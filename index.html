@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A股盘前预判</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --line:#262b36; --txt:#e8ebf0; --sub:#9aa3b2;
+    --accent:#4ea1ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;padding:16px;max-width:680px;margin:0 auto;font-size:16px}
+  header{padding:8px 0 16px;border-bottom:1px solid var(--line);margin-bottom:18px}
+  .date{color:var(--sub);font-size:14px;letter-spacing:.5px}
+  h1{font-size:22px;font-weight:700;margin-top:4px}
+  .tag{display:inline-block;font-size:12px;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:1px 7px;margin-left:8px;vertical-align:middle}
+  section{margin-bottom:22px}
+  h2{font-size:15px;color:var(--sub);font-weight:600;letter-spacing:1px;margin-bottom:10px;text-transform:uppercase}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+  .mainline .name{font-size:17px;font-weight:700;color:var(--accent)}
+  .mainline .logic{font-size:14.5px;color:var(--txt);margin-top:4px}
+  .stock{display:flex;flex-direction:column;gap:2px}
+  .stock .top{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .stock .sname{font-weight:700;font-size:16px}
+  .stock .code{color:var(--sub);font-size:13px;font-variant-numeric:tabular-nums}
+  .stock .reason{font-size:14px;color:var(--txt)}
+  .stock .meta{font-size:12.5px;color:var(--sub);margin-top:2px}
+  ol,ul{padding-left:20px}
+  li{margin-bottom:6px;font-size:14.5px}
+  .risk li{color:#ffd6a0}
+  .news a{color:var(--accent);text-decoration:none}
+  .news li{margin-bottom:8px}
+  .news .src{color:var(--sub);font-size:12px}
+  footer{border-top:1px solid var(--line);padding-top:14px;margin-top:8px;color:var(--sub);font-size:12.5px}
+  .disc{margin-top:6px}
+</style>
+</head>
+<body>
+<header>
+  <div class="date">2026-06-23 · 端午节后首个交易日</div>
+  <h1>A股盘前预判<span class="tag">新框架样例</span></h1>
+</header>
+
+<section>
+  <h2>今日主线</h2>
+  <div class="card mainline">
+    <div class="name">光通信 / CPO / 算力光互连</div>
+    <div class="logic">产业逻辑硬：AI数据中心光纤需求同比激增约75.9%、光纤价格累计涨400–550%、订单排产到2027；龙头共识成立（长飞光纤涨停、板块多股涨停）；美股映射确认（费半+6.42%、美光+8%、Intel+10%）。</div>
+  </div>
+</section>
+
+<section>
+  <h2>重点关注（主板/中小板）</h2>
+  <div class="card stock">
+    <div class="top"><span class="sname">长飞光纤</span><span class="code">601869 · 主板</span></div>
+    <div class="reason">光纤光缆+空芯光纤龙头，主线核心，跨日持续走强＝共识成立。</div>
+    <div class="meta">龙虎榜：需确认主力/机构席位 · 财报：临近半年报，关注披露催化</div>
+  </div>
+  <div class="card stock">
+    <div class="top"><span class="sname">中天科技</span><span class="code">600522 · 主板</span></div>
+    <div class="reason">光纤光缆+海缆头部，AI算力组网与光纤涨价直接受益。</div>
+  </div>
+  <div class="card stock">
+    <div class="top"><span class="sname">亨通光电</span><span class="code">600487 · 主板</span></div>
+    <div class="reason">光纤光缆头部，板块跟随龙头补涨。</div>
+  </div>
+  <div class="card stock">
+    <div class="top"><span class="sname">光迅科技</span><span class="code">002281 · 中小板</span></div>
+    <div class="reason">可自产光芯片+光器件，CPO上游瓶颈环节，回调够深可建底仓。</div>
+  </div>
+</section>
+
+<section>
+  <h2>判断原因</h2>
+  <ol>
+    <li>产业逻辑：AI光纤需求激增、光纤涨价400–550%、订单排到2027，赛道与业绩双硬。</li>
+    <li>龙头共识：长飞光纤涨停、板块多股涨停，龙头持续拉升＝主线共识成立。</li>
+    <li>美股映射：昨夜费城半导体强反弹、美光+8%，外盘联动指向A股算力/光通信链。</li>
+    <li>催化：CPO订单预期与AI数据中心扩张持续强化，仅作主线点火，不单独买入。</li>
+  </ol>
+</section>
+
+<section class="risk">
+  <h2>风险提示</h2>
+  <ul>
+    <li>有色/稀土昨日已大面积涨停，今日属利好兑现/高位分歧，不追。</li>
+    <li>光通信已连续走强，高位注意分时炸板与获利回吐；龙虎榜若现凶悍游资砸盘席位需警惕。</li>
+  </ul>
+</section>
+
+<section class="news">
+  <h2>重要新闻</h2>
+  <ul>
+    <li>光通信集体爆发，长飞光纤涨停、源杰/亨通创新高，AI数据中心光互连需求驱动。<span class="src"> — 证券时报</span></li>
+    <li>美光6/24盘后发FY26Q3财报，HBM全年产能售罄、毛利率有望破80%，关注存储链。<span class="src"> — GlobeNewswire</span></li>
+    <li>6/22中国对美反制：出口管制10家美企（含稀土）、政采排除46家美军工。<span class="src"> — 新华网</span></li>
+  </ul>
+</section>
+
+<footer>
+  数据来源：supertracker科技资讯日报 + 美股隔夜 + A股昨日复盘(龙头共识) + 龙虎榜。
+  <div class="disc">本页由AI辅助生成，仅为个人投研参考，不构成投资建议。股市有风险，入市需谨慎。</div>
+</footer>
+</body>
+</html>
