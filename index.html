@@ -3,90 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A股盘前 · 资讯总览 2026-06-23</title>
+<title>A股资讯总览 · 盘前判断 2026-06-23</title>
 <style>
   :root{
-    --bg:#0b0d12; --bg2:#10131a; --card:#151922; --line:#222836; --txt:#eef1f6; --sub:#8c95a8;
-    --accent:#f5a623; --accent2:#4ea1ff;
-    --gov:#e0556e; --ai:#4ea1ff; --chip:#b07cff; --metal:#f5a623; --robot:#2ec5a8; --pv:#6cc24a; --space:#8b9dff;
+    --bg:#0a0c10; --line:#232936; --txt:#f1f4f9; --txt2:#c6cdd9; --sub:#8b94a6;
+    --gold:#e3a92c;
+    /* 板块色：红橙黄绿蓝靛紫，按 GOV→AI→CHIP→METAL→ROBOT→PV→SPACE 顺序 */
+    --c-gov:#d62f2f; --c-ai:#e06a12; --c-chip:#b8860b; --c-metal:#2f9e44;
+    --c-robot:#1f6feb; --c-pv:#4f46e5; --c-space:#9333ea;
     --mono:ui-monospace,"Cascadia Code","Consolas","SF Mono",monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
   html{scroll-behavior:smooth}
-  body{background:
-      radial-gradient(1200px 500px at 100% -5%,rgba(245,166,35,.07),transparent 60%),
-      radial-gradient(900px 400px at -10% 0%,rgba(78,161,255,.06),transparent 55%),
-      var(--bg);
-    color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
-    line-height:1.62;font-size:16px;padding-bottom:48px}
+  body{background:var(--bg);color:var(--txt);font-family:var(--sans);line-height:1.62;font-size:16px;padding-bottom:48px}
   .wrap{max-width:720px;margin:0 auto;padding:0 16px}
 
-  /* header */
-  header{padding:26px 0 16px}
-  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:2px;color:var(--accent);text-transform:uppercase}
-  h1{font-family:Georgia,"Songti SC",serif;font-size:30px;font-weight:700;line-height:1.15;margin:6px 0 4px;letter-spacing:-.5px}
-  h1 .thin{color:var(--sub);font-weight:400}
-  .meta{color:var(--sub);font-size:13.5px;font-family:var(--mono)}
+  header{padding:26px 0 14px}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase}
+  h1{font-size:28px;font-weight:800;line-height:1.18;margin:8px 0 5px;letter-spacing:-.3px}
+  h1 .thin{color:var(--sub);font-weight:300}
+  .meta{color:var(--sub);font-size:13px;font-family:var(--mono)}
 
-  /* sticky nav */
-  nav{position:sticky;top:0;z-index:20;background:rgba(11,13,18,.82);backdrop-filter:blur(10px);
-      border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:14px 0 22px;
+  nav{position:sticky;top:0;z-index:20;background:rgba(10,12,16,.9);backdrop-filter:blur(10px);
+      border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:14px 0 24px;
       display:flex;gap:7px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
   nav::-webkit-scrollbar{display:none}
-  nav a{flex:0 0 auto;font-family:var(--mono);font-size:12.5px;color:var(--sub);text-decoration:none;
+  nav a{flex:0 0 auto;font-family:var(--mono);font-size:12.5px;text-decoration:none;color:var(--txt2);
         border:1px solid var(--line);border-radius:999px;padding:4px 12px;white-space:nowrap;transition:.15s}
-  nav a:hover,nav a:active{color:var(--txt);border-color:var(--accent);background:rgba(245,166,35,.08)}
+  nav a:hover,nav a:active{color:#fff;border-color:currentColor}
 
-  section{margin-bottom:30px;scroll-margin-top:60px}
-  .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-  .sec-head .bar{width:4px;height:20px;border-radius:2px;background:var(--accent)}
-  .sec-head h2{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--txt);font-weight:700}
-  .sec-head .en{font-family:var(--mono);font-size:11px;color:var(--sub);letter-spacing:1px}
+  section{margin-bottom:30px;scroll-margin-top:58px}
 
-  /* 盘前判断 */
-  .verdict{background:linear-gradient(180deg,rgba(245,166,35,.08),rgba(245,166,35,.02));
-           border:1px solid rgba(245,166,35,.28);border-radius:14px;padding:16px 18px;margin-bottom:12px}
-  .verdict .ml{font-size:18px;font-weight:800;color:var(--accent)}
-  .verdict .lg{font-size:14.5px;color:var(--txt);margin-top:5px}
+  /* 板块标题：实色方块 + 白字 */
+  .sec-head{display:flex;align-items:center;gap:10px;background:var(--c,var(--gold));
+            border-radius:8px;padding:9px 14px;margin-bottom:14px}
+  .sec-head h2{font-size:15.5px;font-weight:800;letter-spacing:1.5px;color:#fff}
+  .sec-head .en{margin-left:auto;font-family:var(--mono);font-size:11px;color:rgba(255,255,255,.85);letter-spacing:1px}
+
+  /* 新闻条目：纯黑底，无浅色填充，左色条分栏 */
+  .item{border:1px solid var(--line);border-left:3px solid var(--c,var(--gold));
+        border-radius:10px;padding:13px 15px;margin-bottom:10px;background:transparent}
+  .item .it-h{display:flex;align-items:flex-start;gap:8px;justify-content:space-between}
+  .item .ttl{font-size:15.5px;font-weight:700;line-height:1.42;color:var(--txt)}
+  .badge{flex:0 0 auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;color:#fff;
+         background:var(--c,var(--gold));border-radius:4px;padding:2px 7px;font-weight:700;margin-top:2px}
+  .item .sm{font-size:13.8px;color:var(--txt2);margin-top:5px}
+  .item ul{padding-left:18px;margin-top:6px}
+  .item li{font-size:13.2px;color:var(--txt2);margin-bottom:3px}
+  .item .src{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:9px;font-family:var(--mono);font-size:12px}
+  .item .src a{color:#5aa3ff;text-decoration:none}
+  .item .src .t{color:var(--sub)}
+  .pricetbl{width:100%;border-collapse:collapse;margin:2px 0 2px;font-size:13px}
+  .pricetbl td{padding:5px 4px;border-bottom:1px solid var(--line);font-family:var(--mono)}
+  .pricetbl td:first-child{color:var(--txt2);font-family:var(--sans)}
+  .up{color:#ff6b6b}.down{color:#43d17a}
+
+  /* 关键摘要 */
+  .digest{counter-reset:d;border:1px solid var(--line);border-radius:10px;padding:4px 16px}
+  .digest li{list-style:none;position:relative;padding:10px 0 10px 34px;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--txt2)}
+  .digest li:last-child{border-bottom:0}
+  .digest li b{color:var(--txt)}
+  .digest li::before{counter-increment:d;content:counter(d,decimal-leading-zero);position:absolute;left:0;top:10px;
+        font-family:var(--mono);font-size:12px;color:var(--gold)}
+
+  /* 盘前判断（置于末尾） */
+  .verdict{border:1px solid rgba(227,169,44,.4);border-left:3px solid var(--gold);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+  .verdict .ml{font-size:18px;font-weight:800;color:var(--gold)}
+  .verdict .lg{font-size:14.5px;color:var(--txt2);margin-top:5px}
   .picks{display:grid;gap:8px}
-  .pick{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:11px 14px}
+  .pick{border:1px solid var(--line);border-radius:11px;padding:11px 14px}
   .pick .h{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
-  .pick .n{font-weight:700;font-size:15.5px}
+  .pick .n{font-weight:700;font-size:15.5px;color:var(--txt)}
   .pick .c{font-family:var(--mono);font-size:12.5px;color:var(--sub)}
-  .pick .r{font-size:13.5px;color:var(--txt);margin-top:1px}
+  .pick .r{font-size:13.5px;color:var(--txt2);margin-top:1px}
   .pick .m{font-size:12px;color:var(--sub);margin-top:3px;font-family:var(--mono)}
   .twocol{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
-  .mini{background:var(--bg2);border:1px solid var(--line);border-radius:11px;padding:12px 14px}
+  .mini{border:1px solid var(--line);border-radius:11px;padding:12px 14px}
   .mini h3{font-size:12px;letter-spacing:1px;color:var(--sub);text-transform:uppercase;margin-bottom:7px}
   .mini ol,.mini ul{padding-left:17px}
-  .mini li{font-size:13px;margin-bottom:5px}
+  .mini li{font-size:13px;margin-bottom:5px;color:var(--txt2)}
   .risk li{color:#ffce9e}
   @media(max-width:560px){.twocol{grid-template-columns:1fr}}
-
-  /* 摘要 */
-  .digest{counter-reset:d}
-  .digest li{list-style:none;position:relative;padding:9px 0 9px 34px;border-bottom:1px solid var(--line);font-size:14.5px}
-  .digest li:last-child{border-bottom:0}
-  .digest li::before{counter-increment:d;content:counter(d,decimal-leading-zero);position:absolute;left:0;top:9px;
-        font-family:var(--mono);font-size:12px;color:var(--accent)}
-
-  /* 新闻条目 */
-  .item{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--sec,var(--accent));
-        border-radius:10px;padding:13px 15px;margin-bottom:10px}
-  .item .it-h{display:flex;align-items:flex-start;gap:8px;justify-content:space-between}
-  .item .ttl{font-size:15.5px;font-weight:700;line-height:1.4}
-  .badge{flex:0 0 auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;color:#0b0d12;
-         background:var(--accent);border-radius:4px;padding:2px 6px;font-weight:700;margin-top:2px}
-  .item .sm{font-size:13.5px;color:#cdd3df;margin-top:5px}
-  .item ul{padding-left:18px;margin-top:6px}
-  .item li{font-size:13px;color:var(--sub);margin-bottom:3px}
-  .item .src{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:8px;font-family:var(--mono);font-size:12px}
-  .item .src a{color:var(--accent2);text-decoration:none}
-  .item .src .t{color:var(--sub)}
-  .pricetbl{width:100%;border-collapse:collapse;margin:2px 0 4px;font-size:13px}
-  .pricetbl td{padding:5px 6px;border-bottom:1px solid var(--line);font-family:var(--mono)}
-  .pricetbl td:first-child{color:var(--sub)}
-  .up{color:#ff6b6b}.down{color:#43d17a}
 
   footer{border-top:1px solid var(--line);padding-top:16px;margin-top:10px;color:var(--sub);font-size:12.5px}
 </style>
@@ -95,26 +93,179 @@
 <div class="wrap">
 
 <header>
-  <div class="kicker">A-SHARE MORNING BRIEF · SUPERTRACKER</div>
-  <h1>盘前主线 <span class="thin">&amp;</span> 资讯总览</h1>
+  <div class="kicker">SUPERTRACKER · A-SHARE BRIEF</div>
+  <h1>资讯总览 <span class="thin">/</span> 盘前判断</h1>
   <div class="meta">2026-06-23　端午节后首个交易日　·　收录窗口 06-21 → 06-23</div>
 </header>
 
 <nav>
-  <a href="#verdict">盘前判断</a>
   <a href="#digest">关键摘要</a>
-  <a href="#gov">政策</a>
-  <a href="#ai">AI</a>
-  <a href="#chip">芯片</a>
-  <a href="#metal">有色</a>
-  <a href="#robot">机器人</a>
-  <a href="#pv">光伏电力</a>
-  <a href="#space">航天</a>
+  <a href="#gov" style="color:var(--c-gov)">政策</a>
+  <a href="#ai" style="color:var(--c-ai)">AI</a>
+  <a href="#chip" style="color:var(--c-chip)">芯片</a>
+  <a href="#metal" style="color:var(--c-metal)">有色</a>
+  <a href="#robot" style="color:var(--c-robot)">机器人</a>
+  <a href="#pv" style="color:var(--c-pv)">光伏电力</a>
+  <a href="#space" style="color:var(--c-space)">航天</a>
+  <a href="#verdict" style="color:var(--gold)">盘前判断</a>
 </nav>
 
-<!-- ============ 盘前判断 ============ -->
+<!-- ============ 关键摘要 ============ -->
+<section id="digest">
+  <div class="sec-head" style="--c:#3a4150"><h2>关键发现摘要</h2><span class="en">7 HIGHLIGHTS</span></div>
+  <ul class="digest">
+    <li><b>对美反制（GOV）</b>：6-22 商务部管制10家美企（含稀土 MP Materials、USA Rare Earth），财政部政采排除46家美军工。</li>
+    <li><b>AI电力瓶颈（AI）</b>：6-21 美 FERC 下令六大区域电网改革并网，为 AI 数据中心提速。</li>
+    <li><b>机器人零部件（ROBOT）</b>：6-22 新华社点名谐波减速器，2030年126–288亿增量、国产替代加速。</li>
+    <li><b>存储催化（CHIP）</b>：美光 6-24 盘后财报，HBM 产能售罄、毛利率有望破80%。</li>
+    <li><b>有色反弹（METAL）</b>：6-22 黄金反弹收复4200、有色ETF盘中涨超5%；钨受出口管制支撑高位。</li>
+    <li><b>Anthropic 下线（AI）</b>：旗舰 Fable 5/Mythos 5 因美出口管制全球下线已第9–10天。</li>
+    <li><b>SpaceX 组网（SPACE）</b>：6-22 范登堡再射24颗星链 V2 Mini，维持高频组网。</li>
+  </ul>
+</section>
+
+<!-- ============ GOV ============ -->
+<section id="gov" style="--c:var(--c-gov)">
+  <div class="sec-head"><h2>政府与政策</h2><span class="en">GOV</span></div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">商务部将10家美国实体列入出口管制管控名单（公告第23号）</div><span class="badge">重大</span></div>
+    <div class="sm">依《出口管制法》即日生效，对美方6/8扩列1260H的直接反制。</div>
+    <ul><li>名单含 MP Materials、USA Rare Earth 两家稀土企业，及 Red Cat、Oshkosh Defense、L3Harris Maritime 等。</li><li>禁止向其出口两用物项、禁止任何国家转移原产中国两用物项给其。</li></ul>
+    <div class="src"><a href="https://www.news.cn/20260622/8e01841af4e6442c9b1dfcd23d686432/c.html">新华网</a><a href="https://www.aljazeera.com/news/2026/6/22/china-adds-10-us-firms-including-rare-earth-miner-to-export-control-list">Al Jazeera</a><span class="t">2026-06-22</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">财政部政府采购对46家美国企业采取措施</div><span class="badge">重大</span></div>
+    <div class="sm">政府采购不得采购46家美企产品（不含在华美资），自印发日施行。</div>
+    <ul><li>以军工为主：洛克希德·马丁、雷神、波音防务、通用动力、通用原子、Anduril 等。</li><li>与商务部第23号公告同日，同为对1260H扩列的反制。</li></ul>
+    <div class="src"><a href="https://www.stdaily.com/web/gdxw/2026-06/22/content_535388.html">科技日报</a><a href="https://www.cnbc.com/2026/06/22/china-trade-curbs-us-companies-export-controls-procurement-exclusion-pentagon-list-.html">CNBC</a><span class="t">2026-06-22</span></div>
+  </div>
+</section>
+
+<!-- ============ AI ============ -->
+<section id="ai" style="--c:var(--c-ai)">
+  <div class="sec-head"><h2>AI 领域</h2><span class="en">AI</span></div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">美 FERC 下令六大区域电网为 AI 数据中心改革并网框架</div><span class="badge">A股相关</span></div>
+    <div class="sm">监管正面回应"算力受制于电力/并网"瓶颈，加速数据中心接入。</div>
+    <ul><li>与超大厂2026巨额 Capex 相互印证，算力需求确定性增强。</li><li>国产映射：电力设备、并网、数据中心供电、光模块、电源、液冷。</li></ul>
+    <div class="src"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026">buildfastwithai</a><span class="t">2026-06-21</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">Anthropic 旗舰 Fable 5/Mythos 5 仍因美出口管制全球下线（第9–10天）</div><span class="badge">重大</span></div>
+    <div class="sm">美商务部6/12以国安为由要求对外国国民停供，公司为合规全线下线。</div>
+    <ul><li>6/22 订阅免费试用关闭，6/23 起转付费计费。</li><li>首例美政府以"出口"名义要求 AI 公司对全球（含本土外籍）停供前沿模型。</li></ul>
+    <div class="src"><a href="https://www.anthropic.com/news/fable-mythos-access">Anthropic</a><span class="t">2026-06-21/22</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">xAI Grok 4.3 在 Amazon Bedrock 正式 GA</div></div>
+    <div class="sm">定价 $1.25/$2.50 每百万 token，支持100万上下文，进入 AWS 企业渠道。</div>
+    <div class="src"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026">buildfastwithai</a><span class="t">2026-06-21</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">动态提示（仅预期，未在窗口内落地）</div></div>
+    <ul><li>OpenAI GPT-5.6 目标6月底；Gemini 3.5 Pro 限量预览；DeepSeek V4.1 多模态。</li><li>窗口外强催化：DeepSeek 约500亿融资6/16-17落定、科创板第五套标准拟扩容AI大模型。</li></ul>
+  </div>
+</section>
+
+<!-- ============ CHIP ============ -->
+<section id="chip" style="--c:var(--c-chip)">
+  <div class="sec-head"><h2>芯片半导体</h2><span class="en">CHIP</span></div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">美光 Micron FY26Q3 财报（6/24 盘后，临窗催化）</div><span class="badge">重大</span></div>
+    <div class="sm">市场预期营收约345亿美元（同比+271%）、毛利率有望破80%。</div>
+    <ul><li>AI 服务器 HBM 需求驱动，2026全年 HBM 产能售罄、订单排至年底。</li><li>已获 NVIDIA Vera Rubin 平台 HBM4 认证（三供之一）。</li><li>6/24盘后结果影响6/25 A股存储/HBM链（长鑫、长江存储、封测）。</li></ul>
+    <div class="src"><a href="https://www.globenewswire.com/news-release/2026/05/27/3302360/14450/en/micron-technology-to-report-fiscal-third-quarter-results-on-june-24-2026.html">GlobeNewswire</a><span class="t">事件日 2026-06-24</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">窗口内无公司级新公告（已 fail loud 标注）</div></div>
+    <div class="sm">GTC Taipei(6/1)、SK海力士12层HBM4E样品(6/18)、AMD/Intel大跌(6/5) 均超窗丢弃；光模块1.6T为趋势性研报，无6/21-23公司级独立公告。</div>
+  </div>
+</section>
+
+<!-- ============ METAL ============ -->
+<section id="metal" style="--c:var(--c-metal)">
+  <div class="sec-head"><h2>有色 / 贵金属</h2><span class="en">METAL</span></div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">近3天金/铜/钨价格速览</div></div>
+    <table class="pricetbl">
+      <tr><td>黄金（现货）</td><td class="up">4196.96 美元/oz ↑</td><td>06-22</td></tr>
+      <tr><td>铜（长江1#）</td><td class="down">当日跌680元/吨 ↓</td><td>06-22</td></tr>
+      <tr><td>白银（现货）</td><td class="down">66.64 美元/oz ↓</td><td>06-22</td></tr>
+      <tr><td>钨精矿（黑钨55%）</td><td class="up">51.5–52万元/标吨 ↑</td><td>06下旬</td></tr>
+      <tr><td>APT（仲钨酸铵）</td><td class="up">76–78万元/吨 ↑</td><td>06月</td></tr>
+    </table>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">黄金6/22反弹收复4200，地缘+技术性修复</div><span class="badge">重大</span></div>
+    <div class="sm">现货金反弹至4196.96美元/oz，终结上周三连跌；国内金饰普涨约16元/克至1277元/克。</div>
+    <div class="src"><a href="https://finance.sina.com.cn/stock/relnews/hk/2026-06-22/doc-iniehmvs0283031.shtml">新浪财经</a><span class="t">2026-06-22</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">有色板块6/22反弹，有色ETF盘中涨超5%</div><span class="badge">重大</span></div>
+    <div class="sm">美伊瑞士会谈落幕，避险与供应担忧修复；贵金属承压、工业金属逆势走强分化；6/30 美国铜关税评估临近。</div>
+    <div class="src"><a href="https://m.jiemian.com/article/14623728.html">界面新闻</a><span class="t">2026-06-22</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">钨6月稳中走高，出口管制+军工刚需支撑</div><span class="badge">重大</span></div>
+    <div class="sm">黑/白钨52万元/标吨，APT 76–78万元/吨；2025钨精矿开采指标降至5.8万吨(-6.45%)，海外非中资新增产能不足5000吨。</div>
+    <div class="src"><a href="https://www.ctia.com.cn/">中钨在线</a><span class="t">2026-06</span></div>
+  </div>
+</section>
+
+<!-- ============ ROBOT ============ -->
+<section id="robot" style="--c:var(--c-robot)">
+  <div class="sec-head"><h2>具身智能 / 机器人</h2><span class="en">ROBOT</span></div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">新华社：消费级具身智能提速，人形机器人核心零部件迎新机遇</div><span class="badge">重大</span></div>
+    <div class="sm">单台人形机器人需26个减速器（工业机器人仅7.5个），2030年谐波减速器126–288亿增量。</div>
+    <ul><li>消费铺货：宇树京东/王府井开店、优必选推"优世界"U1预售、越疆家庭陪伴机器人。</li><li>国产替代：绿的谐波产能79万台/年再增100万台；国产单价为进口40%–60%。</li></ul>
+    <div class="src"><a href="https://www.news.cn/tech/20260622/20ac2af7c26643af9daa223e5ae9916a/c.html">新华网</a><span class="t">2026-06-22</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">Automate 2026 开幕，NVIDIA 人形机器人专馆领衔</div><span class="badge">重大</span></div>
+    <div class="sm">50年来最大规模，首设 NVIDIA 赞助人形机器人专馆，主题"物理AI"。</div>
+    <ul><li>Figure BotQ "每小时下线一台 Figure 03"、累计交付超350台。</li><li>波士顿动力电动 Atlas 商业交付（产能锁定现代+DeepMind）；Agility Digit 部署丰田加拿大工厂。</li></ul>
+    <div class="src"><a href="https://www.techtimes.com/articles/318805/20260621/automate-2026-opens-monday-nvidia-pavilion-marks-humanoid-robot-shift-production.htm">Tech Times</a><span class="t">2026-06-21</span></div>
+  </div>
+</section>
+
+<!-- ============ PV ============ -->
+<section id="pv" style="--c:var(--c-pv)">
+  <div class="sec-head"><h2>光伏新能源 / 电力链</h2><span class="en">PV</span></div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">宏英智能子公司签6.64亿元独立储能电站PC总承包</div></div>
+    <div class="sm">联合体签甘肃白银200MW/800MWh 独立储能电站 PC 总包，合同总价6.64亿元。</div>
+    <div class="src"><a href="https://finance.sina.com.cn/stock/y/2026-06-23/doc-inieixxa2061923.shtml">新浪财经</a><span class="t">2026-06-22</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">深天马A 子公司签分布式光伏EMC协议，25年累计约6.72亿元</div></div>
+    <div class="sm">子公司与中航成套签分布式光伏合同能源管理，运营25年。</div>
+    <div class="src"><a href="https://finance.sina.com.cn/stock/y/2026-06-23/doc-inieixxa2061923.shtml">新浪财经</a><span class="t">2026-06-22</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">背景趋势（窗口外，供主线参考）</div></div>
+    <ul><li>变压器订单排至2027、美国近半数规划数据中心因设备短缺延期；特变在手订单超800亿、特高压市占率超45%。</li><li>国网"十五五"投资4万亿(+40%)；山西6/8储能新政2027装机≥800万千瓦；多晶硅价格承压、供给侧出清为中期逻辑。</li></ul>
+  </div>
+</section>
+
+<!-- ============ SPACE ============ -->
+<section id="space" style="--c:var(--c-space)">
+  <div class="sec-head"><h2>商业航天</h2><span class="en">SPACE</span></div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">SpaceX 6/22 范登堡再射24颗星链 V2 Mini</div><span class="badge">重大</span></div>
+    <div class="sm">猎鹰9号发射24颗 Starlink V2 Mini，一级 B1081 第25次复用、海上回收。</div>
+    <ul><li>延续高密度组网（6/15 已送入2026年第1500颗星链）。</li><li>A股点评：强化"卫星互联网加速"情绪，利好中国卫星等组网链估值，无直接订单传导。</li></ul>
+    <div class="src"><a href="https://spaceflightnow.com/2026/06/20/live-coverage-spacex-to-launch-24-starlink-satellites-on-falcon-9-rocket-from-vandenberg-5/">Spaceflight Now</a><span class="t">2026-06-22</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">国内火箭处间歇期</div></div>
+    <div class="sm">蓝箭/星际荣耀/星河动力等处6月上旬密集发射后间歇期，窗口内无新入轨/试车；航天电器(002025)等A股个股窗口内无新公告。</div>
+  </div>
+</section>
+
+<!-- ============ 盘前判断（末尾） ============ -->
 <section id="verdict">
-  <div class="sec-head"><span class="bar"></span><h2>盘前判断</h2><span class="en">main line</span></div>
+  <div class="sec-head" style="--c:var(--gold)"><h2>盘前判断</h2><span class="en">MAIN LINE</span></div>
   <div class="verdict">
     <div class="ml">光通信 / CPO / 算力光互连</div>
     <div class="lg">产业逻辑硬：AI光纤需求同比+约75.9%、光纤累计涨400–550%、订单排到2027；龙头共识成立（长飞涨停、板块多股涨停）；美股映射确认（费半+6.42%、美光+8%、Intel+10%）。</div>
@@ -135,159 +286,6 @@
       <li>有色/稀土昨已大面积涨停，今属利好兑现/高位，不追。</li>
       <li>光通信连续走强，防高位炸板；龙虎榜现凶悍游资砸盘需警惕。</li>
     </ul></div>
-  </div>
-</section>
-
-<!-- ============ 关键摘要 ============ -->
-<section id="digest">
-  <div class="sec-head"><span class="bar"></span><h2>关键发现摘要</h2><span class="en">7 highlights</span></div>
-  <ul class="digest">
-    <li><b>对美反制（GOV）</b>：6-22 商务部管制10家美企（含稀土 MP Materials、USA Rare Earth），财政部政采排除46家美军工。</li>
-    <li><b>AI电力瓶颈（AI）</b>：6-21 美 FERC 下令六大区域电网改革并网，为 AI 数据中心提速。</li>
-    <li><b>机器人零部件（ROBOT）</b>：6-22 新华社点名谐波减速器，2030年126–288亿增量、国产替代加速。</li>
-    <li><b>存储催化（CHIP）</b>：美光 6-24 盘后财报，HBM 产能售罄、毛利率有望破80%。</li>
-    <li><b>有色反弹（METAL）</b>：6-22 黄金反弹收复4200、有色ETF盘中涨超5%；钨受出口管制支撑高位。</li>
-    <li><b>Anthropic 下线（AI）</b>：旗舰 Fable 5/Mythos 5 因美出口管制全球下线已第9–10天。</li>
-    <li><b>SpaceX 组网（SPACE）</b>：6-22 范登堡再射24颗星链 V2 Mini，维持高频组网。</li>
-  </ul>
-</section>
-
-<!-- ============ GOV ============ -->
-<section id="gov" style="--sec:var(--gov)">
-  <div class="sec-head"><span class="bar" style="background:var(--gov)"></span><h2>政府与政策</h2><span class="en">GOV</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">商务部将10家美国实体列入出口管制管控名单（公告第23号）</div><span class="badge" style="background:var(--gov)">重大</span></div>
-    <div class="sm">依《出口管制法》即日生效，对美方6/8扩列1260H的直接反制。</div>
-    <ul><li>名单含 MP Materials、USA Rare Earth 两家稀土企业，及 Red Cat、Oshkosh Defense、L3Harris Maritime 等。</li><li>禁止向其出口两用物项、禁止任何国家转移原产中国两用物项给其。</li></ul>
-    <div class="src"><a href="https://www.news.cn/20260622/8e01841af4e6442c9b1dfcd23d686432/c.html">新华网</a><a href="https://www.aljazeera.com/news/2026/6/22/china-adds-10-us-firms-including-rare-earth-miner-to-export-control-list">Al Jazeera</a><span class="t">2026-06-22</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">财政部政府采购对46家美国企业采取措施</div><span class="badge" style="background:var(--gov)">重大</span></div>
-    <div class="sm">政府采购不得采购46家美企产品（不含在华美资），自印发日施行。</div>
-    <ul><li>以军工为主：洛克希德·马丁、雷神、波音防务、通用动力、通用原子、Anduril 等。</li><li>与商务部第23号公告同日，同为对1260H扩列的反制。</li></ul>
-    <div class="src"><a href="https://www.stdaily.com/web/gdxw/2026-06/22/content_535388.html">科技日报</a><a href="https://www.cnbc.com/2026/06/22/china-trade-curbs-us-companies-export-controls-procurement-exclusion-pentagon-list-.html">CNBC</a><span class="t">2026-06-22</span></div>
-  </div>
-</section>
-
-<!-- ============ AI ============ -->
-<section id="ai" style="--sec:var(--ai)">
-  <div class="sec-head"><span class="bar" style="background:var(--ai)"></span><h2>AI 领域</h2><span class="en">AI</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">美 FERC 下令六大区域电网为 AI 数据中心改革并网框架</div><span class="badge" style="background:var(--ai)">A股相关</span></div>
-    <div class="sm">监管正面回应"算力受制于电力/并网"瓶颈，加速数据中心接入。</div>
-    <ul><li>与超大厂2026巨额 Capex 相互印证，算力需求确定性增强。</li><li>国产映射：电力设备、并网、数据中心供电、光模块、电源、液冷。</li></ul>
-    <div class="src"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026">buildfastwithai</a><span class="t">2026-06-21</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">Anthropic 旗舰 Fable 5/Mythos 5 仍因美出口管制全球下线（第9–10天）</div><span class="badge" style="background:var(--ai)">重大</span></div>
-    <div class="sm">美商务部6/12以国安为由要求对外国国民停供，公司为合规全线下线。</div>
-    <ul><li>6/22 订阅免费试用关闭，6/23 起转付费计费。</li><li>首例美政府以"出口"名义要求 AI 公司对全球（含本土外籍）停供前沿模型。</li></ul>
-    <div class="src"><a href="https://www.anthropic.com/news/fable-mythos-access">Anthropic</a><span class="t">2026-06-21/22</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">xAI Grok 4.3 在 Amazon Bedrock 正式 GA</div></div>
-    <div class="sm">定价 $1.25/$2.50 每百万 token，支持100万上下文，进入 AWS 企业渠道。</div>
-    <div class="src"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026">buildfastwithai</a><span class="t">2026-06-21</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">动态提示（仅预期，未在窗口内落地）</div></div>
-    <ul><li>OpenAI GPT-5.6 目标6月底；Gemini 3.5 Pro 限量预览；DeepSeek V4.1 多模态。</li><li>窗口外强催化：DeepSeek 约500亿融资6/16-17落定、科创板第五套标准拟扩容AI大模型。</li></ul>
-  </div>
-</section>
-
-<!-- ============ CHIP ============ -->
-<section id="chip" style="--sec:var(--chip)">
-  <div class="sec-head"><span class="bar" style="background:var(--chip)"></span><h2>芯片半导体</h2><span class="en">CHIP</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">美光 Micron FY26Q3 财报（6/24 盘后，临窗催化）</div><span class="badge" style="background:var(--chip)">重大</span></div>
-    <div class="sm">市场预期营收约345亿美元（同比+271%）、毛利率有望破80%。</div>
-    <ul><li>AI 服务器 HBM 需求驱动，2026全年 HBM 产能售罄、订单排至年底。</li><li>已获 NVIDIA Vera Rubin 平台 HBM4 认证（三供之一）。</li><li>6/24盘后结果影响6/25 A股存储/HBM链（长鑫、长江存储、封测）。</li></ul>
-    <div class="src"><a href="https://www.globenewswire.com/news-release/2026/05/27/3302360/14450/en/micron-technology-to-report-fiscal-third-quarter-results-on-june-24-2026.html">GlobeNewswire</a><span class="t">事件日 2026-06-24</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">窗口内无公司级新公告（已 fail loud 标注）</div></div>
-    <div class="sm">GTC Taipei(6/1)、SK海力士12层HBM4E样品(6/18)、AMD/Intel大跌(6/5) 均超窗丢弃；光模块1.6T为趋势性研报无6/21-23公司级独立公告。</div>
-  </div>
-</section>
-
-<!-- ============ METAL ============ -->
-<section id="metal" style="--sec:var(--metal)">
-  <div class="sec-head"><span class="bar" style="background:var(--metal)"></span><h2>有色 / 贵金属</h2><span class="en">METAL</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">近3天金/铜/钨价格速览</div></div>
-    <table class="pricetbl">
-      <tr><td>黄金（现货）</td><td class="up">4196.96 美元/oz ↑</td><td>06-22</td></tr>
-      <tr><td>铜（长江1#）</td><td class="down">当日跌680元/吨 ↓</td><td>06-22</td></tr>
-      <tr><td>白银（现货）</td><td class="down">66.64 美元/oz ↓</td><td>06-22</td></tr>
-      <tr><td>钨精矿（黑钨55%）</td><td class="up">51.5–52万元/标吨 ↑</td><td>06下旬</td></tr>
-      <tr><td>APT（仲钨酸铵）</td><td class="up">76–78万元/吨 ↑</td><td>06月</td></tr>
-    </table>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">黄金6/22反弹收复4200，地缘+技术性修复</div><span class="badge" style="background:var(--metal)">重大</span></div>
-    <div class="sm">现货金反弹至4196.96美元/oz，终结上周三连跌；国内金饰普涨约16元/克至1277元/克。</div>
-    <div class="src"><a href="https://finance.sina.com.cn/stock/relnews/hk/2026-06-22/doc-iniehmvs0283031.shtml">新浪财经</a><span class="t">2026-06-22</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">有色板块6/22反弹，有色ETF盘中涨超5%</div><span class="badge" style="background:var(--metal)">重大</span></div>
-    <div class="sm">美伊瑞士会谈落幕，避险与供应担忧修复；贵金属承压、工业金属逆势走强分化；6/30 美国铜关税评估临近。</div>
-    <div class="src"><a href="https://m.jiemian.com/article/14623728.html">界面新闻</a><span class="t">2026-06-22</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">钨6月稳中走高，出口管制+军工刚需支撑</div><span class="badge" style="background:var(--metal)">重大</span></div>
-    <div class="sm">黑/白钨52万元/标吨，APT 76–78万元/吨；2025钨精矿开采指标降至5.8万吨(-6.45%)，海外非中资新增产能不足5000吨。</div>
-    <div class="src"><a href="https://www.ctia.com.cn/">中钨在线</a><span class="t">2026-06</span></div>
-  </div>
-</section>
-
-<!-- ============ ROBOT ============ -->
-<section id="robot" style="--sec:var(--robot)">
-  <div class="sec-head"><span class="bar" style="background:var(--robot)"></span><h2>具身智能 / 机器人</h2><span class="en">ROBOT</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">新华社：消费级具身智能提速，人形机器人核心零部件迎新机遇</div><span class="badge" style="background:var(--robot)">重大</span></div>
-    <div class="sm">单台人形机器人需26个减速器（工业机器人仅7.5个），2030年谐波减速器126–288亿增量。</div>
-    <ul><li>消费铺货：宇树京东/王府井开店、优必选推"优世界"U1预售、越疆家庭陪伴机器人。</li><li>国产替代：绿的谐波产能79万台/年再增100万台；国产单价为进口40%–60%。</li></ul>
-    <div class="src"><a href="https://www.news.cn/tech/20260622/20ac2af7c26643af9daa223e5ae9916a/c.html">新华网</a><span class="t">2026-06-22</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">Automate 2026 开幕，NVIDIA 人形机器人专馆领衔</div><span class="badge" style="background:var(--robot)">重大</span></div>
-    <div class="sm">50年来最大规模，首设 NVIDIA 赞助人形机器人专馆，主题"物理AI"。</div>
-    <ul><li>Figure BotQ "每小时下线一台 Figure 03"、累计交付超350台。</li><li>波士顿动力电动 Atlas 商业交付（产能锁定现代+DeepMind）；Agility Digit 部署丰田加拿大工厂。</li></ul>
-    <div class="src"><a href="https://www.techtimes.com/articles/318805/20260621/automate-2026-opens-monday-nvidia-pavilion-marks-humanoid-robot-shift-production.htm">Tech Times</a><span class="t">2026-06-21</span></div>
-  </div>
-</section>
-
-<!-- ============ PV ============ -->
-<section id="pv" style="--sec:var(--pv)">
-  <div class="sec-head"><span class="bar" style="background:var(--pv)"></span><h2>光伏新能源 / 电力链</h2><span class="en">PV</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">宏英智能子公司签6.64亿元独立储能电站PC总承包</div></div>
-    <div class="sm">联合体签甘肃白银200MW/800MWh 独立储能电站 PC 总包，合同总价6.64亿元。</div>
-    <div class="src"><a href="https://finance.sina.com.cn/stock/y/2026-06-23/doc-inieixxa2061923.shtml">新浪财经</a><span class="t">2026-06-22</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">深天马A 子公司签分布式光伏EMC协议，25年累计约6.72亿元</div></div>
-    <div class="sm">子公司与中航成套签分布式光伏合同能源管理，运营25年。</div>
-    <div class="src"><a href="https://finance.sina.com.cn/stock/y/2026-06-23/doc-inieixxa2061923.shtml">新浪财经</a><span class="t">2026-06-22</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">背景趋势（窗口外，供主线参考）</div></div>
-    <ul><li>变压器订单排至2027、美国近半数规划数据中心因设备短缺延期；特变在手订单超800亿、特高压市占率超45%。</li><li>国网"十五五"投资4万亿(+40%)；山西6/8储能新政2027装机≥800万千瓦；多晶硅价格承压、供给侧出清为中期逻辑。</li></ul>
-  </div>
-</section>
-
-<!-- ============ SPACE ============ -->
-<section id="space" style="--sec:var(--space)">
-  <div class="sec-head"><span class="bar" style="background:var(--space)"></span><h2>商业航天</h2><span class="en">SPACE</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">SpaceX 6/22 范登堡再射24颗星链 V2 Mini</div><span class="badge" style="background:var(--space)">重大</span></div>
-    <div class="sm">猎鹰9号发射24颗 Starlink V2 Mini，一级 B1081 第25次复用、海上回收。</div>
-    <ul><li>延续高密度组网（6/15 已送入2026年第1500颗星链）。</li><li>A股点评：强化"卫星互联网加速"情绪，利好中国卫星等组网链估值，无直接订单传导。</li></ul>
-    <div class="src"><a href="https://spaceflightnow.com/2026/06/20/live-coverage-spacex-to-launch-24-starlink-satellites-on-falcon-9-rocket-from-vandenberg-5/">Spaceflight Now</a><span class="t">2026-06-22</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">国内火箭处间歇期</div></div>
-    <div class="sm">蓝箭/星际荣耀/星河动力等处6月上旬密集发射后间歇期，窗口内无新入轨/试车；航天电器(002025)等A股个股窗口内无新公告。</div>
   </div>
 </section>
 
