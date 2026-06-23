@@ -7,12 +7,13 @@
 <style>
   :root{
     --bg:#0a0c10; --line:#232936; --txt:#f1f4f9; --txt2:#c6cdd9; --sub:#8b94a6;
-    --gold:#e3a92c;
-    /* 板块色：红橙黄绿蓝靛紫，按 GOV→AI→CHIP→METAL→ROBOT→PV→SPACE 顺序 */
-    --c-gov:#d62f2f; --c-ai:#e06a12; --c-chip:#b8860b; --c-metal:#2f9e44;
-    --c-robot:#1f6feb; --c-pv:#4f46e5; --c-space:#9333ea;
-    --mono:ui-monospace,"Cascadia Code","Consolas","SF Mono",monospace;
-    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+    --gold:#cda85a;
+    /* 板块色：红橙黄绿蓝靛紫降饱和雅色，按 GOV→AI→CHIP→METAL→ROBOT→PV→SPACE 顺序 */
+    --c-gov:#b15c57; --c-ai:#bb7d4f; --c-chip:#9f8c4a; --c-metal:#5f9070;
+    --c-robot:#5683a8; --c-pv:#6468a0; --c-space:#8a6699;
+    /* 中文字体一律走苹方/雅黑，绝不回退宋体；等宽栈也带中文兜底 */
+    --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Heiti SC",sans-serif;
+    --mono:ui-monospace,"Cascadia Code","Consolas","SF Mono","Microsoft YaHei","PingFang SC",monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
   html{scroll-behavior:smooth}
@@ -46,18 +47,18 @@
         border-radius:10px;padding:13px 15px;margin-bottom:10px;background:transparent}
   .item .it-h{display:flex;align-items:flex-start;gap:8px;justify-content:space-between}
   .item .ttl{font-size:15.5px;font-weight:700;line-height:1.42;color:var(--txt)}
-  .badge{flex:0 0 auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;color:#fff;
-         background:var(--c,var(--gold));border-radius:4px;padding:2px 7px;font-weight:700;margin-top:2px}
+  .badge{flex:0 0 auto;font-family:var(--sans);font-size:11px;letter-spacing:.5px;color:#fff;
+         background:var(--c,var(--gold));border-radius:4px;padding:2px 8px;font-weight:700;margin-top:2px}
   .item .sm{font-size:13.8px;color:var(--txt2);margin-top:5px}
   .item ul{padding-left:18px;margin-top:6px}
   .item li{font-size:13.2px;color:var(--txt2);margin-bottom:3px}
   .item .src{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:9px;font-family:var(--mono);font-size:12px}
-  .item .src a{color:#5aa3ff;text-decoration:none}
+  .item .src a{color:#84b4e0;text-decoration:none}
   .item .src .t{color:var(--sub)}
   .pricetbl{width:100%;border-collapse:collapse;margin:2px 0 2px;font-size:13px}
   .pricetbl td{padding:5px 4px;border-bottom:1px solid var(--line);font-family:var(--mono)}
   .pricetbl td:first-child{color:var(--txt2);font-family:var(--sans)}
-  .up{color:#ff6b6b}.down{color:#43d17a}
+  .up{color:#e08585}.down{color:#5cb98c}
 
   /* 关键摘要 */
   .digest{counter-reset:d;border:1px solid var(--line);border-radius:10px;padding:4px 16px}
@@ -68,7 +69,8 @@
         font-family:var(--mono);font-size:12px;color:var(--gold)}
 
   /* 盘前判断（置于末尾） */
-  .verdict{border:1px solid rgba(227,169,44,.4);border-left:3px solid var(--gold);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+  .verdict{background:linear-gradient(180deg,rgba(205,168,90,.13),rgba(205,168,90,.03));
+           border:1px solid rgba(205,168,90,.34);border-radius:12px;padding:16px 18px;margin-bottom:12px}
   .verdict .ml{font-size:18px;font-weight:800;color:var(--gold)}
   .verdict .lg{font-size:14.5px;color:var(--txt2);margin-top:5px}
   .picks{display:grid;gap:8px}
