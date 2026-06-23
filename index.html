@@ -103,7 +103,6 @@
 <nav>
   <a href="#digest">关键摘要</a>
   <a href="#voices" style="color:var(--gold)">大佬言论</a>
-  <a href="#usstock" style="color:var(--gold)">昨夜美股</a>
   <a href="#gov" style="color:var(--c-gov)">政策</a>
   <a href="#ai" style="color:var(--c-ai)">AI</a>
   <a href="#chip" style="color:var(--c-chip)">芯片</a>
@@ -111,6 +110,7 @@
   <a href="#robot" style="color:var(--c-robot)">机器人</a>
   <a href="#pv" style="color:var(--c-pv)">光伏电力</a>
   <a href="#space" style="color:var(--c-space)">航天</a>
+  <a href="#usstock" style="color:var(--gold)">昨夜美股</a>
   <a href="#verdict" style="color:var(--gold)">盘前判断</a>
 </nav>
 
@@ -169,35 +169,6 @@
   <div class="item">
     <div class="it-h"><div class="ttl">窗口内无实质新发声（fail loud，不编造）</div></div>
     <div class="sm">奥特曼、Lisa Su、台积电魏哲家、Dario Amodei、任正非、国内光模块/算力龙头高管在 6/16-23 窗口内均无具名新公开发言；常被传播的相关表态经核对均超窗（多为6月初）。马斯克"Optimus 要耐心"原话出自更早财报会、系回顾性重提。</div>
-  </div>
-</section>
-
-<!-- ============ 昨夜美股 ============ -->
-<section id="usstock" style="--c:var(--gold)">
-  <div class="sec-head" style="--c:var(--gold)"><h2>昨夜美股 · 2026-06-22 收盘</h2><span class="en">US CLOSE</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">指数：半导体逆势独涨，AI权重与纳指杀跌</div></div>
-    <table class="pricetbl">
-      <tr><td>道琼斯</td><td class="up">+0.29%　51712.71</td><td>—</td></tr>
-      <tr><td>纳斯达克</td><td class="down">−1.32%　26166.60</td><td>科技权重拖累</td></tr>
-      <tr><td>标普500</td><td class="down">−0.37%　7472.79</td><td>—</td></tr>
-      <tr><td>费城半导体 SOX</td><td class="up">+2.04%　14634.72</td><td>30只成分22只涨</td></tr>
-    </table>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">关键个股（按子线分组，别用"费半强=算力强"一概而论）</div></div>
-    <table class="pricetbl">
-      <tr><td>存储/设备</td><td class="up">美光+6.82% · Intel+5.19% · AMAT+3.74% · KLAC+3.70%</td></tr>
-      <tr><td>AI算力</td><td class="down">英伟达−0.97% · 博通−4.52% · <span class="up">台积电+1.20%</span></td></tr>
-      <tr><td>光通信</td><td class="down">Lumentum约−1.33%（COHR/GLW未取到精确6/22值）</td></tr>
-      <tr><td>中概</td><td class="down">阿里−3.14% · 拼多多−2.12% · 京东−1.66%（普跌）</td></tr>
-      <tr><td>大宗</td><td>WTI原油<span class="down">跌超3%</span>；金/铜/银未取到精确6/22收盘%</td></tr>
-    </table>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">一句话当晚主线 + A股映射</div><span class="badge">关键</span></div>
-    <div class="sm"><b>"存储/半导体设备独涨、AI算力(英伟达/博通)与光通信(Lumentum)不跟、科技权重杀跌"的分化夜。</b>映射A股：美股昨夜真正确认的是<b>存储/HBM链</b>（美光+6.82%、6/24财报临近），<b>不</b>支持光通信——故A股今日光通信涨停主由产业逻辑+龙头共识驱动，非美股映射。</div>
-    <div class="src"><a href="https://www.tradingkey.com/zh-hans/analysis/stocks/us-stock/261982679-us-stock-close-nasdaq-sp500-spacex-16-micron-anthropic-tradingkey">TradingKey</a><a href="https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-june-22-225817825.html">Yahoo</a><span class="t">2026-06-22 收盘</span></div>
   </div>
 </section>
 
@@ -343,9 +314,23 @@
 <!-- ============ 盘前判断（末尾） ============ -->
 <section id="verdict">
   <div class="sec-head" style="--c:var(--gold)"><h2>盘前判断</h2><span class="en">MAIN LINE</span></div>
+
+  <div id="usstock" class="item" style="--c:var(--gold)">
+    <div class="it-h"><div class="ttl">昨夜美股 · 2026-06-22 收盘（本判断的事实依据，精确数值）</div><span class="badge">事实</span></div>
+    <table class="pricetbl">
+      <tr><td>指数</td><td>道指<span class="up">+0.29%</span>(51712.71) · 纳指<span class="down">−1.32%</span>(26166.60) · 标普<span class="down">−0.37%</span> · 费半<span class="up">+2.04%</span>(14634.72)</td></tr>
+      <tr><td>存储/设备</td><td class="up">美光+6.82% · Intel+5.19% · AMAT+3.74% · KLAC+3.70%</td></tr>
+      <tr><td>AI算力</td><td class="down">英伟达−0.97% · 博通−4.52% · <span class="up">台积电+1.20%</span></td></tr>
+      <tr><td>光通信</td><td class="down">Lumentum约−1.33%（COHR/GLW未取到精确6/22值）</td></tr>
+      <tr><td>中概/大宗</td><td class="down">阿里−3.14% · 拼多多−2.12% · 京东−1.66%；WTI原油跌超3%（金/铜/银未取到精确6/22值）</td></tr>
+    </table>
+    <div class="sm"><b>分化夜：存储/半导体设备独涨、AI算力(英伟达/博通)与光通信(Lumentum)反跌、科技权重杀跌。</b>→ 美股昨夜确认的是<b>存储/HBM链</b>（美光+6.82%、6/24 美光财报），<b>不</b>支持光通信。</div>
+    <div class="src"><a href="https://www.tradingkey.com/zh-hans/analysis/stocks/us-stock/261982679-us-stock-close-nasdaq-sp500-spacex-16-micron-anthropic-tradingkey">TradingKey</a><a href="https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-june-22-225817825.html">Yahoo</a><span class="t">2026-06-22 收盘</span></div>
+  </div>
+
   <div class="verdict">
     <div class="ml">光通信 / CPO / 算力光互连</div>
-    <div class="lg">产业逻辑硬：AI光纤需求激增、光纤累计涨400–550%、订单排到2027、6/16 长飞×中国电信 1.2Tb/s 空芯光纤纪录、黄仁勋"铜退光进"叙事；龙头共识成立（长飞涨停、板块多股涨停）。<b>美股映射（诚实）：昨夜 6/22 是"存储/设备独涨、光通信美股 Lumentum 反跌"，故今日光通信上涨由产业+共识驱动、非美股确认</b>（详见上「昨夜美股」块）。</div>
+    <div class="lg">产业逻辑硬：AI光纤需求激增、光纤累计涨400–550%、订单排到2027、6/16 长飞×中国电信 1.2Tb/s 空芯光纤纪录、黄仁勋"铜退光进"叙事；龙头共识成立（长飞涨停、板块多股涨停）。<b>美股映射（诚实，数据见上）：昨夜存储/设备独涨、光通信美股 Lumentum 反跌，故今日光通信上涨由产业+共识驱动、非美股确认。</b></div>
   </div>
   <div class="picks">
     <div class="pick"><div class="h"><span class="n">长飞光纤</span><span class="c">601869 · 主板</span></div><div class="r">光纤光缆+空芯光纤龙头，主线核心，跨日持续走强＝共识。</div><div class="m">龙虎榜(6-23)：北向沪股通+11.1亿净买第一、外资高盛/瑞银+国泰海通机构主导，无凶悍游资砸盘＝主力进入可中线跟</div></div>
