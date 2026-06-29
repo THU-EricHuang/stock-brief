@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A股资讯总览 · 盘前判断 2026-06-26</title>
+<title>A股资讯总览 · 盘前判断 2026-06-29</title>
 <style>
   :root{
     --bg:#0a0c10; --line:#232936; --txt:#f1f4f9; --txt2:#c6cdd9; --sub:#8b94a6;
@@ -88,6 +88,8 @@
   .risk li{color:#ffce9e}
   @media(max-width:560px){.twocol{grid-template-columns:1fr}}
 
+  .empty{border:1px dashed var(--line);border-radius:10px;padding:13px 15px;color:var(--sub);font-size:13.5px}
+
   footer{border-top:1px solid var(--line);padding-top:16px;margin-top:10px;color:var(--sub);font-size:12.5px}
 </style>
 </head>
@@ -97,7 +99,7 @@
 <header>
   <div class="kicker">SUPERTRACKER · A-SHARE BRIEF</div>
   <h1>资讯总览 <span class="thin">/</span> 盘前判断</h1>
-  <div class="meta">2026-06-26　收录窗口 06-24 → 06-26　·　昨夜美股 06-25 收盘 / A股复盘 06-25 akshare真实行情</div>
+  <div class="meta">2026-06-29　采集窗口 06-27 → 06-29（含周末）　·　昨夜美股 06-26 收盘 / A股复盘 06-26 akshare真实行情 + 龙虎榜</div>
 </header>
 
 <nav>
@@ -118,225 +120,161 @@
 <section id="digest">
   <div class="sec-head" style="--c:#3a4150"><h2>关键发现摘要</h2><span class="en">7 HIGHLIGHTS</span></div>
   <ul class="digest">
-    <li><b>存储超级周期被财报实证（CHIP·最强）</b>：美光FQ3营收415亿美元（同比+346%）、毛利率84.9%反超英伟达成"利润率之王"、Q4指引490-510亿远超预期，HBM 2026售罄；三星/SK海力士警告内存短缺延续至2027年后、约66%全球DRAM产能已分配给AI。存储从"周期复苏"转"超级扩张"。</li>
-    <li><b>A股存储6-25全链共振、多只创新高（复盘）</b>：兆易创新A+H市值破5000亿创新高，中微半导+20%、北京君正+15.29%、汇成股份+12.96%、佰维存储+11.96%、聚辰+10.93%，太极实业一字涨停；存储/封测/材料/设备全链共振、产业驱动优于纯情绪。</li>
-    <li><b>美股分化夜（CHIP/AI）</b>：6-25费半SOX +3.59%(13940.87)、美光+约15%独立大涨；但纳指−0.46%四连阴（苹果−6.13%/微软−3.23%涨价拖累Mag7），<b>NVDA−1.64%、台积电约−1.2%逆芯片板块下跌</b>——算力龙头与存储分化。</li>
-    <li><b>自研推理芯片潮（AI）</b>：OpenAI联手博通发布首颗自研推理芯片"Jalapeño"（9个月完成、2026底部署）；Anthropic与微软洽谈Claude上Maia自研芯片——ASIC替代GPU推理趋势增强，利好先进封装/算力配套。</li>
-    <li><b>A股算力订单兑现（AI）</b>：近3月至少12家A股算力公司披露超500亿元大单（东阳光5月160-190亿+6月100-120亿等），叠加工信部MWC上海"双千兆向双万兆演进+多层次算力设施+6G攻关"，算力进入业绩兑现期。</li>
-    <li><b>中美阶段性缓和（GOV）</b>：6-25商务部例行发布会称中美同意成立贸易理事会、并将讨论对等降税；反制（10家美企管控+禁购46家美企）与磋商两手并行，情绪利好半导体/出口链。</li>
-    <li><b>金价跌破4000续跌（METAL）</b>：现货金6-25跌至约3970美元/盎司（2025年11月来最低、较高位回撤约30%），黄金ETF续减仓，紫金矿业6-25 −6.26%；钨价逆势续涨（黑钨破70万元/吨、年内累涨逾4倍）。</li>
+    <li><b>昨夜美股·芯片绝对重灾区（CHIP·最强信号）</b>：美东6-26三大指数小幅收跌，<b>费城半导体SOX −5.29%</b>为绝对重灾区——安森美 <b>−23.66%</b>（2020年来最大单日跌幅）、西部数据−13%+、希捷−12%+、闪迪−10%+、恩智浦/高通−7%+、美光−6%+、英特尔−3%、英伟达−1.6%。两大利空：①苹果以"存储芯片短缺"为由对Mac/iPad罕见提价（最高+500美元）；②市场传OpenAI考虑将上市推迟至明年。叠加美联储鹰派、5月PCE同比+4.1%（2023年4月来最大）。</li>
+    <li><b>但七巨头逆势翻红、有色避险偏多（结构分化）</b>：七巨头指数+0.86%（微软+5%+、苹果+3%+、亚马逊+2%+）、中概金龙+0.7%（网易+7.74%、拼多多+4.43%）；<b>COMEX黄金期货+0.82%报4041.60、LME期铜+1.75%报13316.0</b>——半导体杀跌，资金避险流向大盘蓝筹与有色。</li>
+    <li><b>A股6-26复盘：存储/硅片相对强、算力/光通信反走弱（akshare精确）</b>：太极实业(600667)<b>+6.20%</b>、立昂微(605358)<b>+6.91%</b>、雅克科技(002409)+4.18%；而工业富联(601138)<b>−8.79%</b>、沪电股份(002463)−4.97%、光迅科技(002281)−8.08%、长电(600584)−3.15%——资金在存储/半导体材料与算力/光之间明显切换。</li>
+    <li><b>龙虎榜主力确认（akshare 20260626）</b>：<b>太极实业净买+3.36亿、买一主买（主力确认）</b>；雅克科技+4.18%但<b>4家机构净卖−1.98亿（高位派发信号）</b>；烽火通信(600498)−10%、机构净卖−2.31亿（光通信被杀）；翔鹭钨业4家机构净买+0.98亿。</li>
+    <li><b>AI·Anthropic Mythos 5获放行（6-27）</b>：美国商务部部长Lutnick致信Anthropic，授权向约百家"受信任伙伴"（网络防御方/关键基础设施，含Apple/Google/Cisco/Nvidia/Microsoft）重新开放最强网络安全模型Mythos 5；较弱的Fable 5仍未放行。凸显美方前沿模型出口/部署管控趋严。</li>
+    <li><b>CHIP·拓荆科技并购停牌（6-27）</b>：拓荆科技(688072)拟发股+现金收购无锡尚积控股权，补全PVD/刻蚀设备短板，<b>股票6-29起停牌（不超10个交易日）</b>。拓荆2025营收65.19亿(+58.87%)、在手订单约110亿——国产半导体设备并购整合信号。</li>
+    <li><b>ROBOT·智元第15000台下线（6-28）</b>：距破万台不足3个月，智元第15000台具身机器人（"智元精灵G2"）下线交付龙旗科技工厂，刷新全球量产纪录；公司称柔性产能可达年10万台以上。METAL：现货金6-25自2025年11月来首次跌破4000、6月末约3960（美联储鹰派转向主因）。</li>
   </ul>
 </section>
 
 <!-- ============ 大佬言论催化 ============ -->
 <section id="voices" style="--c:var(--gold)">
-  <div class="sec-head" style="--c:var(--gold)"><h2>大佬言论催化</h2><span class="en">KOL · 06-24~25</span></div>
+  <div class="sec-head" style="--c:var(--gold)"><h2>大佬言论催化</h2><span class="en">KOL · 6月持续催化</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">黄仁勋 · 英伟达股东大会："智能体时代到来，算力即收入"</div><span class="badge">算力/存储</span></div>
-    <div class="sm">原话要点："有用的AI（智能体）时代"正式到来、智能体成为驱动算力需求的引擎；"过去两年计算需求增加约100万倍"；"推理拐点已至，企业拿到更多算力就能生成更多token、收入就增加""token是利润单位、算力即收入、算力即GDP"；新一代Rubin平台HBM4带宽22TB/s、推理算力是Blackwell的5倍。</div>
-    <div class="src"><span class="t">2026-06-24 美东</span><a href="https://www.tmtpost.com/7916519.html">钛媒体</a><span class="t">→ 算力/AI服务器、HBM存储(国产配套)、光模块/CPO、PCB/铜连接</span></div>
+    <div class="it-h"><div class="ttl">黄仁勋（NVIDIA CEO）·"AI in the loop，AI即公司知识产权"</div><span class="badge">算力</span></div>
+    <div class="sm">原话要点：批"human in the loop完全错了，每家公司都应是AI in the loop"；"AI将成为公司的知识产权，这才是未来的公司"。延续"Token即资产/AI工厂"叙事——1GW AI工厂起步200–300亿美元，未来或达每GW 800–1000亿美元。</div>
+    <div class="src"><span class="t">媒体转述约 2026-06-28</span><a href="https://www.tmtpost.com/8010173.html">钛媒体(GTC原表态)</a><span class="t">→ AI算力/国产算力/AIDC（液冷·电源·铜连接）/Agent应用</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">三星 / SK海力士 · 警告"AI内存短缺延续至2027年后"</div><span class="badge">存储</span></div>
-    <div class="sm">两大存储巨头警告AI驱动的内存短缺将延续到2027年甚至更久，HBM需求爆发、客户已提前数年锁定供应，DRAM整体市场开始紧张；约66%全球DRAM产能已分配给AI应用。美光6-24财报（营收同比翻四倍、毛利率84.9%）是这一逻辑的最强实证。</div>
-    <div class="src"><span class="t">2026-06（持续发酵）</span><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/samsung-and-sk-hynix-warn-ai-driven-memory-shortages-could-last-until-2027-and-beyond">Tom's Hardware</a><span class="t">→ 国产DRAM/NAND/模组、存储接口、HBM配套材料/封装</span></div>
+    <div class="it-h"><div class="ttl">黄仁勋 隔空硬怼 Dario Amodei·反对"AI灭白领"叙事</div><span class="badge">AI应用</span></div>
+    <div class="sm">点名Anthropic CEO Dario Amodei有"上帝情结"，斥"AI太危险所以只有他们能做"是排他性心态，批高管把裁员甩锅给AI；Dario一方主张"AI可能消灭50%白领入门岗位"并于6-11发万字长文呼吁全球强制监管前沿AI。</div>
+    <div class="src"><span class="t">2026-06-28（自5月持续发酵）</span><a href="https://gigazine.net/">GIGAZINE</a><span class="t">→ AI应用渗透乐观情绪（利多算力/应用）＋"可信AI/安全合规"主题</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">Sam Altman · "算力约束或成收入天花板"（窗口外背景）</div></div>
-    <div class="sm">OpenAI内部头号token用户月耗约1000亿token（6年增约100万倍）；强调"前方的基础设施挑战"，算力约束会给收入增长设上限，成本已是企业客户第二大抱怨。<b>核心日期6-1~6-2，超窗，作延续性催化。</b></div>
-    <div class="src"><span class="t">2026-06-01（超窗背景）</span><a href="https://www.cnbc.com/2026/06/01/cnbc-exclusive-transcript-openai-ceo-sam-altman-speaks-with-cnbcs-david-faber-on-power-lunch-today.html">CNBC专访</a><span class="t">→ 算力基础设施/IDC/液冷/光通信/电源</span></div>
+    <div class="it-h"><div class="ttl">Sam Altman（OpenAI CEO）·"算力短缺是大问题 + 能力悬空"</div><span class="badge">算力/存储</span></div>
+    <div class="sm">AI真实能力已具备但组织落地举步维艰；强调算力严重短缺、"需求成长可能比供给更快"；自曝OpenAI内部单月token消耗冠军约1000亿token。市场另传OpenAI考虑将上市推迟至明年（昨夜芯片股利空之一）。</div>
+    <div class="src"><span class="t">2026-06-04（持续）</span><a href="https://finance.sina.com.cn/">新浪财经</a><span class="t">→ AI算力/光模块·CPO/存储（HBM国产替代）/电力·AIDC</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">马斯克（Tesla CEO）·"Optimus量产临近 + AI6芯片"</div><span class="badge">机器人</span></div>
+    <div class="sm">称特斯拉未来约80%价值来自Optimus；Gen3瞄准2026量产、灵巧手设计敲定中；AI6芯片工程评审顺利，预计2028下半年投产、性能为AI5两倍。</div>
+    <div class="src"><span class="t">2026-06-14（持续）</span><a href="https://www.cls.cn/detail/2141354">财联社</a><span class="t">→ 人形机器人（灵巧手/丝杠/减速器/传感器/PEEK）/特斯拉产业链</span></div>
   </div>
 </section>
 
 <!-- ============ GOV ============ -->
 <section id="gov" style="--c:var(--c-gov)">
   <div class="sec-head"><h2>政府与政策</h2><span class="en">GOV</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">商务部6-25例行发布会：中美同意成立贸易理事会、讨论对等降税</div><span class="badge">重大</span></div>
-    <div class="sm">商务部发言人何亚东6-25例行记者会表示，按中美经贸磋商共识，双方同意成立贸易理事会，并将在理事会项下讨论对等降税等合作。</div>
-    <ul><li>中美摩擦边际缓和信号，"对等降税"预期利好出口链、外贸、跨境电商情绪。</li><li>反制（6-22管控10家美企+财政部禁购46家美企）与磋商两手并行。</li><li>阶段性缓和利于风险偏好修复，对半导体、消费电子等受关税扰动板块构成情绪催化。</li></ul>
-    <div class="src"><a href="https://finance.sina.com.cn/jjxw/2026-06-26/doc-iniesrae5306471.shtml">新浪财经</a><span class="t">2026-06-25</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">工信部MWC上海2026致辞：双千兆向双万兆演进、多层次算力设施、加快6G</div><span class="badge">算力主线</span></div>
-    <div class="sm">工信部总工程师钟志红在6-24开幕的MWC上海2026致辞提出四方向：适度超前建强新型基建、推进"双千兆"向"双万兆"演进、加快构建多层次算力设施体系、加快6G核心技术与标准攻关。</div>
-    <ul><li>"双万兆"+多层次算力设施明确为下一阶段新基建主线，利好算力、光通信、光模块、IDC。</li><li>6G核心技术与标准攻关前瞻布局，催化6G、通信设备、卫星通信。</li><li>工业互联网与行业大模型深度融合，利好"AI+制造"。</li></ul>
-    <div class="src"><a href="https://m.thepaper.cn/newsDetail_forward_33444538">澎湃新闻</a><span class="t">2026-06-24</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">商务部第26号公告：完善战略矿产两用物项出口管制举报处理</div></div>
-    <div class="sm">进一步规范稀土等战略矿产两用物项出口管制违法违规行为的举报渠道与处理程序，稀土管控向执法落地与长效监管延伸。</div>
-    <ul><li>稀土/战略矿产出口管制进入常态化、精细化执法阶段，管控趋严。</li><li>利好稀土永磁、稀土资源板块供给收缩与价格预期。</li><li>配合此前对美反制，凸显中国关键矿产"卡位"筹码。</li></ul>
-    <div class="src"><a href="https://www.news.cn/politics/20260624/ff05599a2939483e8ce6ba3820f91f63/c.html">新华网</a><span class="t">2026-06-24</span></div>
-  </div>
+  <div class="empty">近3天（06-27~06-29，含周末）<b>无符合窗口的实质政策资讯</b>。经核查白宫/BIS/USTR/中国政府网/工信部/科技部/发改委/海关/EU AI Act 一手来源，最近相关政策均落在 06-25 及更早（白宫6-25行政、USTR 6-25 Section 301、工信部等七部门6-18平台经济方案、商务部等8部门6-19"AI+消费"实施意见），已按窗口规则丢弃，未跨窗收录。建议 06-30 后复采。</div>
 </section>
 
 <!-- ============ AI ============ -->
 <section id="ai" style="--c:var(--c-ai)">
   <div class="sec-head"><h2>AI 领域</h2><span class="en">AI</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">OpenAI联手博通发布首颗自研推理芯片"Jalapeño"</div><span class="badge">重大</span></div>
-    <div class="sm">OpenAI与博通正式揭晓OpenAI首款自研AI推理芯片Jalapeño，专为大模型推理设计，是双方多代算力平台的第一步。</div>
-    <ul><li>从设计到流片仅用9个月，号称高性能半导体史上最快ASIC开发周期；reticle级超大裸片。</li><li>工程样片已跑GPT-5.3-Codex-Spark等负载，早期测试每瓦性能"显著优于"当前最先进水平。</li><li>计划2026年底首次部署，将与微软等建吉瓦级数据中心——利好A股算力/先进封装/服务器预期。</li></ul>
-    <div class="src"><a href="https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html">CNBC</a><span class="t">2026-06-24</span></div>
+    <div class="it-h"><div class="ttl">美国商务部放行 Anthropic 向约百家"受信任伙伴"重新开放 Mythos 5，Fable 5 仍受限</div><span class="badge">重大</span></div>
+    <div class="sm">在两周前被以国家安全为由叫停后，商务部部长Howard Lutnick致信Anthropic，授权其向一小批网络防御方与关键基础设施提供商重新开放最强网络安全模型Mythos 5；较弱的Fable 5仍未获放行。</div>
+    <ul>
+      <li>Lutnick信函原话："已具备适当防护措施，可允许特定受信任伙伴访问Claude Mythos 5"，对象为网络防御方与关键基础设施提供商。</li>
+      <li>此前约两周（6月中旬）政府以模型可能被"越狱"用于恶意网络攻击为由，对Mythos 5及衍生版Fable 5实施出口管制，Anthropic随即全球停用两款模型。</li>
+      <li>报道口径存差异：部分称约100家公司与联邦机构；Fortune称当前约200家企业经"Project Glasswing"获访问（含Apple、Google、Cisco、Nvidia、Microsoft）。</li>
+    </ul>
+    <div class="src"><a href="https://fortune.com/2026/06/27/anthropic-mythos-5-ai-model-us-commerce-department-clearance-fable/">Fortune（佐证Semafor/CNBC/CNN/NBC/Axios）</a><span class="t">2026-06-27 10:01 ET</span></div>
   </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">A股算力公司频获大单，近3月超500亿元订单落地</div><span class="badge">订单兑现</span></div>
-    <div class="sm">政策助力叠加产业需求，A股至少12家公司近期密集披露算力服务大单，进入业绩兑现期。</div>
-    <ul><li>东阳光斩获最多：5月与A公司框架合同160-190亿元，6-2再签B企业100-120亿元；利通电子算力业务从0.12亿飙至12亿。</li><li>政策面：国家"六张网"投资超7万亿、工信部"模数共振"、证监会科创板第五套标准向AI大模型开门。</li><li>润泽科技等头部进入明显兑现阶段。</li></ul>
-    <div class="src"><a href="https://finance.sina.com.cn/roll/2026-06-24/doc-inienxzw6223158.shtml">新浪财经</a><span class="t">2026-06-24</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">Anthropic与微软洽谈Claude上Maia自研芯片</div></div>
-    <div class="sm">Anthropic与微软就在微软自研Maia芯片上跑Claude推理负载展开早期谈判。</div>
-    <ul><li>微软Maia芯片据称较竞品有约30%成本优势。</li><li>若达成将降低Claude推理成本、削弱对英伟达依赖。</li><li>自研ASIC替代GPU推理趋势增强（与OpenAI Jalapeño同向）。</li></ul>
-    <div class="src"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot/Anthropic</a><span class="t">2026-06-25前后</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">Anthropic指控阿里巴巴"非法"访问其Claude模型</div></div>
-    <div class="sm">Anthropic公开指控阿里巴巴用数千个欺诈账户大规模"非法"获取其Claude模型，事发于美国出口管制收紧的敏感背景下。</div>
-    <ul><li>称对方动用数千个伪造账户进行有组织的访问尝试。</li><li>中美AI竞争与合规摩擦升级，或影响国产替代叙事。</li></ul>
-    <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-06-24/anthropic-accuses-alibaba-of-illicitly-accessing-its-ai-models">Bloomberg</a><span class="t">2026-06-24</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">SpaceX与Reflection AI签63亿美元算力大单；诺奖得主Jumper转投Anthropic</div></div>
-    <div class="sm">SpaceX与Reflection AI达成63亿美元算力协议（月付约1.5亿美元）；AlphaFold2创造者、诺奖得主John Jumper离开DeepMind加盟Anthropic"AI for Science"。</div>
-    <ul><li>SpaceX孟菲斯Colossus据称已突破800亿美元至2029年的算力承诺收入。</li><li>海外大额算力采购热度不减，强化全球算力景气。</li><li>顶级科研人才在前沿实验室间流动加剧。</li></ul>
-    <div class="src"><a href="https://unrot.co/blogs/today-top-10-ai-news-june-25-2026">unrot.co AI榜单</a><span class="t">2026-06（6-25榜单）</span></div>
-  </div>
+  <div class="empty">窗口边缘丢弃（未收录）：OpenAI GPT-5.6（Sol/Terra/Luna）有限预览发布于6-26（超窗一天）；OpenAI/Anthropic IPO草案（6-1、6-8）、智谱GLM-5.2（6-13）、通义qwen-image-2.0-pro（6-22）等均超窗。DeepSeek/Kimi/MiniMax/腾讯混元/阶跃/面壁/商汤/科大讯飞窗内无可追溯实质新动态。</div>
 </section>
 
 <!-- ============ CHIP ============ -->
 <section id="chip" style="--c:var(--c-chip)">
   <div class="sec-head"><h2>芯片半导体</h2><span class="en">CHIP</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">美光Q3炸裂财报：营收415亿、毛利率84.9%反超英伟达，盘后大涨</div><span class="badge">重大</span></div>
-    <div class="sm">美光FQ3营收415亿美元（环比+74%、同比+346%）、单季净利282亿、毛利率84.9%，三项核心指标均创历史新高且超预期幅度均超15%；Q4指引营收490-510亿（分析师预期432亿）、EPS 30-32美元再超预期。</div>
-    <ul><li>HBM 2026产能基本售罄并签长期协议，HBM4量产爬坡为HBM3E两倍；管理层称供需紧张延续至2027年以后。</li><li>美股芯片全线大涨：6-25美光+约15%、西部数据+约12%、闪迪+约12%、希捷+约9%、高通+约4%。</li><li>Susquehanna目标价由1750上调至2000美元。存储从"周期型"转向"成长型"逻辑。</li></ul>
-    <div class="src"><a href="https://finance.sina.com.cn/stock/usstock/summary/2026-06-25/doc-inierayw5683809.shtml">新浪财经</a><a href="https://www.cnbc.com/2026/06/25/micron-stock-3q-earnings-memory.html">CNBC</a><span class="t">2026-06-24盘后/06-25</span></div>
+    <div class="it-h"><div class="ttl">拓荆科技拟发股＋现金收购无锡尚积控股权，股票 6-29 起停牌</div><span class="badge">国产设备整合</span></div>
+    <div class="sm">拓荆科技(688072，半导体薄膜设备龙头)拟以发行股份及支付现金方式收购无锡尚积半导体控股权并募集配套资金，补足PVD与刻蚀设备产品线短板；股票自6-29开市起停牌，预计不超过10个交易日。</div>
+    <ul>
+      <li>标的无锡尚积成立约5年，已实现300mm PVD/CVD设备量产，主营薄膜沉积与刻蚀（PVD/ETCH/CVD），2025年单年融资超5亿元，获国资基金与知名VC加持。</li>
+      <li>经初步测算本次交易不构成重大资产重组；截至公告日审计、评估未完成，标的估值与定价未定。</li>
+      <li>拓荆2025年营收65.19亿元（同比+58.87%），在手订单约110亿元；交易意在国产设备并购整合、补全产品矩阵。</li>
+    </ul>
+    <div class="src"><a href="https://finance.sina.com.cn/tech/roll/2026-06-27/doc-inieuyie1672952.shtml">新浪财经（底层公告6-26晚）</a><span class="t">2026-06-27</span></div>
   </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">A股存储芯片6-25集体爆发，多只千亿龙头创历史新高</div><span class="badge">A股·共识</span></div>
-    <div class="sm">受美光催化，A股存储/封测/设备全线创新高或涨停：兆易创新A+H市值破5000亿创历史新高，中微半导+20%、北京君正+15.29%、汇成股份+12.96%、佰维存储+11.96%、聚辰+10.93%，太极实业一字涨停。</div>
-    <ul><li>Q1业绩弹性已兑现：江波龙净利+2644%、佰维+1568%、兆易+523%。</li><li>机构判2026全年存储仍供不应求，DRAM需求增速20-25%超供给15-20%。</li><li>akshare 6-25：太极实业(600667)+10.00%一字、深科技(000021)+5.83%、长电(600584)+10.00%连板。</li></ul>
-    <div class="src"><a href="https://m.21jingji.com/article/20260625/herald/0b975608d9a9ccc1d543d96a98562087.html">21财经</a><span class="t">2026-06-25</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">SK海力士市值超三星登顶KOSPI，赴美上市最快8月、募资或达290亿美元</div><span class="badge">存储</span></div>
-    <div class="sm">SK海力士6-25股价一度大涨12%，市值首超三星电子、26年来首次登顶韩国股市头名，赴美ADR上市进入倒计时。</div>
-    <ul><li>拟赴美募资140-290亿美元，SEC或6月内批准ADR，最快8月登陆美股。</li><li>掌握全球52% HBM份额（三星39%、美光8%），Q1营收同比+198%、营业利润+405%。</li><li>当前预期市盈率仅3-4倍 vs 美光8倍，赴美旨在估值重估。</li></ul>
-    <div class="src"><a href="https://finance.sina.com.cn/roll/2026-06-25/doc-inieqskx7868172.shtml">新浪财经</a><span class="t">2026-06-25</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">长鑫科技295亿科创板IPO过会，国产DRAM龙头打新临近</div><span class="badge">A股·设备链</span></div>
-    <div class="sm">国产DRAM龙头长鑫科技科创板IPO已过会并提交注册，拟募资295亿，为2026年以来A股最大IPO。</div>
-    <ul><li>Q1营收508亿同比+719%、净利330亿；预计H1营收1100-1200亿同比超600%。</li><li>募资投向DRAM技术升级、晶圆量产线改造、前瞻研发。</li><li>设备国产化受益：中微（刻蚀）、北方华创（刻蚀/CVD/PVD/热处理）已进入头部存储厂批量采购。</li></ul>
-    <div class="src"><a href="https://www.stcn.com/article/detail/3930244.html">证券时报</a><span class="t">5-27过会/6月推进注册</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">光迅科技全球首款3.2T硅光NPO模块规模化落地</div><span class="badge">光通信</span></div>
-    <div class="sm">光迅推出全球首款3.2T硅光单模NPO模块，已在阿里云、腾讯云完成全系列系统验证，为业界首家规模化工程落地厂商；1.6T已批量交付、800G月产能超10万只、订单排至2026年年中。</div>
-    <ul><li>推进35亿元定增扩高端光模块产能，实控人中国信科承诺认购。</li><li>CPO商业化渐近，是A股光通信主线核心标的。</li><li>akshare 6-25：光迅(002281)−1.84%（高位回踩）。</li></ul>
-    <div class="src"><a href="https://m.c114.com.cn/w5458-1307240.html">C114通信网</a><span class="t">近期（定增进行中）</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">风险对冲：年内93家半导体公司减持，机构提示见顶分歧</div><span class="badge">风险</span></div>
-    <div class="sm">板块大涨同时，年内已有93家半导体公司减持，多家A股科技公司"套现离场"，市场对短期波动/见顶有分歧。</div>
-    <ul><li>与存储/封测涨价兑现的乐观逻辑形成对照，属风险提示项。</li><li>5%科技龙头虹吸近半资金，结构分化加剧。</li><li>长电科技（封测龙头）封测涨价、利润弹性显现，是涨价线封测标的。</li></ul>
-    <div class="src"><a href="https://www.stcn.com/article/detail/3950186.html">证券时报</a><span class="t">2026-06（近期讨论）</span></div>
-  </div>
+  <div class="empty">窗口外丢弃（均落在6-23~6-26，超窗，未收录）：<b>美光</b>Q3 FY2026财报（营收414.6亿美元、毛利率84.9%、Q4指引500亿美元）6-24；SK Hynix纳斯达克DR发行（约294亿美元，拟7-10挂牌）6-24；TSMC全节点涨价5%–10%报道6-23；三星/SK海力士HBM4调整6-23；彩虹股份×京东方 彩虹光电30%股权转让6-24。华为海思/寒武纪/中芯/北方华创/中微/长存/长鑫/摩尔线程/壁仞/燧原窗内无单独可追溯公告。</div>
 </section>
 
 <!-- ============ METAL ============ -->
 <section id="metal" style="--c:var(--c-metal)">
   <div class="sec-head"><h2>有色 / 贵金属</h2><span class="en">METAL</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">现货黄金跌破4000美元、6-25跌至约3970，较高位回撤约30%</div><span class="badge">利空黄金股</span></div>
-    <div class="sm">6-24现货黄金盘中跌破4000美元/盎司，6-25跌至约3970美元、创2025年11月以来新低，国内金价跌破1000元/克；下跌斜率、速度、幅度在过去三年金牛市中前所未见。</div>
-    <ul><li>主因美联储加息预期急剧逆转：6月FOMC按兵不动，但SEP将2026年底利率预期中值由3.4%上修至3.8%、9位委员支持年内至少加息一次。</li><li>黄金ETF 6-25单日续减4.282吨，二季度遭大额赎回；美债收益率走高、美元走强双重施压。</li><li>紫金矿业6-25 −6.26%（akshare），山东黄金/中金黄金/赤峰/招金等承压。</li></ul>
-    <div class="src"><a href="https://www.jiemian.com/article/14641820.html">界面新闻</a><a href="https://finance.sina.com.cn/roll/2026-06-25/doc-inierayt7811092.shtml">新浪财经</a><span class="t">2026-06-24/06-25</span></div>
+    <div class="it-h"><div class="ttl">国际金价连跌，6月末回落至约3960美元，年内较高点跌约19%，美联储鹰派转向为主因</div><span class="badge">利空黄金股</span></div>
+    <div class="sm">受美联储转向高利率维持甚至潜在加息预期、实际利率上行影响，黄金跌破多个技术关口；深度复盘报道发布于6-27。</div>
+    <ul>
+      <li>金价自4月接近4918美元历史高点累计回落约19%，6月末报约3960美元。</li>
+      <li>核心驱动：利率预期重定价（降息→高利率/潜在加息），5月CPI同比4.2%、2026整体通胀预期上调至3.6%，美联储6-17维持联邦基金利率3.50%–3.75%。</li>
+      <li>技术面：跌破200日均线触发量化止损与被动抛售；支撑3820、阻力4114。对国内金企：山东黄金AISC约1200+、中金黄金1100+、赤峰约980美元/盎司，金价回落压缩高成本矿企利润弹性。</li>
+    </ul>
+    <div class="src"><a href="https://finance.sina.com.cn/stock/usstock/summary/2026-06-27/doc-inievrey3987857.shtml">新浪财经（美股·黄金）</a><span class="t">2026-06-27</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">钨价逆势续涨，"黄金跌、钨金涨"，黑钨精矿破70万元/吨</div><span class="badge">利好钨</span></div>
-    <div class="sm">黄金大跳水之际钨价逆势维持强势：黑钨精矿（65%）已突破70万元/吨（历史区间仅6-7万元/吨）、APT约120万元/吨，钨价1年多累涨逾4倍。</div>
-    <ul><li>厦门钨业称当前钨精矿涨价幅度"史无前例"、随行就市调价；章源钨业以价格传导为主。</li><li>章源钨业(002378) 6-25 +4.03%（akshare）。</li><li>涉及标的：厦门钨业、中钨高新、章源钨业。</li></ul>
-    <div class="src"><a href="https://www.stcn.com/article/detail/3605506.html">证券时报</a><span class="t">2026-06（持续）</span></div>
+    <div class="it-h"><div class="ttl">6月25日金价首次跌破4000美元关口（2025年11月来首次）</div></div>
+    <div class="sm">通胀担忧与美联储潜在加息预期推动金价下破4000整数关，盘中报3992–3997美元一线；报道发布于6-26。</div>
+    <ul>
+      <li>6-25金价跌破4000美元，为自2025年11月以来首次；盘中美东7:27报3992.80、8:16报3997.20美元。</li>
+      <li>原因：市场预期美联储今年晚些时候可能加息或长时间维持高利率。</li>
+      <li>注：此为现货口径；昨夜美股块为6-26 COMEX期货收盘+0.82%报4041.60，口径（现货vs期货、时点）不同，并存记录。</li>
+    </ul>
+    <div class="src"><a href="https://finance.sina.com.cn/stock/usstock/summary/2026-06-26/doc-inieryeq2323292.shtml">新浪财经（美股·黄金）</a><span class="t">2026-06-26</span></div>
   </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">铜价回调激活买盘，沪铜低点触及91500元/吨</div></div>
-    <div class="sm">6-24~25铜价持续下行、沪铜主力低点触及91500元/吨；6-25回调激活买盘、持货商挺价支撑使贴水收窄，但终端需求一般。</div>
-    <ul><li>下游加工企业新增订单激增、积极入市低价补库。</li><li>机构看好有色中长期：铜供给端新增矿山有限、需求端新能源/电网/数据中心不可替代。</li><li>市场关注"金铜比回归"交易。</li></ul>
-    <div class="src"><a href="https://hq.smm.cn/h5/cu">上海有色网SMM</a><span class="t">2026-06-24/06-25</span></div>
-  </div>
+  <div class="empty">窗口外丢弃：章源钨业6月下半月长单上调（黑钨52万/标吨、APT 78万/吨）发布于6-18，超窗；铜（江西铜业/铜陵/紫金/洛阳钼业）近3天无可追溯公告，黄金公司近3天无窗内新公告。（昨夜美股块含6-26 COMEX金/铜/银收盘数。）</div>
 </section>
 
 <!-- ============ ROBOT ============ -->
 <section id="robot" style="--c:var(--c-robot)">
   <div class="sec-head"><h2>具身智能 / 机器人</h2><span class="en">ROBOT</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">特斯拉Optimus 3量产临近，供应链冲刺，中证机器人指数走强</div><span class="badge">最强催化</span></div>
-    <div class="sm">盟立、亚光等供应商下半年全力冲刺Optimus 3量产支持，盟立供谐波减速器与关节模组、亚光供机器人眼部高精度镜头；产线计划7月底或8月在加州工厂启动。</div>
-    <ul><li>马斯克规划：加州工厂7-8月投产、明年夏天德州扩产、长期目标年产能1000万台。</li><li>6-24机器人ETF华夏(562500)+0.70%、中证机器人指数+0.89%；三花智控、恒立液压、宏英智能新纳入该指数。</li><li>关节模组占整机BOM约35%-60%，是A股弹性最大环节。</li></ul>
-    <div class="src"><a href="https://www.jiemian.com/article/14636233.html">界面新闻</a><span class="t">2026-06-24</span></div>
+    <div class="it-h"><div class="ttl">智元第15000台具身智能机器人下线，刷新全球量产纪录</div><span class="badge">量产纪录</span></div>
+    <div class="sm">距第1万台下线不足3个月，智元第15000台通用具身机器人正式下线，机型为"智元精灵G2"，当日交付龙旗科技工厂用于智能制造一线作业。</div>
+    <ul>
+      <li>量产节奏：2023年6台样机→2024年8月量产→2025年1月破千→2025年底5000台→2026年3月破万→2026年6月28日达1.5万台。</li>
+      <li>第15000台机型为"智元精灵G2"，当日交付龙旗科技工厂部署。</li>
+      <li>公司称柔性生产与交付能力可达年10万台以上，场景覆盖3C制造、物流、商业服务。</li>
+    </ul>
+    <div class="src"><a href="https://www.stcn.com/article/detail/3983904.html">证券时报网（STCN）</a><span class="t">2026-06-28 18:30</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">机器人融资暴增但高度集中，头部27家"卷走"全部10亿级大额融资</div><span class="badge">国内一级</span></div>
-    <div class="sm">2026年前5个月国内具身智能完成437起融资、规模约489亿元，但资金高度集中于少数头部，行业进入"清场"阶段。</div>
-    <ul><li>27家公司拿走全部10亿元及以上融资，其中6家年内已融两次。</li><li>人民币单笔均值从2.49亿升至5.5亿；A轮及之前占72.8%。</li><li>43家独角兽创始人均出自顶级高校实验室或华为/百度/微软等。</li></ul>
-    <div class="src"><a href="https://finance.sina.com.cn/jjxw/2026-06-23/doc-iniemfsn1900040.shtml">钛媒体/新浪</a><span class="t">2026-06-23</span></div>
+    <div class="it-h"><div class="ttl">Apptronik 低调发布下一代人形机器人 Apollo 2（海外同业）</div></div>
+    <div class="sm">Apptronik未走"视频＋社媒造势"路线，而以一次安静的官网更新发布下一代模块化人形机器人Apollo 2，体现CEO Jeff Cardenas "substance over hype"理念。</div>
+    <ul>
+      <li>模块化移动：可配置为双足或轮式底盘，按作业环境切换。</li>
+      <li>搭载"90%+能效专利执行器"、热插拔电池支持近乎连续作业、多层硬件安全系统。</li>
+      <li>目标六大商业场景：货到人拣选、打包物流、检测分拣、人到货拣选、汽车装配料盒、机床上下料。</li>
+    </ul>
+    <div class="src"><a href="https://www.humanoidsdaily.com/news/substance-over-hype-apptronik-quietly-unveils-apollo-2-humanoid-via-website-update">Humanoids Daily</a><span class="t">2026-06-28</span></div>
   </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">宇树科技IPO提交注册，A股"具身智能第一股"加速落地</div></div>
-    <div class="sm">继6-1科创板过会后，宇树已提交注册、正式启动注册程序，有望成为A股通用机器人/具身智能第一股。</div>
-    <ul><li>拟募资42.02亿元，投向模型研发、本体研发、新品开发、智能制造基地。</li><li>2025年营收16.99亿、净利2.78亿；人形机器人出货超5500台居全球第一。</li><li>海外：Figure 03产线提速至1台/小时、波士顿动力Atlas 2026产能已售罄。</li></ul>
-    <div class="src"><a href="https://www.news.cn/fortune/20260601/c6a6d3341daa43dcab1668fc816f88d5/c.html">新华网</a><span class="t">6-2提交注册（进度延续）</span></div>
-  </div>
+  <div class="empty">窗口外丢弃：优必选"优世界"全尺寸人形机器人发布定于6-30（未来）；追觅俞浩达沃斯6-23~25；宇树×英伟达H2 Plus 6-1~2；Agility借壳上市（$2.5B SPAC）6-24（仅差一天）；特斯拉Optimus、Figure、Boston Dynamics、1X、银河通用、永贵电器窗内无可追溯单一事件。</div>
 </section>
 
 <!-- ============ PV ============ -->
 <section id="pv" style="--c:var(--c-pv)">
   <div class="sec-head"><h2>光伏 / 电力新能源</h2><span class="en">PV</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">多晶硅/硅片周价继续下行，硅业分会提示高库存未根本扭转</div></div>
-    <div class="sm">硅业分会周报显示多晶硅、硅片价格小幅回落，供需关系尚未实质反转、高库存压力仍在，需供给端实质减产+终端回暖化解——是A股硅料/硅片情绪核心压制。</div>
-    <ul><li>N型复投料成交均价3.53万元/吨（环比−1.94%）、N型颗粒硅3.43万元/吨（−2.00%）。</li><li>183N单晶硅片0.93元/片（环比−1.06%）；价格反转需供给侧实质收缩。</li><li>6-23日报：丰水期川滇复产意愿强、展会后签单不及预期、价格震荡偏弱。</li></ul>
-    <div class="src"><a href="https://www.stcn.com/article/detail/3756582.html">证券时报网</a><span class="t">2026-06（周报）</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">中国西电中标国网特高压18.99亿元，电网4万亿投资主线持续兑现</div><span class="badge">A股·电力设备</span></div>
-    <div class="sm">中国西电6家子公司在国网特高压设备招标中合计中标18.99亿元，覆盖变压器、开关、断路器、电容器等；电力设备是当前确定性最高的主线之一。</div>
-    <ul><li>"十五五"全国电网固定资产投资有望达4万亿、较"十四五"增约40%；2026年国网/南网投资约7000亿/1890亿。</li><li>中国西电特高压变压器、GIS、换流阀核心环节市占率超30%。</li><li>akshare 6-25：中国西电(601179)−1.05%。</li></ul>
-    <div class="src"><a href="https://www.bjnews.com.cn/detail/1781251508129484.html">新京报</a><span class="t">2026-06-12</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">储能出海高景气：比亚迪智利+匈牙利电站投运、宁德587Ah排产至下半年</div><span class="badge">储能</span></div>
-    <div class="sm">比亚迪储能智利Elena、匈牙利最大电池储能项目先后投运（近4GWh），与Grenergy智利合作总规模9.1GWh；宁德时代587Ah电芯订单排产至2026下半年、产能利用率超100%满产。</div>
-    <ul><li>宁德合同负债492亿、同比+76.88%创近五年新高，下游提前打款抢产能。</li><li>比亚迪储能已覆盖全球110多个国家和地区。</li><li>储能景气延续，催化电芯产业链。</li></ul>
-    <div class="src"><a href="https://finance.sina.com.cn/roll/2026-06-15/doc-inicnuhr8235277.shtml">新浪财经</a><span class="t">2026-06-15</span></div>
-  </div>
+  <div class="empty">近3天（06-27~06-29，含周末）<b>无可追溯的实质动态条目</b>。经对通威/协鑫/隆基/晶科/天合/TCL中环/阳光电源/华为数字能源/宁德时代/比亚迪储能/科华数据/中国西电及硅料价格、反内卷限产、储能装机主题多轮核验，临近项均超窗：宁德慕尼黑天恒钠电储能（6-23）、隆基控股股东解质押（6-24）、华为数字能源构网型储能LUTERRA（6-23）、中国西电中标国网特高压18.99亿（6-13）、硅料N型复投料周报（6-24/下期约7-01）。窗口含周末＋硅业分会周报惯例周三，是无在窗条目的客观原因。建议6-30后复采。</div>
 </section>
 
 <!-- ============ SPACE ============ -->
 <section id="space" style="--c:var(--c-space)">
   <div class="sec-head"><h2>商业航天</h2><span class="en">SPACE</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">蓝箭航天科创板IPO获受理，拟募资75亿主投可复用火箭</div><span class="badge">A股催化</span></div>
-    <div class="sm">蓝箭航天IPO申请正式获上交所受理，成为科创板第五套标准扩容后首家受理企业，是民营火箭龙头资本化关键一步。</div>
-    <ul><li>拟募资75亿元：47.3亿投可复用火箭技术、27.7亿投产能；公司估值已超200亿元。</li><li>直接催化"蓝箭概念"配套A股（中航光电、航天电器等连接器/箭载单机供应商）。</li><li>航天电器(002025) 6-25 +10.00%一字涨停（akshare，连续涨停）。</li></ul>
-    <div class="src"><a href="https://www.jiemian.com/article/13846005.html">界面新闻</a><span class="t">2026-06（受理进程）</span></div>
+    <div class="it-h"><div class="ttl">Rocket Lab 完成第10次连续成功发射，为日本 Synspective 部署 StriX 雷达卫星</div><span class="badge">100%成功</span></div>
+    <div class="sm">Electron火箭从新西兰1号工位发射"Ten Owl of Ten"任务，将一颗SAR对地观测卫星送入552km低轨；这是为Synspective的第10次专属发射，全部100%成功，也是该公司今年第12次发射。</div>
+    <ul>
+      <li>发射时间为新西兰时间6-27 5:43（对应美东6-26），地点马希亚LC-1。</li>
+      <li>Synspective StriX星座已有10颗在轨，全部由Electron部署。</li>
+      <li>入轨552km太阳同步轨道；本次为2026年第12次发射，巩固专属小卫星市场可靠性纪录。</li>
+    </ul>
+    <div class="src"><a href="https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-completes-10th-consecutive-launch-100-mission-success">Rocket Lab 官方</a><span class="t">2026-06-26 14:49 ET</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">SpaceX发射Starlink 17-45，B1081一级火箭第25次复用回收成功</div><span class="badge">海外发射</span></div>
-    <div class="sm">SpaceX从范登堡基地发射24颗星链V2 Mini卫星，一级火箭海上回收成功（北京时间6-26 11:30升空），延续高频组网与回收节奏。</div>
-    <ul><li>一级火箭B1081第25次飞行，落于无人船"Of Course I Still Love You"。</li><li>系2026年第74次猎鹰9号发射、第59次星链专属任务。</li><li>是全球可复用火箭标杆参照。</li></ul>
-    <div class="src"><a href="https://spaceflightnow.com/2026/06/24/live-coverage-west-coast-falcon-9-launch-to-continue-expansion-of-spacexs-starlinks-network/">Spaceflight Now</a><span class="t">2026-06-25</span></div>
+    <div class="it-h"><div class="ttl">SpaceX 星舰上面级 Ship 40 完成首次静态点火，备战 Flight 13</div></div>
+    <div class="sm">6-26 SpaceX在德州Starbase的Massey试验场对将用于星舰第13飞的上面级Ship 40进行静态点火，单台中心Raptor 3完成约15秒全时长燃烧。</div>
+    <ul>
+      <li>测试对象为V3构型上面级Ship 40，将执行Flight 13演示任务。</li>
+      <li>单台中心发动机约15秒全时长燃烧。</li>
+      <li>距V3星舰首飞（5-22）约一个月，Flight 13预计7月进行。</li>
+    </ul>
+    <div class="src"><a href="https://www.space.com/space-exploration/launches-spacecraft/spacexs-next-starship-breathes-fire-for-1st-time-in-prelaunch-test-video">Space.com</a><span class="t">2026-06-26</span></div>
   </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">千帆组网密集、朱雀三号遥二备战复用首飞（国内产业链）</div><span class="badge">国内链</span></div>
-    <div class="sm">千帆星座6月持续高频组网（6-5长八送极轨12组、6-9朱雀二号改一箭双星），规划超1.5万颗；蓝箭朱雀三号遥二上发射台备战静态点火，四季度力争首次复用飞行。</div>
-    <ul><li>海南商业航天发射场常态化运行，利好卫星总装与配套A股。</li><li>中航光电商业航天订单排至2027年、2026确认收入预计12-13亿元。</li><li>国产液氧甲烷可复用火箭关键节点临近。</li></ul>
-    <div class="src"><a href="https://www.stdaily.com/web/gdxw/2026-06/05/content_528330.html">科技日报</a><span class="t">2026-06-05/06-09</span></div>
-  </div>
+  <div class="empty">窗口外丢弃：Rocket Lab NASA选标（PolSIR/TSIS-2）6-25（早窗一天）；Blue Origin（New Glenn 5-28静态点火爆炸）、Relativity Space（6-17）、蓝箭（朱雀二号6-9、朱雀三号试车约6-19）、星河动力/深蓝/星际荣耀/东方空间/天兵/银河航天均超窗或仅前瞻；航天电器近3天仅盘面资金数据，非实质动态。</div>
 </section>
 
 <!-- ============ 盘前判断（末尾） ============ -->
@@ -344,52 +282,50 @@
   <div class="sec-head" style="--c:var(--gold)"><h2>盘前判断</h2><span class="en">MAIN LINE</span></div>
 
   <div id="usstock" class="item" style="--c:var(--gold)">
-    <div class="it-h"><div class="ttl">昨夜美股 · 2026-06-25 美东收盘（本判断的事实依据）</div><span class="badge">事实</span></div>
+    <div class="it-h"><div class="ttl">昨夜美股 · 2026-06-26 美东收盘（本判断的事实依据）</div><span class="badge">事实</span></div>
     <table class="pricetbl">
-      <tr><td>指数</td><td>道指<span class="up">+0.14%</span>(51920.62) · 标普<span class="down">−0.01%</span>(7357.49) · 纳指<span class="down">−0.46%</span>(25358.60，四连阴，苹果−6.13%/微软−3.23%涨价拖累Mag7)</td></tr>
-      <tr><td>半导体（独强）</td><td class="up">费半SOX +3.59%(13940.87) · 美光MU +约15%(财报点燃) · 闪迪/西数+约12% · 希捷+约9% · 高通+约4%</td></tr>
-      <tr><td>AI算力（分化偏弱）</td><td><span class="down">英伟达NVDA −1.64%($195.74，逆板块跌)</span> · <span class="down">台积电TSM 约−1.2%($435.42)</span> · AMD 约$531.48(盘前+3.8%)</td></tr>
-      <tr><td>光通信</td><td class="up">Lumentum LITE +约2.35%($862.21) · Coherent COHR 约$409.92(偏强，当日精确%未核到)</td></tr>
-      <tr><td>大宗</td><td>现货金<span class="down">约3970</span>(跌破4000、2025年11月来最低) · 沪铜91500元/吨低位 · 钨逆势续涨</td></tr>
+      <tr><td>指数</td><td>道指<span class="down">−0.09%</span>(51876.10) · 标普500<span class="down">−0.05%</span>(7354.02) · 纳指<span class="down">−0.24%</span>(25297.61，连跌第5日，本周累计−4.6%)</td></tr>
+      <tr><td>半导体（杀跌主线）</td><td class="down">费半SOX −5.29% · 安森美 −23.66%(2020来最大单日) · 西部数据 −13%+ · 希捷 −12%+ · 闪迪 −10%+ · 恩智浦/高通 −7%+ · 美光 −6%+ · 英特尔 −3% · AMD −2%</td></tr>
+      <tr><td>AI算力（相对抗跌）</td><td><span class="down">英伟达NVDA −1.6%</span> · 七巨头指数 <span class="up">+0.86%</span>(微软+5%+/苹果+3%+/亚马逊+2%+) — 算力平台逆芯片翻红</td></tr>
+      <tr><td>光通信（CPO）</td><td>Coherent COHR / Lumentum LITE 6-26当日确切涨跌<b>未找到（fail loud）</b>；背景：英伟达3月向LITE/COHR各投约200亿美元锁定光芯片产能</td></tr>
+      <tr><td>中概</td><td class="up">纳斯达克中国金龙 +0.7%(网易+7.74%/拼多多+4.43%/新东方+4.28%/蔚来+2.75%) — 利好A股开盘情绪</td></tr>
+      <tr><td>大宗（避险偏多）</td><td class="up">COMEX黄金期货 +0.82%(4041.60) · LME期铜 +1.75%(13316.0) · COMEX白银 −0.34%(57.89)</td></tr>
     </table>
-    <div class="sm"><b>分化夜：芯片（SOX +3.59%、美光+15%）独立大涨，大盘被苹果/微软涨价拖平、纳指四连阴；NVDA−1.64%、台积电约−1.2%逆芯片板块下跌——算力龙头与存储分化。</b>→ 昨夜最硬的隔夜映射是<b>存储涨价链</b>（美光财报+三星/海力士短缺警告），其次光通信；<b>算力龙头(NVDA/TSM)反弱，别把存储强当全板块强。</b>诚实提示：AMD/COHR/TSM/美光当日精确收盘%部分来源只给到价格或盘前数，已据可核查程度标注、未编造小数。</div>
-    <div class="src"><a href="https://www.cnbc.com/2026/06/25/micron-stock-3q-earnings-memory.html">CNBC</a><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-25-2026">TheStreet</a><span class="t">2026-06-25 收盘</span></div>
+    <div class="sm"><b>杀跌夜：芯片是绝对重灾区（SOX −5.29%、存储链惨杀），但七巨头逆势翻红、中概反弹、金铜避险偏强。</b>两大利空：①苹果以"存储芯片短缺"为由对Mac/iPad罕见提价（最高+500美元）——被解读为内存涨价以牺牲未来需求换定价权；②市场传OpenAI考虑将上市推迟至明年。叠加美联储鹰派、5月PCE同比+4.1%（2023年4月来最大）。<b>关键拆分：苹果因缺货被迫涨价，本质指向存储供给紧、涨价逻辑仍在——需分清"情绪杀"与"基本面"。</b>诚实提示：光通信个股COHR/LITE当日精确收盘%未核到，已fail loud，未编造。</div>
+    <div class="src"><a href="https://fortune.com/2026/06/27/anthropic-mythos-5-ai-model-us-commerce-department-clearance-fable/">Fortune</a><span class="t">2026-06-26 收盘 · supertracker_2026-06-29</span></div>
   </div>
 
   <div class="verdict">
-    <div class="ml">主线一 · 存储/HBM芯片（产业+共识+映射三合一，最强但点位已高）</div>
-    <div class="lg">产业逻辑：美光财报实证——营收415亿(同比+346%)、毛利率84.9%反超英伟达、Q4指引490-510亿远超；三星/SK海力士警告内存短缺延续至2027年后、约66%全球DRAM产能已给AI、HBM售罄，DRAM需求增速20-25%超供给15-20%，从"周期复苏"转"超级扩张"，真实需求+涨价驱动。<b>龙头共识成立：A股存储6-25全链共振、兆易创新A+H破5000亿创新高、中微半导+20%、太极实业一字，跨日强势、产业驱动优于纯情绪连板。</b>美股映射：SOX+3.59%、美光+15%独立大涨。<b>红线：存储6-25是"大面积高开+集体新高/涨停"的财报脉冲，6-26最易高开兑现，追高防分歧；已涨停个股(太极一字、长电连板)防炸板。</b></div>
+    <div class="ml">主线一 · 存储/半导体材料涨价链（产业逻辑仍在，但隔夜美股转空 → "防低开、等回踩低吸"，不追高）</div>
+    <div class="lg">产业逻辑：存储超级周期实证未变——美光毛利率84.9%、内存短缺延续至2027年后、<b>苹果因存储缺货罕见涨价（最高+500美元）= 供给紧、涨价逻辑仍在（非纯情绪）</b>。<b>龙头共识落在存储/硅片：</b>A股6-26太极实业(600667)+6.20%、立昂微(605358)+6.91%、雅克(002409)+4.18%、有研硅/上海合晶硅片涨停，资金从算力/光切向存储/材料；<b>龙虎榜确认：太极实业净买+3.36亿、买一主买（主力进入）。</b><b>美股映射（关键转空）：隔夜费半SOX −5.29%、存储惨杀（美光−6%/西数−13%/安森美−23.66%）→ 周一存储/半导体大概率低开兑现。</b>红线：这是"情绪杀"非基本面破，回踩低吸优于追高；周五高位的太极、立昂微防分歧炸板；<b>雅克龙虎榜4家机构净卖−1.98亿=高位派发信号，高位不追。</b></div>
   </div>
   <div class="verdict">
-    <div class="ml">主线二 · 算力配套/光通信（黄仁勋"算力即收入"+订单兑现，承接但防龙头分化）</div>
-    <div class="lg">产业逻辑：黄仁勋6-24股东会"智能体时代、算力即收入、Rubin HBM4 22TB/s/推理算力5倍Blackwell"；A股近3月算力订单超500亿落地、工信部MWC"双万兆+多层次算力+6G"、OpenAI联手博通自研推理芯片，配套需求确定。<b>映射：昨夜光通信LITE+2.35%/COHR偏强；但NVDA−1.64%、TSM约−1.2%龙头反弱——算力链强度弱于存储，需防龙头分化。</b>共识：A股CPO/PCB随主线（沪电6-25 +8.12%）。</div>
+    <div class="ml">主线二 · 有色（铜为主、金谨慎）（半导体杀跌下的隔夜防御方向）</div>
+    <div class="lg">产业逻辑：铜供给端新增矿有限 + AIDC铜连接需求；金价虽中途跌破4000，<b>COMEX期货6-26仍+0.82%站回4041.60、LME铜+1.75%报13316.0</b>。共识偏弱：A股紫金6-26 −3.16%、章源钨业−6%仍在调整，但<b>翔鹭钨业龙虎榜4家机构净买+0.98亿</b>。美股映射（偏多）：半导体杀跌资金避险，有色相对抗跌——<b>定位防御性而非进攻</b>，现货金中途破4000与期货背离，弹性有限。</div>
   </div>
   <div class="picks">
-    <div class="pick"><div class="h"><span class="n">深科技</span><span class="c">000021 · 中小板</span></div><div class="r">存储模组/封测（金士顿代工），6-25 +5.83%未涨停（akshare），存储主线里相对未透支，可低吸。</div></div>
-    <div class="pick"><div class="h"><span class="n">工业富联</span><span class="c">601138 · 主板</span></div><div class="r">AI服务器/算力配套，6-25仅+0.27%（akshare）最未透支，黄仁勋"算力即收入"映射，承接算力capex。</div></div>
-    <div class="pick"><div class="h"><span class="n">兆易创新</span><span class="c">603986 · 主板</span></div><div class="r">存储龙头(DRAM/NOR/MCU)，A+H破5000亿创新高＝共识锚；已创新高，回调再看、防高位兑现。</div></div>
-    <div class="pick"><div class="h"><span class="n">沪电股份</span><span class="c">002463 · 主板</span></div><div class="r">PCB/CPO算力配套，6-25 +8.12%（akshare）已大涨，主线明确但追高谨慎、回调跟。</div></div>
-    <div class="pick"><div class="h"><span class="n">太极实业</span><span class="c">600667 · 主板</span></div><div class="r">存储/DRAM封测，6-25一字涨停＝高位，只作存储共识风向标，不追一字、回调再看。</div><div class="m">akshare 6-25：+10.00% 一字封板</div></div>
+    <div class="pick"><div class="h"><span class="n">太极实业</span><span class="c">600667 · 主板</span></div><div class="r">存储/DRAM封测；6-26龙虎榜买一主买、最硬主力信号，但已+6.20%高位+隔夜SOX−5.29%，防周一低开、回踩低吸不追高。</div><div class="m">akshare 6-26：+6.20%(26.88) · 龙虎榜净买+3.36亿(买一主买)</div></div>
+    <div class="pick"><div class="h"><span class="n">深科技</span><span class="c">000021 · 中小板</span></div><div class="r">存储模组/DRAM封测（长鑫委外）；6-26仅+0.58%相对未透支，存储链低位标的，隔夜利空下看能否企稳。</div><div class="m">akshare 6-26：+0.58%(53.51)</div></div>
+    <div class="pick"><div class="h"><span class="n">紫金矿业</span><span class="c">601899 · 主板</span></div><div class="r">铜+金龙头；隔夜COMEX金+0.82%/铜+1.75%映射偏多，半导体杀跌下的避险防御；但6-26 −3.16%、现货金中途破4000，弹性受限。</div><div class="m">akshare 6-26：−3.16%(25.10)</div></div>
+    <div class="pick"><div class="h"><span class="n">工业富联</span><span class="c">601138 · 主板</span></div><div class="r">AI服务器/算力配套；6-26 −8.79%已大幅杀跌，隔夜七巨头翻红（微软+5%/算力总需求叙事未破）+超跌，但需放量企稳确认，不在下跌途中抄底。</div><div class="m">akshare 6-26：−8.79%(70.22)</div></div>
   </div>
   <div class="twocol">
     <div class="mini"><h3>判断原因</h3><ol>
-      <li>产业逻辑：美光财报实证(415亿/毛利率84.9%/Q4指引490-510亿)+三星海力士警告短缺至2027+、66%DRAM给AI、HBM售罄，存储"周期→超级扩张"，真实需求+涨价。</li>
-      <li>龙头共识：存储成立——A股6-25全链共振、兆易A+H破5000亿新高、太极一字、中微半导+20%，跨日强势、产业驱动优于纯情绪。</li>
-      <li>美股映射：昨夜SOX+3.59%、美光+15%独立大涨；但NVDA−1.64%/TSM−1.2%龙头分化、纳指四连阴——映射强在存储链、弱在算力龙头。</li>
-      <li>新闻催化：黄仁勋6-24股东会"算力即收入/Rubin HBM4"；OpenAI联手博通自研芯片、A股算力500亿订单；中美同意成立贸易理事会/对等降税=情绪缓和。</li>
+      <li>产业逻辑：存储超级周期实证（美光毛利率84.9%/内存短缺至2027后/苹果因缺货涨价$500=供给紧、涨价非情绪）；铜供给紧+AIDC需求。</li>
+      <li>龙头共识：A股6-26共识在存储/硅片——太极+6.20%（龙虎榜买一主买+3.36亿主力确认）、立昂微+6.91%、有研硅/上海合晶硅片涨停；但算力/光通信反走弱（工业富联−8.79%、沪电−4.97%、光迅−8.08%、烽火−10%机构净卖−2.31亿）。</li>
+      <li>美股映射（关键转空）：隔夜6-26费半SOX−5.29%、存储惨杀（美光−6%/西数−13%/安森美−23.66%），但七巨头翻红（微软+5%/苹果+3%）、NVDA仅−1.6%、金+0.82%/铜+1.75%——映射"存储/设备被杀、算力平台抗跌、有色避险偏多"。</li>
+      <li>新闻催化：苹果因存储短缺罕见涨价（供给紧确认）+传OpenAI推迟IPO（情绪利空）+美联储鹰派（5月PCE+4.1%）→压制半导体情绪；拓荆并购无锡尚积6-29停牌（国产设备整合，个股停牌不改板块逻辑）。</li>
     </ol></div>
     <div class="mini risk"><h3>风险提示</h3><ul>
-      <li>存储是6-25才大面积新高/涨停的财报脉冲→6-26最易高开兑现，追高防分歧；太极一字、长电连板等已涨停个股防炸板。</li>
-      <li>指数结构分化极端：6-25沪指虽涨但约4228只下跌、涨跌比近1:4，资金高度抱团科技龙头，题材外个股风险大、普涨缺失。</li>
-      <li>美股龙头分化：NVDA−1.64%/TSM−1.2%逆芯片下跌、纳指四连阴(苹果微软涨价拖累)，算力龙头不如存储强。</li>
-      <li>黄金股承压：现货金跌破4000续跌至约3970、紫金6-25 −6.26%；半导体年内93家减持、见顶分歧加剧。</li>
+      <li>隔夜费半−5.29%、存储惨杀，A股半导体/存储周一大概率低开兑现；周五强势的太极（+6.20%）、立昂微（+6.91%）防高位分歧；雅克龙虎榜4家机构净卖−1.98亿=高位派发信号，高位不追。</li>
+      <li>美联储鹰派（SEP上修利率、5月PCE+4.1%）+OpenAI推迟IPO情绪利空，风险偏好受压；现货金中途跌破4000（与COMEX期货+0.82%背离），有色防御弹性有限。</li>
     </ul></div>
   </div>
 </section>
 
 <footer>
-  数据来源：supertracker 科技资讯日报_2026-06-26（GOV/AI/CHIP/METAL/ROBOT/PV/SPACE，9路并行采集）+ 美股隔夜（2026-06-25收盘）+ A股06-25复盘（半导体/存储全链新高）+ akshare真实行情（关注池精确涨跌）。<br>
-  未确认项（fail loud）：美股个股AMD/COHR/TSM/美光当日精确收盘%部分来源仅给价格或盘前数，已据可核查程度标注、未编造；A股6-25精确涨停/跌停/炸板总家数公开源未给干净数字，连板梯队部分为6-24口径参考。<br>
+  数据来源：supertracker 科技资讯日报_2026-06-29（GOV/AI/CHIP/METAL/ROBOT/PV/SPACE，近3天含周末，在窗实质条目偏少）+ 美股隔夜（2026-06-26收盘）+ A股06-26复盘（akshare精确行情）+ 龙虎榜（20260626，akshare）。<br>
+  未确认项（fail loud）：光通信个股COHR/LITE 6-26当日精确收盘%未核到，已标注、未编造；GOV/PV近3天无在窗实质条目，已据实标注。<br>
   本页由AI辅助生成，仅为个人投研参考，不构成投资建议。股市有风险，入市需谨慎。
 </footer>
 
