@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A股资讯总览 · 盘前判断 2026-10-01</title>
+<title>A股资讯总览 · 盘前判断 2026-10-02</title>
 <style>
   :root{
     --bg:#0a0c10; --line:#232936; --txt:#f1f4f9; --txt2:#c6cdd9; --sub:#8b94a6;
@@ -93,7 +93,7 @@
 <header>
   <div class="kicker">SUPERTRACKER · A-SHARE BRIEF</div>
   <h1>资讯总览 <span class="thin">/</span> 盘前判断</h1>
-  <div class="meta">2026-10-01（周四，国庆假期首日，A股休市）　采集窗口 09-29 → 10-01（已对 09-30 日报去重）　·　昨夜美股 09-30（周三）收盘 / A股 09-30 收盘（akshare 快照，D1=09-30，D2=09-29）　·　<b>国庆休市，预判用于节后首个交易日</b></div>
+  <div class="meta">2026-10-02（周五，国庆假期第二天，A股休市）　采集窗口 09-30 → 10-02（已对 10-01 日报去重）　·　昨夜美股 10-01（周四）收盘 / A股 09-30 收盘（akshare 快照，D1=09-30，D2=09-29）　·　<b>国庆休市，预判用于节后首个交易日</b></div>
 </header>
 
 <nav>
@@ -112,379 +112,514 @@
 
 <!-- ============ 关键摘要 ============ -->
 <section id="digest">
-  <div class="sec-head" style="--c:#3a4150"><h2>关键发现摘要</h2><span class="en">收录 22 条 · pass 6 / review 16（含 conflict_pending 2）· cat 强 1 / 中 17 / 弱 4</span></div>
+  <div class="sec-head" style="--c:#3a4150"><h2>关键发现摘要</h2><span class="en">收录 35 条 · pass 6 / review 29（含 conflict_pending 2）· cat 强 0 / 中 29 / 弱 6</span></div>
   <ul class="digest">
-    <li><b>[CHIP·强·pass] 美光 FY26Q4 财报：营收 542.3 亿美元创纪录，Non-GAAP 毛利率 87.0%；FY27Q1 指引营收 615 亿美元 ±15 亿，FY26 全年营收 1331.9 亿美元（上年 373.8 亿）</b>——GAAP/Non-GAAP EPS 32.87/33.42 美元；CEO Mehrotra 原话 <b>"Micron delivered record fiscal 2026 results, and we expect an even stronger fiscal 2027"</b>。A股映射：<b>存储链（兆易创新、江波龙、德明利、佰维存储、香农芯创、深科技）及存储设备/材料（北方华创、中微、雅克科技），节后首日情绪偏多</b>。美光 IR 新闻稿 + SEC 8-K Exhibit 99.1（主控已复核），pass。</li>
-    <li><b>[AI·中·pass] Anthropic 发布报告：智谱开源模型 GLM-5.3 已能端到端自主构建网络攻击，ExploitBench 成功率 12%（50/410），接近 Claude Mythos Preview 的 14%</b>——原文 <b>"GLM-5.3 has been released without meaningful safeguards to limit misuse"</b>；通过越狱或权重阉割，拒绝率可从 95% 降到 6%。A股映射：<b>网络安全/AI 安全合规受益；智谱概念双向（能力获背书，同时有监管和出口风险）</b>。Anthropic 官方研究页，pass。</li>
-    <li><b>[METAL·中·pass] [更新] 金银国庆前夜回落：09-30 现货金 4156.10 美元（-0.60%），现货银 60.18 美元（-1.90%）</b>——美国 Q2 GDP 终值 2.2%、ADP 就业强于预期，降息预期回落，长端美债收益率走高。A股映射：<b>黄金股（山东黄金、中金黄金、赤峰黄金、招金矿业、紫金矿业）节后开盘承压</b>。Kitco PM Report + 官方报价页，pass。</li>
-    <li><b>[METAL·中·pass] [更新] 钨节前最后报价：55% 钨精矿 36-38 万元/标吨，APT 54-56 万元/吨，市场"承压偏弱"；另有一家广东上市钨企下调长单采购价（未点名）</b>——A股映射：<b>厦门钨业、章源钨业、翔鹭钨业、中钨高新，节后长单定价偏空</b>。中钨在线报价原文，pass（"广东某钨企下调长单"一项 conflict_pending）。</li>
-    <li><b>[PV·中·pass] [更新] InfoLink 周价更新到 09-24~30 周，全产业链持平</b>——多晶硅 40.0 元/kg、N 型 182 硅片 1.000 元/片、TOPCon 电池 0.300 元/W、TOPCon 组件 0.723 元/W；国庆期间暂停更新。A股映射：<b>光伏主链（通威、隆基绿能、TCL中环）中性，反内卷价格守住但没有上行</b>。InfoLink + 索比双源，pass。</li>
-    <li><b>[观察项·不进正式摘要·CHIP·中·review] BHP Escondida 监督员工会拒绝资方报价，进入 5 天政府强制调解期，智利罢工风险从 Centinela 扩散到全球最大铜矿</b>——LME 三月铜 14,446 美元/吨，9 月累计涨约 9%。mining.com 单源，review。</li>
-    <li><b>[观察项·METAL·review·超窗] 山东黄金下调 2026 年矿产金产量目标，从不低于 49 吨降到 36-38 吨</b>（公告日 09-24，前几期日报未收，节后对估值有影响）。</li>
-    <li><b>[观察项·SPACE·conflict_pending] SpaceX Crew-13 载人任务（10-01 11:10 ET）与 Falcon Heavy NROL-97 任务（10-01 23:53 ET）结果未知</b>，均落在 A 股假期内，次日闭环。</li>
+    <li><b>[AI·中·pass] Google 发布 Gemini 4 Argon：输出上限从 64K 提到 100 万 token，入门期 API 价格为输入 2 美元、输出 10 美元/百万 token，之后涨到 4/20 美元</b>——DeepSWE v1.1 77.9%、AutomationBench 51.3%（第一）、CWE-bench v1 68%（并列第一）、LVBench 91.7%；首批面向 Fairwind Program 的"受信网络安全防御者"开放。A股映射：<b>AI 应用/Agent、网络安全情绪；海外大模型军备竞赛加码，算力链需求预期延续</b>。Google 官方博客，pass。</li>
+    <li><b>[AI·中·pass] OpenAI 公开一起协调的"模型蒸馏"攻击，核心集群归因于"与 Moonshot AI 相关联的个人"</b>——7-24~25 高峰期 4000 多个用户、16000 次请求，关联集群超过 15000 个用户；手法是在一个对话里复制加密推理，再到另一个对话里让模型解密转录。OpenAI 已封号、修补加密推理回放漏洞。A股映射：<b>数据安全/AI 安全受益；国产大模型出海合规风险上升（月之暗面概念偏空）</b>。openai.com 官方原文，pass。</li>
+    <li><b>[AI·中·pass] 英伟达与 CoreWeave 联合发文：Vera Rubin 架构落地 CoreWeave 的 Agentic AI 云平台</b>——未披露金额和 GPU 数量。A股映射：<b>算力租赁/IDC、光模块、液冷服务器</b>。NVIDIA 官方博客，pass。</li>
+    <li><b>[METAL·中·pass] [更新] 中钨在线三季度收官价：钨精矿 38 万元/标吨，APT 56 万元/吨，钨粉 85 万元/吨</b>——原文"月末钨精矿价格跌破 40 万元/标吨关口，收官 38 万元/标吨"；钨粉 85 万元/吨为首次披露，10 月上半月长单报价还没出。A股映射：<b>厦门钨业、章源钨业、翔鹭钨业、中钨高新，节后长单定价是焦点，短期偏弱</b>。中钨在线官方报价，pass。</li>
+    <li><b>[SPACE·中·pass] [更新·闭环] SpaceX Crew-13 于 10-01 11:10 EDT 发射，不到 8 小时就与 ISS 对接，创美国飞船最快对接纪录</b>——乘组 Jessica Watkins、Luke Delaney、Sergey Teteryatnikov、Joshua Kutryk，驻留约 6 个月；昨日的 conflict_pending 已闭环。A股映射：<b>商业航天情绪（弱关联）</b>。spaceflightnow + space.com，pass。</li>
+    <li><b>[观察项·不进正式摘要·CHIP·中·review] DB HiTek 8 寸代工今年第二次涨价，中国客户涨 20%-30%，韩国客户约 10%</b>——首发 TheElec 09-28 21:22 KST，消息来自"知情人士"，没有公司表态；DigiTimes 10-01 跟进。如果属实，对中芯国际、华虹公司的 8 寸提价预期是强催化。TheElec/DigiTimes，review。</li>
+    <li><b>[观察项·METAL·中·review] Escondida 监督员工会以 95% 赞成票授权罢工，正处于 5 天强制调解期（可延 5 天）</b>——只有二手英文矿业媒体的报道，没有 BHP 公告。mining-journal.com + discoveryalert.com，review。</li>
   </ul>
 </section>
 
 <!-- ============ 大佬言论催化 ============ -->
 <section id="voices" style="--c:var(--gold)">
-  <div class="sec-head" style="--c:var(--gold)"><h2>大佬言论催化</h2><span class="en">KOL · 美光 CEO Mehrotra / 群联 CEO 潘健成 / Anthropic 已收 · 黄仁勋 / Altman / 马斯克 / Amodei / Hassabis / Lisa Su / 王兴兴 / 稚晖君 / Peter Beck fail loud</span></div>
+  <div class="sec-head" style="--c:var(--gold)"><h2>大佬言论催化</h2><span class="en">KOL · OpenAI 推理负责人 / 华为董事长 / 贵金属机构观点已收 · 黄仁勋+马斯克"SI"说法存疑 · Altman/Amodei/Hassabis/Lisa Su/王兴兴/稚晖君/Adcock/Beck/Bezos/特朗普 fail loud</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">V1｜Sanjay Mehrotra（美光 CEO，财报）：「"Micron delivered record fiscal 2026 results, and we expect an even stronger fiscal 2027"」</div><span class="badge">言论·pass</span></div>
-    <div class="sm">美光 FY26Q4 财报新闻稿原话，配合 FY27Q1 指引营收 615±15 亿美元（比本季再高约 13%）。催化：<b>存储链节后情绪</b>。归入 CHIP 板块（C1）。代理另摘录一句 <b>"AI is becoming Super Intelligence (SI), and memory enhances this intelligence..."</b>，主控复核 8-K 时没有看到，暂作 review，不进正式摘要。</div>
-    <div class="src"><a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx">美光 IR</a><a href="https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm">SEC 8-K</a><span class="t">2026-09-30 美东盘后 · verification=pass（主控复核 8-K）</span></div>
+    <div class="it-h"><div class="ttl">V1｜OpenAI 推理负责人（访谈）：「"1 万个 Agent 最多占了 10% 的功劳"」，判断千禧年难题突破只是多智能体时代"开胃菜"</div><span class="badge">言论·review</span></div>
+    <div class="sm">量子位 09-30 转述访谈内容，认为下一阶段的重点是多智能体协同，没有产品或数字。催化：<b>Agent/多智能体概念情绪</b>。归入 AI 板块。</div>
+    <div class="src"><a href="https://www.qbitai.com/2026/09/499654.html">量子位</a><span class="t">2026-09-30 22:03 CST · verification=review</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">V2｜潘健成（群联 CEO）：「"I tell myself every day it'll ease"」，判断存储短缺会持续数年</div><span class="badge">言论·review</span></div>
-    <div class="sm">DIGITIMES 09-30 引述。催化：<b>存储模组/主控（江波龙、佰维存储）</b>，与美光指引同向。归入 CHIP 板块。</div>
-    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES</a><span class="t">2026-09-30 00:00 CST · verification=review</span></div>
+    <div class="it-h"><div class="ttl">V2｜华为董事长：称昇腾在中国已领先英伟达</div><span class="badge">言论·review</span></div>
+    <div class="sm">DigiTimes 标题级消息，没有具体测试数据或场景说明。催化：<b>国产算力（华为昇腾链）</b>。归入 CHIP 板块。</div>
+    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">窗口内（09-30~10-02，日报未标具体时分）· verification=review</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">V3｜Anthropic（机构表态）：认为 GLM-5.3「"released without meaningful safeguards to limit misuse"」</div><span class="badge">言论·pass</span></div>
-    <div class="sm">Anthropic 官方研究页 09-29 发布。催化：<b>网络安全受益；也可能成为美方收紧开源权重管制的论据，智谱概念情绪双向</b>。归入 AI 板块（A1）。</div>
-    <div class="src"><a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities">Anthropic</a><span class="t">2026-09-29 00:00 PT · verification=pass</span></div>
+    <div class="it-h"><div class="ttl">V3｜贵金属机构观点：摩根士丹利 Gower 认为金价 2027H2 有望破 5000 美元、银涨到 120 美元有基本面支撑；美银提示 Q4 金价跌破 4000 美元的风险在上升；WisdomTree Shah 称黄金正迎来"最好的十年之一"；韩国央行时隔 13 年重启购金，拟 12 月买入 1 吨国产黄金</div><span class="badge">言论·review</span></div>
+    <div class="sm">Kitco 09-30/10-01 汇总的机构评论，看多与警示并存，方向分化。催化：<b>黄金股情绪双向</b>。归入 METAL 板块。</div>
+    <div class="src"><a href="https://www.kitco.com/news/">Kitco</a><span class="t">2026-09-30~10-01 · verification=review</span></div>
   </div>
-  <div class="empty"><b>fail loud（大佬言论）</b>：<b>黄仁勋 / Sam Altman / 马斯克 / Dario Amodei / Demis Hassabis / Lisa Su / 王兴兴 / 稚晖君 / Peter Beck</b>——窗口内没有找到媒体转述，X 受限；<b>特朗普 / USTR</b>——窗口内也没有新的芯片或关税表态（USTR 最新一条 09-27，超窗）。</div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">V4｜黄仁勋 + 马斯克 09-30 对谈，网传两人把 AI "改口称 SI（超级智能）"</div><span class="badge">言论·review（存疑）</span></div>
+    <div class="sm">只看到 B 站转发，没有一手出处；新浪/微博二次转述的"改口称 SI"说法<b>真实性存疑</b>，与昨日美光 CEO "AI is becoming Super Intelligence (SI)" 一句同样还没核实。归入 AI 板块，不作为正式催化使用。</div>
+    <div class="src"><span class="t">来源：B 站转发 / 新浪微博二次转述（未核实）· verification=review（存疑）</span></div>
+  </div>
+  <div class="empty"><b>fail loud（大佬言论）</b>：<b>Sam Altman / Dario Amodei / Demis Hassabis / Lisa Su / 王兴兴 / 稚晖君 / Brett Adcock / Peter Beck / Bezos / 特朗普</b>——窗口内没有找到媒体转述，X 受限；<b>USTR</b>——只有 G20 贸易部长会的程序性致辞和钢铁产能过剩论坛声明，没有量化关税或禁令内容。</div>
 </section>
 
 <!-- ============ GOV ============ -->
 <section id="gov" style="--c:var(--c-gov)">
-  <div class="sec-head"><h2>政府与政策</h2><span class="en">GOV · 2 条（0 pass / 2 review）· EU 地平线欧洲追加 5 亿欧元 + EU 跨境应急通信提案</span></div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">G1｜欧盟为"地平线欧洲"追加 5 亿欧元科研资金</div><span class="badge">中·review</span></div>
-    <div class="sm">EC 09-29 新闻稿原文 <b>"additional €500 million for research programme Horizon Europe"</b>。</div>
-    <ul>
-      <li>追加 5 亿欧元；</li>
-      <li>投向是宽口径科研，不是半导体或 AI 专项；</li>
-      <li>EC 官方新闻中心发布。</li>
-    </ul>
-    <div class="src"><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2004">EC 官网</a><span class="t">2026-09-29 00:00 CET · cat=中 · verification=review · 映射：无直接映射</span></div>
-  </div>
-  <div class="item">
-    <div class="it-h"><div class="ttl">G2｜欧盟委员会提议建设跨境"关键通信系统"（应急响应用）</div><span class="badge">弱·review</span></div>
-    <div class="sm">09-30 提出供首响应人员使用的跨成员国安全通信系统提案，未给预算和时间表。</div>
-    <ul>
-      <li>处于立法提案阶段；</li>
-      <li>没有量化数字；</li>
-      <li>着眼应急通信韧性。</li>
-    </ul>
-    <div class="src"><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2008">EC 官网</a><span class="t">2026-09-30 00:00 CET · cat=弱 · verification=review · 映射：无直接映射</span></div>
-  </div>
-  <div class="empty"><b>未收</b>：窗口内国内（gov.cn、ndrc）没有科技/芯片/AI 类政策，只有文化遗产、康复护理、体育消费类文件，未收录。whitehouse.gov 的 presidential-actions 和 fact-sheets 本轮只抓到导航壳，这是<b>源失败，不等于没有事件</b>。USTR 最新一条在 09-27，超窗。</div>
+  <div class="sec-head"><h2>政府与政策</h2><span class="en">GOV · 0 条 · 窗口内无硬事件，源失败不等于无事件</span></div>
+  <div class="empty"><b>窗口内没有可收录的硬事件。</b>可以抓到的源（ndrc、gov.cn/lianbo/bumen、USTR、EC presscorner）确认窗口内没有芯片/AI/算力/光伏类政策：USTR 只有 09-30 的 G20 贸易部长会致辞和钢铁产能过剩论坛声明，没有量化关税或禁令内容；EC 的跨境通信提案昨日已报，玛丽居里 2.1 亿欧元科研资助与 A 股无关。<b>源失败</b>：gov.cn/zhengce/zuixin、whitehouse.gov/presidential-actions 与 /fact-sheets 只抓到壳页，<b>不能排除白宫侧有遗漏</b>。WebSearch 命中的七部门电池规划（09-28）、五部门绿色算力通知（09-21）、BIS 1 月旧规都已超窗。</div>
 </section>
 
 <!-- ============ AI ============ -->
 <section id="ai" style="--c:var(--c-ai)">
-  <div class="sec-head"><h2>AI 领域</h2><span class="en">AI · 1 条（1 pass）· Anthropic：GLM-5.3 端到端网络攻击能力报告</span></div>
+  <div class="sec-head"><h2>AI 领域</h2><span class="en">AI · 7 条（3 pass / 4 review，含 conflict_pending 1）· Gemini 4 Argon + OpenAI 蒸馏攻击 + 英伟达×CoreWeave + GPT-6 Astra Ultrafast + DeepSeek DSec + Manus 2.0</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">A1｜Anthropic 报告：GLM-5.3 已具备端到端网络攻击构建能力，安全防护"形同虚设"</div><span class="badge">中·pass</span></div>
-    <div class="sm">ExploitBench 端到端成功率 GLM-5.3 为 12%（50/410），Claude Mythos Preview 为 14%（56/410），GLM-5.2 等早期模型为 0%；二进制利用中完整控制流劫持成功率 4% vs 6%。报告原话 <b>"a meaningful step change in the cyber capabilities available to attackers"</b>。NIST 下属 CAISI 09-17 曾评价它为"迄今最具网络能力的开放权重模型"，比美国前沿模型落后约 4 个月。</div>
+    <div class="it-h"><div class="ttl">A1｜Google 发布 Gemini 4 Argon，输出上限 100 万 token，API 入门价 2/10 美元</div><span class="badge">中·pass</span></div>
+    <div class="sm">输出 token 上限从 64K 扩到 1M；基准成绩 DeepSWE v1.1 77.9%、CWE-bench v1 68%（并列第一）、AutomationBench 51.3%（第一）、LVBench 91.7%；入门期价格为输入 2 美元、输出 10 美元/百万 token（缓存输入打 95% 折扣），之后涨到 4/20 美元。</div>
     <ul>
-      <li>开源模型的网络攻击能力逼近闭源前沿；</li>
-      <li>虚假掩护故事越狱成功率 64%、预填充推理 92%、权重阉割 100%；</li>
-      <li>量子位 09-29 跟进，标题《Anthropic，你是来给智谱打广告的吧！》</li>
+      <li>首批面向 Fairwind Program 的网络安全防御者开放；</li>
+      <li>主打长流程软件工程、法律/金融知识工作；</li>
+      <li>先低价拉量，后续涨价。</li>
     </ul>
-    <div class="src"><a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities">Anthropic</a><span class="t">2026-09-29 00:00 PT（官方页未标时分）· cat=中 · verification=pass（Anthropic 官方研究页）· 映射：网络安全/AI 安全合规受益；智谱概念与国产开源模型情绪双向，美方可能借此收紧对开源权重的管制</span></div>
+    <div class="src"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">Google 官方博客</a><span class="t">2026-09-30 20:00 UTC · cat=中（代理判为强；属于产品发布，没有直接改变 A股板块的订单或价格，主控降级）· verification=pass · 映射：AI 应用/Agent、网络安全情绪；算力需求预期</span></div>
   </div>
-  <div class="empty"><b>去重与未收</b>：GPT-6.1 Sol、dots、英伟达回购没有新数字。GPT-6.1 Astra 暂停发布仍没有官方回应，继续挂 conflict_pending。量子位"OpenAI 推理之父访谈"列表页只给"8 小时前"，锁不住日期，按规则丢弃。Google/DeepMind 博客列表日期只到月份，无法确认是否落窗。</div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">A2｜OpenAI 公开协调蒸馏攻击，归因于"与 Moonshot AI 相关联的个人"</div><span class="badge">中·pass</span></div>
+    <div class="sm">攻击者在一个对话里复制加密推理，再到另一个对话里要求模型解密转录；7-24~25 高峰期 4000 多个用户、16000 次请求，关联提示模式的集群超过 15000 个用户。</div>
+    <ul>
+      <li>指名月之暗面关联个人；</li>
+      <li>已封禁账户、关闭加密推理回放漏洞；</li>
+      <li>通过前沿模型论坛向业界共享情报。</li>
+    </ul>
+    <div class="src"><a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/">OpenAI</a><span class="t">2026-09-30 00:00 PT（官方页未标时分）· cat=中 · verification=pass · 映射：数据安全/AI 安全受益；月之暗面相关、国产模型出海合规偏空</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">A3｜英伟达 × CoreWeave：Vera Rubin 架构落地 Agentic AI 云平台</div><span class="badge">中·pass</span></div>
+    <div class="sm">CoreWeave 把英伟达的计算、网络和软件整合进面向 AI 负载的云平台，双方强调"多代部署"的投资回报。</div>
+    <ul>
+      <li>面向 Agentic AI，覆盖训练到生产；</li>
+      <li>采用 Vera Rubin；</li>
+      <li>没有披露订单金额或 GPU 数量。</li>
+    </ul>
+    <div class="src"><a href="https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/">NVIDIA 官方博客</a><span class="t">2026-09-30 00:00 PT · cat=中 · verification=pass · 映射：算力租赁/IDC、光模块、液冷服务器</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">A4｜英伟达博客：GPT-6 Astra Ultrafast 已通过 OpenAI API 上线，基于 Blackwell，生成速度最高为标准模式的 8 倍</div><span class="badge">中·conflict_pending</span></div>
+    <div class="sm">面向 ChatGPT Work 与 Codex 用户开放，原文称比 Astra 标准模式"快至多 8 倍"；没有提到此前的"暂停发布"。</div>
+    <ul>
+      <li>8 倍提速；</li>
+      <li>跑在 Blackwell 上；</li>
+      <li>名称是"GPT-6 Astra"，昨日挂起的是"GPT-6.1 Astra 暂停发布"，版本号对不上。</li>
+    </ul>
+    <div class="src"><a href="https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/">NVIDIA 官方博客</a><span class="t">2026-10-01 00:00 PT · cat=中 · status=conflict_pending（与昨日 GPT-6.1 Astra 暂停发布的说法冲突，openai.com 上没找到对应页面）· verification=review · 映射：GPU/推理算力链、液冷服务器</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">A5｜DeepSeek 在知乎首次公开 V4.1 Agent 训练平台"DSec"</div><span class="badge">中·review</span></div>
+    <div class="sm">DeepSeek 自有账号发文，披露 V4.1 Agent 训练用的内部平台（"大本营"）；量子位转述。</div>
+    <ul>
+      <li>首次披露 Agent 训练基础设施；</li>
+      <li>没有算力或参数数字；</li>
+      <li>一手是知乎，未直抓。</li>
+    </ul>
+    <div class="src"><a href="https://www.qbitai.com/2026/09/499308.html">量子位</a><span class="t">2026-09-30 13:18 CST · cat=中 · verification=review · 映射：国产大模型 + 国产算力适配（寒武纪、海光信息）</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">A6｜Manus 2.0 发布：Agent 有了独立手机号和钱包，并能拉群协作</div><span class="badge">中·review</span></div>
+    <div class="sm">新增独立手机号、钱包，支持多个 Agent 组群完成任务；没有披露定价和用户规模。</div>
+    <ul>
+      <li>Agent 具备身份和支付能力；</li>
+      <li>多 Agent 协作；</li>
+      <li>没有量化数据。</li>
+    </ul>
+    <div class="src"><a href="https://www.qbitai.com/2026/09/499592.html">量子位</a><span class="t">2026-09-30 15:58 CST · cat=中 · verification=review · 映射：AI Agent 应用（金山办公等）情绪</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">A7｜〔访谈〕OpenAI 推理负责人：千禧年难题的突破，"1 万个 Agent 最多占了 10% 的功劳"</div><span class="badge">弱·review</span></div>
+    <div class="sm">认为数学突破只是多智能体时代的"开胃菜"，下一阶段的重点是多智能体协同。</div>
+    <ul>
+      <li>原话"10000 个 Agent 最多占了 10% 的功劳"；</li>
+      <li>多智能体方向；</li>
+      <li>没有产品或数字。</li>
+    </ul>
+    <div class="src"><a href="https://www.qbitai.com/2026/09/499654.html">量子位</a><span class="t">2026-09-30 22:03 CST · cat=弱 · verification=review · 映射：Agent 概念情绪</span></div>
+  </div>
+  <div class="empty"><b>去重/规则丢弃</b>：AMD 82 亿美元收购 World Labs（09-28，已在 09-29 日报收录）；智谱 GLM-4.6（实为 2025-09-30 旧闻）；Kimi OK Computer（2025-09-25 旧闻）；何恺明 ARC 新作（只有相对时间）；腾讯混元免费延期（没找到官方页，属促销）。Anthropic、通义千问、科大讯飞窗口内没有新的硬事件。</div>
 </section>
 
 <!-- ============ CHIP ============ -->
 <section id="chip" style="--c:var(--c-chip)">
-  <div class="sec-head"><h2>芯片半导体</h2><span class="en">CHIP · 8 条（1 pass / 7 review）· 美光 FY26Q4 财报（强）+ SK 海力士 Winpac 订单 + 三星代工/路线图 + 玻璃基板 + A20 Pro WMCM + Foundry 2.0</span></div>
+  <div class="sec-head"><h2>芯片半导体</h2><span class="en">CHIP · 8 条（0 pass / 8 review）· DB HiTek 8寸代工涨价 + 寒武纪索赔278亿 + 三星2nm良率60% + Shinko收购JDI + 南亚3D封装 + 英飞凌泰国 + Synopsys-亚马逊 + 华为Mate90</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">C1｜美光 FY26Q4 财报：营收 542.29 亿美元创纪录，FY27Q1 指引 615 亿美元</div><span class="badge">强·pass</span></div>
-    <div class="sm">Q4 营收 542.29 亿美元（上年同期 113.2 亿，约 +379%），GAAP/Non-GAAP 毛利率 86.8%/87.0%，GAAP/Non-GAAP EPS 32.87/33.42 美元。FY26 全年营收 1331.9 亿美元（上年 373.8 亿），Non-GAAP EPS 75.52 美元（上年 8.29）。FY27Q1 指引：营收 615±15 亿美元，GAAP/Non-GAAP 毛利率约 85.95%/86.25%，Non-GAAP EPS 38.15±1 美元。CEO 原话 <b>"Micron delivered record fiscal 2026 results, and we expect an even stronger fiscal 2027"</b>。</div>
+    <div class="it-h"><div class="ttl">C1｜DB HiTek 今年第二次上调代工价，中国客户涨 20%-30%，韩国客户约 10%</div><span class="badge">中·review</span></div>
+    <div class="sm">TheElec 原文 <b>"The company raised prices twice this year, in March and September, with increases ranging from about 5% to 30%"</b>；上半年中国客户约占营收 60%；业内人士称中国客户"effectively handing over blank checks"。CEO 赵基锡指示提价，这一说法来自"知情人士"。</div>
     <ul>
-      <li>下季指引比本季再高约 13%；</li>
-      <li>毛利率维持 86% 以上，存储超级周期没有见顶迹象；</li>
-      <li>新闻稿没有单列 HBM 或数据中心收入（CNBC 标题称"data center revenue jumps 11-fold"，review）。</li>
+      <li>8 寸代工涨价最高 30%；</li>
+      <li>中国客户涨幅明显高于韩国客户；</li>
+      <li>AI 数据中心、机器人需求让 200mm 产能偏紧。</li>
     </ul>
-    <div class="src"><a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx">美光 IR</a><a href="https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm">SEC 8-K</a><span class="t">2026-09-30 美东盘后（时分未披露，按 00:00 ET 记）/ 北京 10-01 凌晨 · cat=强 · verification=pass（主控复核 8-K）· 映射：存储芯片/模组（兆易创新、江波龙、德明利、佰维存储、香农芯创、深科技）、存储设备材料（北方华创、中微、雅克科技）受益</span></div>
+    <div class="src"><a href="https://www.digitimes.com/news/a20261001VL216/capacity-demand-price-2026-revenue.html">DigiTimes</a><a href="https://www.thelec.net/news/articleView.html?idxno=14226">TheElec</a><span class="t">2026-10-01 00:00 Local（DigiTimes 跟进稿）；首发 TheElec 2026-09-28 21:22 KST（超窗，前几期日报未收）· cat=中（代理判为强；只有知情人士消息，没有公司公告，按规则降级）· verification=review（主控已核 TheElec 原文，数字一致）· 映射：8 寸代工（中芯国际、华虹公司）提价预期；功率/模拟设计公司成本端承压</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">C2｜SK 海力士恢复向 Winpac 下达 DDR4/DDR5 封装订单</div><span class="badge">中·review</span></div>
-    <div class="sm">DIGITIMES 09-30 标题级消息，未披露金额或数量。</div>
+    <div class="it-h"><div class="ttl">C2｜寒武纪前 CTO 梁军把索赔金额从 42.87 亿元提高到 278.32 亿元</div><span class="badge">中·review</span></div>
+    <div class="sm">股权激励劳动争议诉讼变更请求，索赔从 42.87 亿元提高到 278.32 亿元；此前 6 起相关诉讼均败诉，股权回购案已进入强制执行；新诉求尚未开庭。</div>
     <ul>
-      <li>涉及通用 DRAM，不含 HBM；</li>
-      <li>存储封测外包需求回暖；</li>
-      <li>只有单一列表源。</li>
+      <li>278.32 亿元是单方主张，法院未认定；</li>
+      <li>前 6 案全部败诉；</li>
+      <li>回购案在强制执行。</li>
     </ul>
-    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：存储封测（长电科技、通富微电、深科技）</span></div>
+    <div class="src"><a href="https://21jingji.com/article/20260930/herald/11ac34a36679fd07aa34adbd66f94a00.html">21经济网</a><span class="t">2026-09-30 00:00 CST · cat=中 · verification=review（多家媒体数字一致，但没有公司公告；代理判 pass，主控改判 review）· 映射：寒武纪（688256）情绪扰动，基本面影响有限</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">C3｜TrendForce 现货价：假期 DRAM 现货交投清淡，主流颗粒均价环比 +0.93%，NAND 采购偏弱</div><span class="badge">中·review</span></div>
-    <div class="sm">TrendForce 09-30 现货周报，DRAM 小幅上行，NAND 需求疲弱。</div>
+    <div class="it-h"><div class="ttl">C3｜三星代工 2nm 良率接近 60%</div><span class="badge">中·review</span></div>
+    <div class="sm">DigiTimes 标题级消息，与昨日已报的"代工亏损收窄 42%"是同一业务线的新进展。</div>
     <ul>
-      <li>DRAM 现货 +0.93%；</li>
-      <li>NAND 与 DRAM 分化；</li>
-      <li>报告归因于假期，不认为是趋势反转。</li>
+      <li>2nm 良率约 60%；</li>
+      <li>与 HBM4 base die 放量互补；</li>
+      <li>先进制程接单能力提升。</li>
     </ul>
-    <div class="src"><a href="https://www.trendforce.com/news/">TrendForce</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：存储模组现货端（江波龙、佰维存储）涨价斜率放缓</span></div>
+    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：中芯国际先进制程对标情绪</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">C4｜三星代工：2026 年亏损预计同比收窄 42%（HBM4 base die 4nm 拉动），目标 2029 年 HPC 占营收 66%</div><span class="badge">中·review</span></div>
-    <div class="sm">TrendForce 与 DIGITIMES 09-30 报道，都是测算或前瞻目标。</div>
+    <div class="it-h"><div class="ttl">C4｜Shinko Electric 收购 JDI 茂原工厂，用于扩充 AI 先进封装产能</div><span class="badge">中·review</span></div>
+    <div class="sm">DigiTimes 标题级，没有金额。</div>
     <ul>
-      <li>亏损收窄 42%；</li>
-      <li>HBM4 base die 订单放量；</li>
-      <li>HPC 占比目标 66%。</li>
+      <li>收购 JDI Mobara 厂；</li>
+      <li>用于 AI 芯片先进封装；</li>
+      <li>日系封测产能整合。</li>
     </ul>
-    <div class="src"><a href="https://www.trendforce.com/news/">TrendForce</a><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：晶圆代工（中芯国际、华虹公司）景气参照</span></div>
+    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：先进封装（长电科技、通富微电）</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">C5｜三星调整 DRAM 路线图：B1b 混合键合优先导入 D0a，为 HBM5 铺路</div><span class="badge">中·review</span></div>
-    <div class="sm">DIGITIMES 09-29 标题级消息，没有量产时间表。</div>
+    <div class="it-h"><div class="ttl">C5｜南亚科技 3D 封装工厂项目获批</div><span class="badge">中·review</span></div>
+    <div class="sm">DigiTimes 标题级，没有投资额和时间表。</div>
     <ul>
-      <li>混合键合；</li>
-      <li>D0a 节点优先；</li>
-      <li>面向 HBM5。</li>
+      <li>DRAM 厂往 3D 封装延伸；</li>
+      <li>审批类事件；</li>
+      <li>细节未披露。</li>
     </ul>
-    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-09-29 00:00 Local · cat=中 · verification=review · 映射：混合键合/先进封装设备（北方华创、拓荆科技、长川科技）</span></div>
+    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：利基 DRAM（兆易创新、东芯股份）情绪</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">C6｜四家玻璃基板厂规格趋同于 510×515mm，被解读为台积电下一代封装的方向</div><span class="badge">中·review</span></div>
-    <div class="sm">DIGITIMES 09-30，未点名厂商，台积电没有表态。</div>
+    <div class="it-h"><div class="ttl">C6｜英飞凌在泰国新建后段封测厂，目标扩到五个模块</div><span class="badge">中·review</span></div>
+    <div class="sm">DigiTimes 标题级。</div>
     <ul>
-      <li>规格统一；</li>
-      <li>面板级封装方向；</li>
-      <li>只是市场解读。</li>
+      <li>泰国后段产能；</li>
+      <li>规划五个模块；</li>
+      <li>海外产能多元化。</li>
     </ul>
-    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：玻璃基板/TGV（彩虹股份、沃格光电、京东方A）主题</span></div>
+    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-10-01 00:00 Local · cat=中 · verification=review · 映射：功率器件封测（华天科技）竞争参照</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">C7｜苹果 A20 Pro 放弃 PoP，改用 WMCM 封装</div><span class="badge">中·review</span></div>
-    <div class="sm">DIGITIMES 09-30，未披露量产时间与供应商。</div>
+    <div class="it-h"><div class="ttl">C7｜Synopsys 与亚马逊签署超过 10 亿美元的协议，加速 AWS 定制芯片开发</div><span class="badge">中·review</span></div>
+    <div class="sm">DigiTimes 标题级，金额"超 10 亿美元"。</div>
     <ul>
-      <li>PoP→WMCM；</li>
-      <li>台积电先进封装增量；</li>
-      <li>移动 DRAM 封装形态变化。</li>
+      <li>10 亿美元以上；</li>
+      <li>面向 ASIC 设计工具和 IP；</li>
+      <li>云厂商自研芯片趋势延续。</li>
     </ul>
-    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：消费电子封装链，没有明确受益标的</span></div>
+    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-10-01 00:00 Local · cat=中 · verification=review · 映射：EDA（华大九天、概伦电子）情绪映射</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">C8｜"Foundry 2.0"营收创纪录，增长扩散到台积电以外</div><span class="badge">弱·review</span></div>
-    <div class="sm">DIGITIMES 09-30，没有金额和厂商名单。</div>
+    <div class="it-h"><div class="ttl">C8｜华为 Mate 90 系列扩大自研 LogicFolding 芯片的使用</div><span class="badge">弱·review</span></div>
+    <div class="sm">TrendForce 标题级，强调自研操作系统和芯片路线，没有出货量或良率数字。</div>
     <ul>
-      <li>营收新高；</li>
-      <li>非台积电厂商份额提升；</li>
-      <li>属于趋势评论。</li>
+      <li>自研芯片扩展到旗舰机；</li>
+      <li>自主可控路线延续；</li>
+      <li>没有量化数据。</li>
     </ul>
-    <div class="src"><a href="https://www.digitimes.com/calendar.asp?d=7d">DIGITIMES 日历</a><span class="t">2026-09-30 00:00 Local · cat=弱 · verification=review · 映射：代工板块情绪参考</span></div>
+    <div class="src"><a href="https://www.trendforce.com/news/">TrendForce</a><span class="t">2026-10-01 00:00 Local · cat=弱 · verification=review · 映射：华为产业链情绪</span></div>
   </div>
-  <div class="empty"><b>未收/闭环</b>：三星 HBM 占 2027 DRAM 产能 30%、SK 海力士/台积电 HBM5 联测、武汉芯融光 13.2 亿，都是 09-30 已报且没有新数字，去重丢弃。长鑫科技 349 亿投资：WebSearch 限定 static.sse.com.cn 没找到公告 PDF，维持 review，仍需股东大会审议。<b>盘前含义：09-30 A 股半导体行业资金净流出 125.6 亿元（全市场第一），美光指引是本期唯一硬催化，节后首日要看资金能否回流才算共识回归。</b></div>
+  <div class="empty"><b>去重丢弃</b>：Winpac 封装订单、B1b 混合键合、玻璃基板、HBM 占产能 30%、代工亏损收窄 42% 都没有新数字；英伟达回购、GlobalFoundries 新加坡利用率超 90%、ACM Research 积压订单 +88% 都发布于 09-28/29，超窗。美光全年营收"+256%"昨日已按 8-K 收录，不重复。长鑫科技 349 亿公告原文仍没找到。<b>盘前含义</b>：09-30 A 股半导体行业资金净流出 125.6 亿元（全市场第一），节后首日要看资金能否回流才算共识回归。</div>
 </section>
 
 <!-- ============ METAL ============ -->
 <section id="metal" style="--c:var(--c-metal)">
-  <div class="sec-head"><h2>有色 / 贵金属</h2><span class="en">METAL · 4 条（2 pass / 2 review）· 金银回落 + 钨节前报价 + Escondida 调解 + 铜价连涨铝走弱</span></div>
+  <div class="sec-head"><h2>有色 / 贵金属</h2><span class="en">METAL · 7 条（2 pass / 5 review）· 钨精矿跌破40万收官 + Escondida 95%罢工授权 + 金银10-01收平 + 智利8月铜产量-12.8% + 日本炼厂指引分化 + Cobre Panama + Bell Bay铝厂</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">M1｜[更新] 金银国庆前夜回落：现货金 4156.10 美元（-0.60%），现货银 60.18 美元（-1.90%）</div><span class="badge">中·pass</span></div>
-    <div class="sm">Kitco PM Report 原文 <b>"spot gold was trading near $4,156.10 an ounce, down 0.60% on the session"</b>、<b>"spot silver was trading near $60.180, down 1.90%"</b>；报价页 09-30 19:26 ET 快照为金 4153.00、银 60.23。</div>
+    <div class="it-h"><div class="ttl">M1｜[更新] 中钨在线三季度收官价：钨精矿 38 万元/标吨、APT 56 万元/吨、钨粉 85 万元/吨</div><span class="badge">中·pass</span></div>
+    <div class="sm">原文"月末钨精矿价格跌破 40 万元/标吨关口，收官 38 万元/标吨。仲钨酸铵（APT）与钨粉价格走势同步，分别收于 56 万元/吨、85 万元/吨"；附章源、翔鹭 1-9 月长单报价走势图。</div>
     <ul>
-      <li>09-29 的反弹（金 +1.42%）没能延续；</li>
-      <li>美 Q2 GDP 终值 2.2%、8 月 PCE +0.2%、ADP 强于预期；</li>
-      <li>长端美债收益率走高压制贵金属。</li>
+      <li>钨精矿 9 月跌破 40 万；</li>
+      <li>钨粉 85 万元/吨是新披露的数字；</li>
+      <li>10 月上半月长单还没公布。</li>
     </ul>
-    <div class="src"><a href="https://www.kitco.com/news/article/2026-09-30/metals-fade-long-yields-offset-cooler-inflation-lower-fed-odds-kitco-pm">Kitco News</a><a href="https://www.kitco.com/price/precious-metals">Kitco 报价</a><span class="t">2026-09-30 17:51 UTC（PM Report）；价格页 2026-09-30 19:26 ET · cat=中（代理判为强；单日 -0.6% 不足以改变板块预期，主控降级）· verification=pass（Kitco 官方报价页）· 映射：黄金/白银股节后开盘承压</span></div>
+    <div class="src"><a href="https://www.ctia.com.cn/news/133973.html">中钨在线</a><span class="t">2026-09-30 00:00 CST · cat=中 · verification=pass · 映射：钨板块节后长单定价偏弱（厦门钨业、章源钨业、翔鹭钨业、中钨高新）</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">M2｜[更新] 中钨在线节前收盘报价：钨精矿 36-38 万元/标吨，APT 54-56 万元/吨</div><span class="badge">中·pass</span></div>
-    <div class="sm">同一报价里钨粉 830-860 元/kg、碳化钨粉 800-830 元/kg，市场"承压偏弱"；原文另提到"昨日广东某上市钨企下调长单采购价格"，未点名。09-30 日报只有这篇的标题，本期补齐数字。</div>
+    <div class="it-h"><div class="ttl">M2｜[更新] Escondida 监督员工会以 95% 赞成票授权罢工，正处于 5 天强制调解期</div><span class="badge">中·review</span></div>
+    <div class="sm">工会约 1020 人，拒绝资方最终报价后投票授权罢工；按智利法律须进入 5 天政府调解，可再延 5 天，期满前不能合法罢工。Escondida FY26 产铜 126 万吨，单位成本 1.07 美元/磅。</div>
     <ul>
-      <li>节前最后一轮价格区间；</li>
-      <li>有长单下调的信号；</li>
-      <li>国庆期间休市，节后长单是焦点。</li>
+      <li>95% 授权罢工（昨日只报了"进入调解"）；</li>
+      <li>诉求涉及薪资、多任务制、14×14 倒班；</li>
+      <li>全球最大单体铜矿。</li>
     </ul>
-    <div class="src"><a href="https://www.ctia.com.cn/news/133930.html">中钨在线</a><span class="t">2026-09-29 00:00 CST · cat=中（代理判为强；没有涨跌幅、属于弱稳报价，主控降级）· verification=pass（"广东某钨企下调长单"一项 conflict_pending）· 映射：厦门钨业、章源钨业、翔鹭钨业、中钨高新短期毛利预期偏空</span></div>
+    <div class="src"><a href="https://www.mining-journal.com/miners/news-analysis/4537591/strikes-loom-worlds-biggest-copper-union-rejects-bhp-offer">Mining Journal</a><a href="https://discoveryalert.com/news/copper-price-escondida-strike-october-2026/">DiscoveryAlert</a><span class="t">2026-10-01 00:00 Local（精确时分不详）· cat=中（代理判为强；罢工还没发生，也没有 BHP 公告，主控降级）· verification=review · 映射：铜矿（紫金矿业、江西铜业、铜陵有色、洛阳钼业）偏多</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">M3｜BHP Escondida 监督员工会拒绝资方报价，进入 5 天政府调解期，智利罢工风险从 Centinela 扩散到全球最大铜矿</div><span class="badge">中·review</span></div>
-    <div class="sm">原文 <b>"parties must now enter a mandatory five-day government-led mediation"</b>。Centinela 两个工会已在 09-28 否决最终报价并进入调解（09-30 日报已收，本期不重复）；LME 三月铜 14,446 美元/吨，9 月累计涨约 9%。</div>
+    <div class="it-h"><div class="ttl">M3｜[更新] 金银 10-01 窄幅收平：现货金 4177.20 美元（+0.02%），现货银 60.88 美元（+0.02%）</div><span class="badge">弱·pass</span></div>
+    <div class="sm">报价页 10-01 19:08 ET 快照；ISM 制造业 PMI 降到 54.5，盘中金价一度跌到 4158 美元附近。日内区间金 4138.50-4193.90，银 59.84-61.55。</div>
     <ul>
-      <li>智利两大矿同时有罢工风险；</li>
-      <li>调解失败才会触发罢工；</li>
-      <li>铜价连涨的供给侧支撑。</li>
+      <li>09-30 回落后企稳；</li>
+      <li>振幅不小但收盘持平；</li>
+      <li>没有方向性催化。</li>
     </ul>
-    <div class="src"><a href="https://www.mining.com/web/supervisors-at-bhps-escondida-mine-in-chile-reject-offer-paving-the-way-for-a-strike/">mining.com</a><span class="t">2026-09-30 13:01（站点时间，时区未标）· cat=中 · verification=review（媒体单源，未见 BHP 公告）· 映射：铜矿（紫金矿业、江西铜业、铜陵有色、洛阳钼业）受益</span></div>
+    <div class="src"><a href="https://www.kitco.com/price/precious-metals">Kitco 报价</a><span class="t">2026-10-01 19:08 ET · cat=弱 · verification=pass · 映射：黄金股中性</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">M4｜铜价有望连续第三个月上涨，上期所铜库存下降；铝价触及两个月低点</div><span class="badge">中·review</span></div>
-    <div class="sm">原文 <b>"copper stocks in Shanghai Futures Exchange warehouses declined"</b>，没给具体吨数。</div>
+    <div class="it-h"><div class="ttl">M4｜智利 8 月铜产量同比下降 12.8%，为 36.95 万吨</div><span class="badge">中·review</span></div>
+    <div class="sm">SMM 首页标题"智利 8 月铜产量同比下降 12.8%，至 369,500 吨"。</div>
     <ul>
-      <li>铜 3 连涨；</li>
-      <li>上期所库存去化；</li>
-      <li>铝走弱，铜铝分化。</li>
+      <li>全球第一大产铜国减产；</li>
+      <li>与 Escondida、Centinela 劳资风险叠加；</li>
+      <li>只有标题，未溯源到 Cochilco/INE。</li>
     </ul>
-    <div class="src"><a href="https://www.mining.com/web/copper-price-set-for-3rd-straight-monthly-gain-aluminum-hits-2-month-low/">mining.com</a><span class="t">2026-09-30 10:37（站点时间，时区未标）· cat=中 · verification=review（库存类数字只有媒体口径）· 映射：铜板块偏多，电解铝偏弱</span></div>
+    <div class="src"><a href="https://news.smm.cn">SMM</a><span class="t">2026-10-01 00:00 CST（列表页"10 小时前"，能锁定日期）· cat=中 · verification=review · 映射：铜价供给侧支撑</span></div>
   </div>
-  <div class="empty"><b>超窗线索（不计入条目，供复核）</b>：① 山东黄金下调 2026 年矿产金产量目标，从不低于 49 吨降到 36-38 吨（公告日 09-24，前几期日报未收，节后对山东黄金估值有影响，review）；② 紫金黄金与赤峰黄金控股股东签补充协议，交割先决条件期限延到 2026-11-30（媒体称 09-28 签署，超窗，review）。SMM 首页本轮只给相对时间，未采用。<b>盘前含义：金银止跌反弹未延续，黄金股空仓观望；铜站稳、Escondida+Centinela 双矿罢工风险支撑铜价，是次级主线。</b></div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">M5｜日本炼厂下半年铜产量指引分化：三菱材料 -18%，古河 -3%，日铁矿业 +2%</div><span class="badge">中·review</span></div>
+    <div class="sm">SMM 汇总；另有泛太平洋铜业上半财年铜产量低于目标。</div>
+    <ul>
+      <li>三菱材料降幅最大；</li>
+      <li>炼厂普遍受原料或检修扰动；</li>
+      <li>印证铜精矿偏紧、TC 低位。</li>
+    </ul>
+    <div class="src"><a href="https://news.smm.cn">SMM</a><span class="t">2026-10-01 00:00 CST（列表页相对时间推算）· cat=中 · verification=review · 映射：铜冶炼（江西铜业、铜陵有色）加工费承压、矿端偏多</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">M6｜巴拿马 Cobre Panama 处置仍未定：建议"重启筹资"与"有序关闭"两种表述并存</div><span class="badge">中·review</span></div>
+    <div class="sm">SMM 同时列出"巴拿马建议重启 Cobre Panama 铜矿以资助分阶段关闭"和"巴拿马建议有序关闭第一量子旗下 Cobre Panama 铜矿"。</div>
+    <ul>
+      <li>部分重启是为了给关闭筹资；</li>
+      <li>第一量子资产去留未定；</li>
+      <li>该矿原年产能约 30 万吨。</li>
+    </ul>
+    <div class="src"><a href="https://news.smm.cn">SMM</a><span class="t">2026-10-01 00:00 CST（列表页相对时间推算）· cat=中 · verification=review · 映射：铜精矿供给预期，双向</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">M7｜力拓确定 Bell Bay 铝冶炼厂运营到 2031 年</div><span class="badge">中·review</span></div>
+    <div class="sm">Kitco 转载通讯社稿 <b>"Rio Tinto secures Bell Bay aluminum smelter operations till 2031"</b>，此前市场担心它因电价过高关停。</div>
+    <ul>
+      <li>运营延续到 2031 年；</li>
+      <li>消除停产尾部风险；</li>
+      <li>对全球铝供给是边际偏空。</li>
+    </ul>
+    <div class="src"><a href="https://www.kitco.com/news/off-the-wire/2026-10-01/rio-tinto-secures-bell-bay-aluminum-smelter-operations-till-2031">Kitco</a><span class="t">2026-10-01 11:28 ET · cat=中 · verification=review（通讯社稿，没有直抓力拓公告；代理判 pass，主控改为 review）· 映射：电解铝（中国铝业等）供给参照，影响有限</span></div>
+  </div>
+  <div class="empty"><b>规则丢弃</b>：WebSearch 命中"章源钨业公布 10 月上半月长单报价"（stcn，黑钨精矿 26.70 万元/标吨、APT 39.00 万元/吨），原文自报"2025 年 10 月上半月"，数字也远低于当前 36-38 万的价格带，判定为 2025 年旧文混入，丢弃。ctia 上没有 2026 年 10 月的长单单篇。</div>
 </section>
 
 <!-- ============ ROBOT ============ -->
 <section id="robot" style="--c:var(--c-robot)">
-  <div class="sec-head"><h2>具身智能 / 机器人</h2><span class="en">ROBOT · 2 条（1 pass / 1 review）· 韩国 T-Robotics 人形机器人项目 + Figure F.02 退役</span></div>
+  <div class="sec-head"><h2>具身智能 / 机器人</h2><span class="en">ROBOT · 6 条（0 pass / 6 review）· IDC人形机器人出货+432% + Tangent Robotics融资 + Flourish1 + Astribot T1 + 波士顿动力五指 + GPT-6 Astra接宇树G1</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">R1｜韩国 T-Robotics 联合 KAIST/KEIT 推进显示面板工厂人形机器人项目，获 45 亿韩元资金</div><span class="badge">中·review</span></div>
-    <div class="sm">项目属于韩国"KRW 2.3 trillion"人形机器人国家生态计划，目标 <b>"establish production systems for humanoids tailored to ten industries by 2030"</b>，关键零部件国产化率目标 45%-80%；智元、龙旗科技参与。</div>
+    <div class="it-h"><div class="ttl">R1｜IDC：2026 年上半年全球人形机器人出货接近 2.5 万台，同比增长 432.1%，智元以 8600 多台、约 35% 份额排第一</div><span class="badge">中·review</span></div>
+    <div class="sm">原文 <b>"Global humanoid robot shipments approached 25,000 units in the first half of 2026, up 432.1% year on year"</b>；科研教育、展演、政务数据中心三类场景合计占 69%。</div>
     <ul>
-      <li>45 亿韩元 / 国家计划 2.3 万亿韩元；</li>
-      <li>2030 年覆盖十大行业；</li>
-      <li>有中国厂商参与。</li>
+      <li>出货 2.5 万台、+432%；</li>
+      <li>智元份额约 35%；</li>
+      <li>应用仍以科研和展演为主，工业、家庭还没规模化。</li>
     </ul>
-    <div class="src"><a href="https://humanoidsdaily.com/news/t-robotics-humanoid-display-factory-project">humanoidsdaily</a><span class="t">2026-09-29 00:00 KST（转引每日经济新闻韩国 mk.co.kr）· cat=中 · verification=review · 映射：龙旗科技、智元供应链概念</span></div>
+    <div class="src"><a href="https://www.humanoidsdaily.com/news/idc-h1-2026-humanoid-shipments-agibot">humanoidsdaily</a><span class="t">2026-09-30 08:40 UTC · cat=中（没有直抓 IDC 原报告）· verification=review · 映射：智元供应链、人形机器人零部件（减速器/丝杠/灵巧手）</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">R2｜Figure AI 官方宣布 F.02 机型退役</div><span class="badge">弱·pass</span></div>
-    <div class="sm">Figure 官网新闻页确认 F.02 停用，没有台数或产能数字。</div>
+    <div class="it-h"><div class="ttl">R2｜Tangent Robotics 获 450 万美元 Pre-seed 融资，研发灵巧手触觉</div><span class="badge">中·review</span></div>
+    <div class="sm">Fly Ventures 与 Toyota Ventures 联合领投，做带触觉传感和学习控制的机器人手。</div>
     <ul>
-      <li>机型代际切换；</li>
-      <li>没有量化信息；</li>
-      <li>官方一手。</li>
+      <li>450 万美元；</li>
+      <li>有丰田产业资本；</li>
+      <li>灵巧手是关键零部件。</li>
     </ul>
-    <div class="src"><a href="https://www.figure.ai/news/f-02-decommission">Figure AI</a><span class="t">2026-09-30 00:00 PT · cat=弱 · verification=pass（官方一手）· 映射：无直接映射</span></div>
+    <div class="src"><a href="https://www.humanoidsdaily.com/news/tangent-robotics-4-5-million-pre-seed-dexterity">humanoidsdaily</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：灵巧手/触觉传感器</span></div>
   </div>
-  <div class="empty"><b>去重与未收</b>：智元 100 台灵犀 X2 入驻爱仕达（humanoidsdaily 英文复述，无新数字）。Tesla Optimus、宇树、银河通用、优必选、傅利叶窗口内没有落窗事件；tesla.com/blog 返回 403。</div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">R3｜Flourish 1：3555 美元的轮式半人形家用机器人，开放 50 台预订，12 月交付</div><span class="badge">中·review</span></div>
+    <div class="sm">主打家务场景，首批预订 50 台。</div>
+    <ul>
+      <li>3555 美元；</li>
+      <li>50 台；</li>
+      <li>2026-12 交付。</li>
+    </ul>
+    <div class="src"><a href="https://www.humanoidsdaily.com/news/flourish-1-affordable-home-robot">humanoidsdaily</a><span class="t">2026-09-30 00:00 Local · cat=中 · verification=review · 映射：消费级服务机器人</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">R4｜Astribot T1（1.8 万美元）在 IROS 北美首秀</div><span class="badge">中·review</span></div>
+    <div class="sm">Astribot 借 IROS 展会把 T1 带到北美。</div>
+    <ul>
+      <li>1.8 万美元；</li>
+      <li>出海铺垫；</li>
+      <li>中国人形机器人公司。</li>
+    </ul>
+    <div class="src"><a href="https://www.humanoidsdaily.com/news/astribot-t1-north-america-iros-18000">humanoidsdaily</a><span class="t">2026-10-01 00:00 Local · cat=中 · verification=review · 映射：人形机器人出海/零部件</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">R5｜波士顿动力给新一代人形机器人的手加了"小指"</div><span class="badge">中·review</span></div>
+    <div class="sm">Atlas 新灵巧手增加第五指，提升抓握能力。</div>
+    <ul>
+      <li>五指化；</li>
+      <li>精细抓取；</li>
+      <li>海外技术路线参照。</li>
+    </ul>
+    <div class="src"><a href="https://www.therobotreport.com/boston-dynamics-drops-pinkie-on-new-humanoid-hand/">The Robot Report</a><span class="t">2026-10-01 00:00 Local · cat=中 · verification=review · 映射：灵巧手产业链</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">R6｜〔演示〕量子位：GPT-6 Astra 接入宇树 G1，完成厨房收纳</div><span class="badge">弱·review</span></div>
+    <div class="sm">标题"刚刚，GPT-6 Astra 接上宇树 G1，把厨房收拾了！"，把机器人技能封装成大模型可以调用的工具。</div>
+    <ul>
+      <li>本体 + 大模型 Agent 集成；</li>
+      <li>家庭场景；</li>
+      <li>技术演示，没有商业数字。</li>
+    </ul>
+    <div class="src"><a href="https://www.qbitai.com/2026/09/499493.html">量子位</a><span class="t">2026-09-30 15:54 CST（列表页"前天 15:54"，与 URL 序号对应）· cat=弱 · verification=review · 映射：宇树概念</span></div>
+  </div>
+  <div class="empty"><b>去重/规则丢弃</b>：软银拟收购 RAI 研究所（09-18，超窗）；Agility Digit 5、波士顿动力 Metaplant 训练中心（日期锁不住）；Figure F.02（重复）。Tesla Optimus、宇树、银河通用、优必选、傅利叶窗口内没有硬事件，WebSearch 只命中旧闻。永贵电器没有公告。</div>
 </section>
 
 <!-- ============ PV ============ -->
 <section id="pv" style="--c:var(--c-pv)">
-  <div class="sec-head"><h2>光伏 / 电力新能源</h2><span class="en">PV · 1 条（1 pass）· InfoLink 周价更新到 09-24~30 周，全链持平</span></div>
+  <div class="sec-head"><h2>光伏 / 电力新能源</h2><span class="en">PV · 3 条（0 pass / 3 review）· 阳光电源柬埔寨108MW + 山西废止1.52GW + 索比评论知识产权</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">P1｜[更新] InfoLink 周价更新到 09-24~30 周：多晶硅 40.0 元/kg、N 型 182 硅片 1.000 元/片、TOPCon 电池 0.300 元/W、TOPCon 组件 0.723 元/W</div><span class="badge">中·pass</span></div>
-    <div class="sm">多晶硅、硅片持平，电池片落在前期区间 0.290-0.300 的上沿；页面提示国庆期间暂停更新。索比 09-29 快报同样显示环比持平，"上下游多观望为主，成交偏少"，组件报价 0.69-0.71 元/W。</div>
+    <div class="it-h"><div class="ttl">P1｜阳光电源在柬埔寨完成 108MW 构网型储能系统，具备黑启动能力</div><span class="badge">中·review</span></div>
+    <div class="sm">为柬埔寨国家电力公司 EDC 交付 108MW 构网型 BESS，配 516 套 PCS；阳光电源地区负责人公开确认项目完成。</div>
     <ul>
-      <li>全链持平；</li>
-      <li>电池片守在区间上沿；</li>
-      <li>节前成交清淡。</li>
+      <li>108MW、516 套 PCS；</li>
+      <li>构网型 + 黑启动；</li>
+      <li>没有披露金额。</li>
     </ul>
-    <div class="src"><a href="https://www.infolink-group.com/spot-price">InfoLink</a><a href="https://news.solarbe.com/202609/29/50029806.html">索比</a><span class="t">2026-09-30 00:00 CST（InfoLink）/ 2026-09-29 06:01 CST（索比）· cat=中 · verification=pass（InfoLink + 索比双源）· 映射：光伏主链（通威、隆基绿能、TCL中环）中性</span></div>
+    <div class="src"><a href="https://www.energy-storage.news/sungrow-completes-108mw-grid-forming-battery-storage-system-with-black-start-capability-in-cambodia/">Energy Storage News</a><span class="t">2026-10-01 00:00 Local · cat=中 · verification=review · 映射：阳光电源海外储能</span></div>
   </div>
-  <div class="empty"><b>去重与未收</b>：阿曼 USP 停产（代理抓到的是 09-30 日报已收的同一篇索比 09-29 稿，同一 URL，只多了"实际只爬坡到 3-4 万吨/年"一句，官方仍没有声明，继续 conflict_pending）；阳光电源排名、中电建集采无新信息；通威 TNC 2.0 组件 09-28 超窗。★实体（通威/隆基/阳光/宁德）和科华数据、中国西电窗口内没有公告。</div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">P2｜山西公示 2026 年第三批拟废止的风光项目，规模约 1.52GW</div><span class="badge">弱·review</span></div>
+    <div class="sm">收回的指标拟重新分配。</div>
+    <ul>
+      <li>1.52GW；</li>
+      <li>地方指标调整；</li>
+      <li>不涉及龙头企业的具体项目。</li>
+    </ul>
+    <div class="src"><a href="https://news.solarbe.com/202609/30/50029879.html">索比</a><span class="t">2026-09-30 00:00 CST · cat=弱 · verification=review · 映射：没有直接映射</span></div>
+  </div>
+  <div class="item">
+    <div class="it-h"><div class="ttl">P3｜〔评论〕索比：知识产权保护是光伏反内卷的"题眼"</div><span class="badge">弱·review</span></div>
+    <div class="sm">评论文章，呼应反内卷政策讨论，没有新的量化数据。</div>
+    <ul>
+      <li>评论；</li>
+      <li>反内卷叙事；</li>
+      <li>没有涉及具体企业。</li>
+    </ul>
+    <div class="src"><a href="https://news.solarbe.com/202609/30/50029844.html">索比</a><span class="t">2026-09-30 00:00 CST · cat=弱 · verification=review · 映射：光伏反内卷政策预期</span></div>
+  </div>
+  <div class="empty"><b>规则丢弃</b>：印度奈杜佩塔 7GW TOPCon 电池厂投产（总产能 10.6GW，投资 3.437 亿美元），正文没有企业名，无法映射。InfoLink 国庆停更。★实体（通威、隆基、宁德）以及科华数据、中国西电窗口内没有公告。阿曼 USP 停产仍没有官方声明。</div>
 </section>
 
 <!-- ============ SPACE ============ -->
 <section id="space" style="--c:var(--c-space)">
-  <div class="sec-head"><h2>商业航天</h2><span class="en">SPACE · 4 条（0 pass / 4 review，含 conflict_pending 2）· 星舰 F14 入轨部署星链 V3 + Crew-13 载人任务 + NROL-97 Falcon Heavy + Starliner 无人测试</span></div>
+  <div class="sec-head"><h2>商业航天</h2><span class="en">SPACE · 4 条（1 pass / 3 review，含 conflict_pending 1）· Crew-13 创纪录对接 + NROL-97结果未知 + Transporter-18 + 长八甲Q4密集发射</span></div>
   <div class="item">
-    <div class="it-h"><div class="ttl">S1｜[更新] 星舰 Flight 14 实际入轨（262×275 km，倾角 30.5°），部署 26 颗星链 V3；Flight 15 目标 10 月底</div><span class="badge">中·review</span></div>
-    <div class="sm">NSF 复盘：轨道插入点火 95 m/s 后部署 26 颗 Starlink V3，全程 3 小时 8 分 30 秒，<b>"是以往任务的 3 倍"</b>。Booster 21 在 T+1:16 损失 1 台内环发动机，Ship 41 的 SN127 真空发动机在 T+7:18 关机。Flight 15 静态点火预计两周内，Ship 42 预计 2-3 周就绪，Pad 2 在装新的维修结构。</div>
+    <div class="it-h"><div class="ttl">S1｜[更新·闭环] Crew-13 于 10-01 11:10 EDT 发射，不到 8 小时对接 ISS，创美国飞船最快对接纪录</div><span class="badge">中·pass</span></div>
+    <div class="sm">Crew Dragon 从 LC-39A 发射，乘组为 Jessica Watkins、Luke Delaney、Sergey Teteryatnikov、Joshua Kutryk，驻留约 6 个月；原文 <b>"setting a new speed record for a U.S. spacecraft"</b>。</div>
     <ul>
-      <li>首次入轨并部署 V3 卫星；</li>
-      <li>有两处发动机异常；</li>
-      <li>F15 定在 10 月底，是否做"筷子"捕获还没确认。</li>
+      <li>按原定窗口发射；</li>
+      <li>不到 8 小时对接，创纪录；</li>
+      <li>昨日的 conflict_pending 已闭环。</li>
     </ul>
-    <div class="src"><a href="https://www.nasaspaceflight.com/2026/09/starship-14-orbit-flight-15/">NASASpaceflight</a><span class="t">2026-09-30 15:17 UTC · cat=中 · verification=review（NSF 单源，不是 SpaceX 官方）· 映射：商业航天、卫星互联网（星链对标）情绪延续</span></div>
+    <div class="src"><a href="https://spaceflightnow.com/2026/10/01/fresh-crew-takes-off-for-six-month-stay-aboard-space-station/">spaceflightnow</a><a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-crew-13-astronaut-mission-docks-iss-fastest-trip-us-spacecraft">space.com</a><span class="t">2026-10-01 11:10 EDT（发射时刻）· cat=中 · verification=pass · 映射：商业航天情绪（弱关联）</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">S2｜SpaceX Crew-13 载人任务定于 10-01 11:10 ET 发射（结果未知）</div><span class="badge">中·conflict_pending</span></div>
-    <div class="sm">NASA/SpaceX 确认"go"，天气 60% 可发；备份窗口 10-02 10:47 ET。</div>
+    <div class="it-h"><div class="ttl">S2｜Falcon Heavy NROL-97：原定 10-01 23:53 EDT 发射，结果未知</div><span class="badge">中·conflict_pending</span></div>
+    <div class="sm">NRO 首次使用 Falcon Heavy，这是第 14 枚 Falcon Heavy；芯级 B1106 一次性使用。主控复抓 spaceflightnow 首页，仍然只有发射前预告。</div>
     <ul>
-      <li>4 名航天员，前往 ISS，驻留约 6 个月；</li>
-      <li>约 8 小时交会对接；</li>
-      <li>有天气推迟风险。</li>
+      <li>备份窗口 10-02 23:48 EDT；</li>
+      <li>NRO 首次使用；</li>
+      <li>芯级不回收。</li>
     </ul>
-    <div class="src"><a href="https://www.space.com/news/live/spacex-nasa-crew-13-astronauts-launch-to-iss-september-30-2026">Space.com 直播</a><span class="t">2026-09-30 23:03 ET（直播稿最后更新）· cat=中 · status=conflict_pending · verification=review · 映射：载人航天链情绪（弱关联）</span></div>
+    <div class="src"><a href="https://spaceflightnow.com/2026/10/01/falcon-heavy-to-fly-its-first-mission-for-u-s-spy-satellite-agency/">spaceflightnow</a><a href="https://www.nasaspaceflight.com/2026/10/nrol97-launch/">NASASpaceflight</a><span class="t">2026-10-01 19:17 UTC（NSF 预告稿）· cat=中 · status=conflict_pending · verification=review · 映射：军工卫星发射链情绪（间接）</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">S3｜Falcon Heavy 首次执行 NRO 任务 NROL-97，定于 10-01 23:53 ET 发射（结果未知）</div><span class="badge">中·conflict_pending</span></div>
-    <div class="sm">火箭已转运至 39A 工位，两枚助推器回收至 LZ-1/LZ-2，芯级不回收；隶属 2025-04 授予的 NSSL Phase 3 Lane 2 合同（合同是旧事，不是本期新签）。</div>
+    <div class="it-h"><div class="ttl">S3｜SpaceX Transporter-18 拼车任务发射，搭载约 130 个载荷，包括 AI 数据中心原型星</div><span class="badge">中·review</span></div>
+    <div class="sm">原文 <b>"A Falcon 9 carrying 130 payloads lifted off from Vandenberg"</b>，进入太阳同步轨道，载荷包括 AI 数据中心原型卫星和能量重定向演示星。</div>
     <ul>
-      <li>NRO 首次使用 Falcon Heavy；</li>
-      <li>备份窗口 10-02 23:48 ET；</li>
-      <li>天气 60% 可发。</li>
+      <li>130 个载荷；</li>
+      <li>太空算力原型；</li>
+      <li>从范登堡 SLC-4E 发射。</li>
     </ul>
-    <div class="src"><a href="https://www.techtimes.com/articles/328337/20260930/falcon-heavy-launches-first-nro-spy-satellite-opening-nearly-14b-nssl-lane-2-contract.htm">Tech Times</a><a href="https://mynews13.com/fl/orlando/space/2026/09/30/spacex-nrol-97-launch">My News 13</a><span class="t">2026-09-30 14:45 ET · cat=中 · status=conflict_pending · verification=review · 映射：军工卫星发射链情绪（间接）</span></div>
+    <div class="src"><a href="https://spaceflightnow.com/2026/10/01/live-coverage-ai-datacenter-prototypes-energy-redirection-demonstrators-and-more-launching-on-spacexs-transporter-18/">spaceflightnow</a><span class="t">2026-10-01 11:32 PDT · cat=中 · verification=review（预告稿标题为"Launch preview"，发射结果按 NSF 单源）· 映射：太空算力/卫星互联网主题</span></div>
   </div>
   <div class="item">
-    <div class="it-h"><div class="ttl">S4｜NASA/波音计划年底前执行 Starliner 无人测试飞行，载人任务推迟到 2028 年中</div><span class="badge">弱·review</span></div>
-    <div class="sm">改款飞船换装新的推进阀门，应对 2024 年的推进系统故障。</div>
+    <div class="it-h"><div class="ttl">S4｜SpaceNews：长征八号甲 9 月完成第 9、10 次发射，部署国网星座卫星和遥感四十号，Q4 发射排期密集</div><span class="badge">中·review</span></div>
+    <div class="sm">标题 <b>"China launches Guowang, Yaogan-40 satellites, sets up busy Q4 manifest"</b>。</div>
     <ul>
-      <li>2026 年底无人测试；</li>
-      <li>2028 年中载人；</li>
-      <li>针对推进系统的硬件改进。</li>
+      <li>长八甲第 9、10 次发射；</li>
+      <li>国网 + 遥感；</li>
+      <li>Q4 高密度发射。</li>
     </ul>
-    <div class="src"><a href="https://spaceflightnow.com/2026/09/29/nasa-plans-unpiloted-starliner-test-flight-at-end-of-year/">SpaceflightNow</a><span class="t">2026-09-29 00:00 ET · cat=弱 · verification=review · 映射：关联极低</span></div>
+    <div class="src"><a href="https://spacenews.com/china-launches-guowang-yaogan-40-satellites-sets-up-busy-q4-manifest/">SpaceNews</a><span class="t">2026-10-01 00:00 Local · cat=中 · verification=review · 映射：卫星互联网（国网/千帆产业链）节后情绪</span></div>
   </div>
-  <div class="empty"><b>未收</b>：国内商业航天（蓝箭、银河航天、天兵、星河动力、千帆等）窗口内没有落窗事件；中文 WebSearch 命中的都是 2025-12~2026-07 的旧闻，已剔除。航天电器没有公告。</div>
+  <div class="empty"><b>国内商业航天</b>：银河航天官网最新一条是 09-20，窗口内无更新；蓝箭、星际荣耀、星河动力、深蓝、东方空间、天兵以及 Blue Origin、Rocket Lab 因预算用尽<b>没有专项核查</b>（这是源覆盖不足，不等于没有事件）。航天电器没有公告。</div>
 </section>
 
 <!-- ============ 盘前判断（末尾） ============ -->
 <section id="verdict">
-  <div class="sec-head" style="--c:var(--gold)"><h2>盘前判断</h2><span class="en">MAIN LINE · 2026-10-01 · 国庆休市，预判用于节后首个交易日</span></div>
+  <div class="sec-head" style="--c:var(--gold)"><h2>盘前判断</h2><span class="en">MAIN LINE · 2026-10-02 · 国庆休市，预判用于节后首个交易日</span></div>
 
   <div id="usstock" class="item" style="--c:var(--gold)">
-    <div class="it-h"><div class="ttl">昨夜美股 · 美东 2026-09-30（周三）收盘 + 隔夜外盘（本判断的事实依据）</div><span class="badge">事实</span></div>
+    <div class="it-h"><div class="ttl">昨夜美股 · 美东 2026-10-01（周四）收盘 + 隔夜外盘（本判断的事实依据）</div><span class="badge">事实</span></div>
     <table class="pricetbl">
-      <tr><td>美股指数（<b>三大指数涨跌互现，费半基本走平</b>）</td><td>道指 <span class="down">-0.86%</span>(50,906) · 纳指 <span class="up">+0.24%</span>(26,861) · 标普500 <span class="down">-0.25%</span>(7,652) · <b>费半 SOX -0.00%(12,629)</b>（均 2026-09-30 收盘）</td></tr>
-      <tr><td>半导体设备/存储（<b>正常时段持平，盘后巨震</b>）</td><td>MU +0.0%（正常时段）→ <b><span class="up">美光盘后约 +14.6%，报 1199.52 美元</span></b>（Bloomberg/CNBC 搜索摘要，未直抓行情页，review）· <span class="down">AMAT -0.1%</span> · <span class="down">KLAC -0.8%</span> · <span class="up">LRCX +1.4%</span>（2026-09-30）→ 存储超级周期由盘后财报确认，正常时段设备链内部仍分化</td></tr>
-      <tr><td>AI 算力（<b>算力偏弱</b>）</td><td><span class="up">NVDA +0.5%</span> · <span class="down">AVGO -1.1%</span> · <span class="down">TSM -0.2%</span>（2026-09-30）</td></tr>
-      <tr><td>光通信（<b>集体走弱</b>）</td><td><span class="down">LITE -0.2%</span> · <span class="down"><b>COHR -1.5%</b></span> · <span class="down"><b>GLW -3.1%</b></span>（2026-09-30）→ 09-29 反弹后再度走弱</td></tr>
-      <tr><td>中概（涨跌互现）</td><td><span class="down">BABA -0.2%</span> · <span class="up">PDD +0.6%</span> · <span class="up">JD +1.1%</span>（2026-09-30）· <b>金龙指数未接入</b></td></tr>
-      <tr><td><b>隔夜大宗（2026-10-01 各时间戳）</b></td><td><span class="down">COMEX 金 4181.58 -0.12%</span>（08:11:01）· <span class="down">COMEX 银 60.55 -0.03%</span>（08:10:56）· <span class="up">COMEX 铜 662.67 +0.08%</span>（08:10:57，智利两大矿罢工风险扩散）· <span class="up">NYMEX 油 90.44 +0.02%</span>（08:11:05）</td></tr>
-      <tr><td>A50 / 港股 / 汇率（<b>方向不一</b>）</td><td>A50 期货（<b>2026-10-01 05:14:44</b>）<b>13937 <span class="down">-0.19%</span></b>（<b>未过 ±0.5% 门槛</b>）· 恒指（2026-09-30）24613 <span class="up">+0.37%</span> · 恒生科技（2026-09-30）4254 <span class="up">+0.10%</span> · 离岸人民币（2026-10-01）<b>6.7094 +0.01%（脚本标"贬值压制"，但幅度可以忽略）</b> → <b>指数平开，存储/设备链结构性高开</b></td></tr>
+      <tr><td>美股指数（<b>三大指数普涨，费半领涨</b>）</td><td>道指 <span class="up">+0.04%</span>(50,927) · 纳指 <span class="up">+0.04%</span>(26,872) · 标普500 <span class="up">+0.19%</span>(7,666) · <b>费半 SOX <span class="up">+1.59%</span>(12,829)</b>（均 2026-10-01 收盘）</td></tr>
+      <tr><td>半导体设备/存储（<b>设备领涨，存储跟涨但弹性收窄</b>）</td><td>MU <span class="up">+3.0%</span> · AMAT <span class="up">+3.5%</span> · KLAC <span class="up">+2.8%</span> · LRCX <span class="up">+3.5%</span>（2026-10-01 正常时段）→ <b>美光 09-30 盘后只涨 +0.37%，报 1069 美元（CNBC）；上期日报写的"美光盘后 +14.6%"有误，本期更正</b></td></tr>
+      <tr><td>AI 算力（<b>分化</b>）</td><td><span class="up">NVDA +1.1%</span> · <span class="down">AVGO -2.1%</span> · <span class="up">TSM +0.7%</span>（2026-10-01）</td></tr>
+      <tr><td>光通信（<b>领涨全市场</b>）</td><td><span class="up"><b>LITE +7.7%</b></span> · <span class="up"><b>COHR +10.9%</b></span> · <span class="up">GLW +4.3%</span>（2026-10-01）</td></tr>
+      <tr><td>中概（<b>集体走弱</b>）</td><td><span class="down">BABA -0.1%</span> · <span class="down">PDD -1.8%</span> · <span class="down">JD -0.9%</span>（2026-10-01）· <b>金龙指数未接入</b></td></tr>
+      <tr><td><b>隔夜大宗</b></td><td><span class="up">COMEX 铜 657.78 +0.61%</span> · <span class="up">COMEX 金 4204.92 +0.06%</span> · <span class="up">COMEX 银 61.31 +0.21%</span> · <span class="up">NYMEX 原油 92.97 +0.11%</span>（2026-10-02 早盘快照）</td></tr>
+      <tr><td>A50 / 港股 / 汇率（<b>方向偏平</b>）</td><td>A50 期货（<b>2026-10-02 05:14</b>）<b>13898 <span class="up">+0.27%</span></b>（<b>未过 ±0.5% 门槛</b>）· 恒指（2026-09-30）24613 <span class="up">+0.37%</span> · 恒生科技（2026-09-30）4254 <span class="up">+0.10%</span>（假期内港股暂无新数据）· 离岸人民币 USDCNH（2026-10-02）<b>6.7156 +0.04%</b>（脚本标"贬值压制"，但幅度可以忽略）→ <b>指数平开，设备/光通信链结构性高开</b></td></tr>
     </table>
-    <div class="sm"><b>一句话：今天国庆休市，本期是给节后首个交易日用的预判（上期口径 10-09，以交易所公告为准）。主线仍是半导体存储/设备链：美光 FY26Q4 营收 542.3 亿美元，FY27Q1 指引 615±15 亿美元，高于市场预期约 568 亿，盘后约 +14.6%（review）。不过 09-30 A 股半导体行业资金净流出 125.6 亿元，是全市场第一，A 股共识还没回来。第二主线是铜，逻辑是智利两大矿罢工风险加上铜价连涨。A50 夜盘 -0.19%，方向偏平，情绪档位修复震荡。最大风险是节后存储链跳空高开后利好兑现，以及假期 8 天外盘缺口。</b></div>
-    <div class="src"><span class="t">数据来源：科技资讯日报_2026-10-01 + ak_brief 快照 _数据快照_2026-09-30.txt（2026-10-01 08:13 生成，akshare：新浪/腾讯/东财/同花顺，D1=09-30、D2=09-29）+ WebSearch 1 次（美光盘后涨幅 +14.6% 和市场一致预期 568 亿美元，来源 Bloomberg / CNBC 2026-09-30 搜索摘要，review）· <b>[缺失项]：本次按指令未运行 ak_brief.py（包括 check），个股位置、个股资金流和 09-30 龙虎榜都未取到；金龙指数未接入；FCX/SCCO 隔夜未取到；MU 盘后行情页未直抓；宏观日历未单独查询（非农日期按惯例推断）；节后首个交易日日期沿用上期口径 10-09，未核实交易所公告</b></span></div>
+    <div class="sm"><b>一句话：国庆休市第二天，本期仍是给节后首个交易日用的预判（具体日期以交易所公告为准，未核实）。主线一由"存储"改为半导体设备优先、存储打底：10-01 美股设备股 AMAT/LRCX 各 +3.5%、费半 +1.59%；美光正常时段只涨 3.0%，盘后也只有 +0.37%。上期写的"美光盘后 +14.6%"有误，本期更正，美光业绩超预期但已经被定价。主线二是铜：Escondida 工会 95% 赞成票授权罢工，智利 8 月铜产量同比 -12.8%。A50 夜盘 +0.27%，大盘偏平。最大风险有两个：存储是"业绩超预期、股价不涨"的兑现形态；09-30 A 股半导体资金净流出 125.6 亿，共识还没修复。</b></div>
+    <div class="src"><span class="t">数据来源：科技资讯日报_2026-10-02 + ak_brief 快照 _数据快照_2026-09-30.txt（2026-10-02 08:11 生成，akshare：新浪/腾讯/东财/同花顺；A 股 D1=09-30、D2=09-29，外盘与美股为 10-01/10-02）+ WebSearch 1 次（美光 10-01 收盘 +3%、盘后 +0.37% 报 1069 美元、LSEG 一致预期 510.7 亿美元，来源 CNBC 2026-10-01 与 Schaeffer's 搜索摘要，review）。<b>[缺失项]</b>：按指令未运行 ak_brief.py（包括 check），个股位置、个股资金流和 09-30 龙虎榜都未取到；金龙指数未接入；FCX/SCCO 隔夜未取到；港股 10-01 起无新数据；宏观日历未单独查询（非农日期按惯例推断）；节后首个交易日日期未核实交易所公告。</span></div>
   </div>
 
   <div class="verdict">
-    <div class="ml">大盘温度计 · 修复震荡，略偏降温（指数平开，存储/设备链结构性高开，节后首日不追高）</div>
-    <div class="lg"><b>方向倾向：指数平开，存储/设备链结构性高开。</b>A50 期货 2026-10-01 05:14 报 13937、-0.19%，没过 ±0.5% 门槛。美股 2026-09-30 收盘道指 50906 / -0.86%、纳指 26861 / +0.24%、标普 7652 / -0.25%，费半 SOX 12629 / -0.00%，正常交易时段基本是平的。增量信息在盘后：美光 2026-09-30 盘后约 +14.6%，报 1199.52 美元（Bloomberg/CNBC 搜索摘要，未直抓行情页，review），而快照里 MU 正常时段是 +0.0%。恒指 2026-09-30 收 24613 / +0.37%，恒生科技 4254 / +0.10%，偏暖。离岸人民币 2026-10-01 报 6.7094、+0.01%，脚本标"贬值压制"，但幅度可以忽略。<b>背离点</b>：A50 小跌、道指跌 0.86%，美光盘后大涨，两边方向不一致；分链看也只有设备 LRCX +1.4% 偏强，算力 AVGO -1.1%、光通信 COHR -1.5% / GLW -3.1% 偏弱。整体判断是存储单链走强，带不动整个科技板块。假期还有 7 个交易日的外盘，节后开盘前一晚的 A50 和 MU 累计涨跌要再确认一次。<br><b>情绪周期</b>：脚本规则粗判为「震荡/修复（标准仓位）」，<b>本期同意，定档修复震荡，略偏降温</b>（均为 2026-09-30 口径）。涨停 52 家、跌停 9 家，09-29 为 57 / 10。炸板 12 家，炸板率 19%，09-29 为 12%，有所抬升。昨涨停今日表现均 +1.24%、红盘率 49%，09-29 是 +2.64% / 58%，溢价减半但还是正的。两市成交额 9093 亿，比前 5 日均值 10087 亿缩量 9.9%（09-29 缩 16.7%），节前缩量。强势池 199 家、60 日新高 179 家。最高板是新华传媒 7 板（出版），脚本已注明属于孤龙高标，不按亢奋定档。<br><b>仓位提示</b>：修复震荡期按标准仓位操作，节后首日不追高开。存储/设备票如果开盘涨幅超过 5%，算预期兑现位，等回踩分时均线或第二天再说。铜方向只做低位，黄金、钨方向空仓观望。</div>
+    <div class="ml">大盘温度计 · 修复震荡，略偏降温（平开略偏暖，设备和光通信结构性偏强）</div>
+    <div class="lg"><b>方向倾向：平开略偏暖，设备和光通信结构性偏强。</b>A50 期货 2026-10-02 05:14 报 13898、+0.27%，没过 ±0.5% 门槛。2026-10-01 美股收盘：道指 50927 / +0.04%，纳指 26872 / +0.04%，标普 7666 / +0.19%，费半 SOX 12829 / +1.59%。分链看，设备 AMAT +3.5%、LRCX +3.5%、KLAC +2.8%，存储 MU +3.0%；光通信最强，COHR +10.9%、LITE +7.7%、GLW +4.3%；算力分化，NVDA +1.1%、TSM +0.7%、AVGO -2.1%。中概偏弱，BABA -0.1%、PDD -1.8%、JD -0.9%。恒指 2026-09-30 收 24613 / +0.37%，恒生科技 4254 / +0.10%（假期内港股暂无新数据）。离岸人民币 2026-10-02 报 6.7156、+0.04%，脚本标"贬值压制"，但幅度可以忽略。<b>背离点</b>：美股三大指数基本走平，费半却 +1.59%，科技是结构性走强，不是普涨；中概走弱，说明外资对中国资产的情绪没有跟上。离节后开盘还隔着 10-02（周五，9 月非农按惯例当日公布，未核实）等多个美股交易日，开盘前一晚要复核 A50 和 SOX 的累计涨跌。<br><b>情绪周期</b>：修复震荡，略偏降温，和脚本粗判「震荡/修复（标准仓位）」一致（A 股口径仍是 2026-09-30，假期内没有新数据）。涨停 52 家、跌停 9 家（09-29 为 57 / 10）；炸板 12 家，炸板率 19%（09-29 为 12%）；昨涨停今日表现均 +1.24%、红盘率 49%（09-29 为 +2.64% / 58%），溢价减半但仍是正的。两市成交额 9093 亿，比前 5 日均值 10087 亿缩 9.9%。最高板是新华传媒 7 板（出版），属于孤龙高标，不按亢奋定档。<br><b>仓位提示</b>：标准仓位，节后首日不追高开。设备、存储票开盘涨幅超过 5% 算预期兑现位，等回踩分时均线再说；铜只做低位；光通信隔夜涨幅大，但 A 股资金是流出的，只观察。</div>
   </div>
 
   <div class="verdict">
-    <div class="ml">今日主线一 · 半导体存储/设备链——存储超级周期获美光业绩确认（延续上期主线）</div>
-    <div class="lg"><b>产业逻辑</b>：美光 FY26Q4 营收 542.29 亿美元（上年同期 113.2 亿，约 +379%），Non-GAAP 毛利率 87.0%。FY27Q1 指引营收 615±15 亿美元，比本季再高约 13%，Non-GAAP 毛利率约 86.25%，EPS 38.15±1 美元。FY26 全年营收 1331.9 亿美元（上年 373.8 亿）。CEO 原话 <b>"we expect an even stronger fiscal 2027"</b>（SEC 8-K 复核，pass）。另有两条辅证：SK 海力士恢复向 Winpac 下 DDR4/DDR5 封装订单（review），TrendForce 09-30 DRAM 现货 +0.93%、NAND 偏弱（review）。存储的真实需求和涨价都还在，DRAM/HBM 强于 NAND。<br><b>共识/美股映射证据</b>：美股端，MU 盘后约 +14.6%（review），市场一致预期营收约 568 亿美元，美光指引高出约 8%；09-30 正常时段 LRCX +1.4%、AMAT -0.1%、KLAC -0.8%。<b>A 股共识端是负的</b>：09-30 半导体行业资金净流出 125.6 亿元（全市场流出第一），元件也流出 58.0 亿；上期两只存储/设备票北方华创 -2.07%、深科技 -2.84%，都跑输上证（+0.31%）。这是节前去风险兑现，没有证据显示资金在节前提前埋伏。所以本主线目前只靠产业逻辑和美股映射支撑，节后首日要看北方华创、深科技能否放量收红才算共识回归，龙头高开低走就下调强度。</div>
+    <div class="ml">今日主线一 · 半导体设备（主）+ 存储（辅）——存储扩产周期，从"存储涨价"传导到"设备资本开支"</div>
+    <div class="lg"><b>产业逻辑</b>：美光 FY26Q4 营收 542.3 亿美元，高于 LSEG 一致预期 510.7 亿；调整后 EPS 33.42 美元，预期 31.61 美元。FY27Q1 指引营收约 615 亿美元，调整后 EPS 38.15±1 美元（CNBC 2026-10-01）。存储厂收入和毛利同时处在高位，扩产资本开支有支撑。另有一条辅证：DB HiTek 3 月、9 月两次上调 8 寸代工价，中国客户涨 20%-30%（TheElec 原文，知情人士口径，review），说明成熟制程产能也偏紧。<br><b>共识/美股映射证据</b>：2026-10-01 美股设备 AMAT +3.5%、LRCX +3.5%、KLAC +2.8%，SOX +1.59%，设备的反应比存储强。MU 正常时段 +3.0%，盘后（09-30）只有 +0.37%，报 1069 美元，较 2025-09-30 已累计上涨 537%（CNBC），市场把这份财报当成"超预期但已定价"，<b>存储的弹性要往下调</b>。A 股共识端仍是负的：09-30 半导体行业资金净流出 125.6 亿元（全市场流出第一），元件流出 58.0 亿；09-30 北方华创 -2.07%、深科技 -2.84%。节后首日要看北方华创能否放量收红，收红才算共识回来。</div>
   </div>
 
   <div class="verdict">
-    <div class="ml">今日主线二 · 铜——供给扰动加上铜价连涨（新主线，次级）</div>
-    <div class="lg"><b>产业逻辑</b>：BHP Escondida（全球最大铜矿）监督员工会拒绝资方报价，进入 5 天政府强制调解期；此前 Centinela 两个工会已在 09-28 否决最终报价、进入调解。智利两大矿同时有罢工风险（mining.com 单源，review）。LME 三月铜 14,446 美元/吨，9 月累计涨约 9%，有望连续第三个月上涨，上期所铜库存下降（review）。<br><b>共识/美股映射证据</b>：COMEX 铜 2026-10-01 08:10 报 662.67、+0.08%，节前没有回落。工业金属行业资金 09-29 净流入 17.1 亿（上期快照）；09-30 资金流入 Top5 里有能源金属 +16.8 亿，没有工业金属。FCX/SCCO 隔夜数据未取到，美股映射这一关缺失，所以主线降为次级，只配一只低位票。罢工只有在调解失败后才会发生，属于事件驱动，要跟踪 5 天调解的结果。</div>
+    <div class="ml">今日主线二 · 铜：供给扰动升级（次级）</div>
+    <div class="lg"><b>产业逻辑</b>：Escondida 监督员工会（约 1020 人）以 95% 赞成票授权罢工，目前在 5 天强制调解期，可再延 5 天，大约 10-05 前后到期（mining-journal，review）。该矿 FY26 产铜 126 万吨，是全球最大的单体铜矿。智利 8 月铜产量同比 -12.8%，为 36.95 万吨（SMM 标题，review）；日本炼厂下半年指引里，三菱材料 -18%（SMM，review）。<br><b>共识/美股映射证据</b>：COMEX 铜 2026-10-02 08:09 报 657.78、+0.61%，假期内继续走强。09-30 能源金属行业资金净流入 16.8 亿，进入流入 Top5，工业金属没进 Top5。FCX/SCCO 隔夜数据未取到，美股映射这一关缺失，所以主线降为次级。罢工要等调解失败才会落地，仍属于事件驱动。</div>
   </div>
 
   <div class="mini" style="margin-top:8px"><h3>重点关注 · 说明</h3><ul>
-    <li>按指令本次未运行 ak_brief.py（包括 check 子命令），<b>个股 5 日/20 日涨幅、距 60 日高点、个股资金流和 09-30 龙虎榜都未取到</b>。位置关卡只能用上期打分输出的 09-30 单日涨跌幅和连板梯队代替，资金关卡用行业级资金流代替，主力确认关卡留空，不编席位。四只全部是主板/中小板。</li>
+    <li>按指令本次没有运行 ak_brief.py（包括 check 子命令），<b>个股 5 日/20 日涨幅、距 60 日高点、个股资金流和 09-30 龙虎榜都未取到</b>。位置关卡用 09-30 成绩单里的单日涨跌和连板梯队代替，资金关卡用行业资金流代替，龙虎榜留空，不编席位。四只全部是主板/中小板。</li>
   </ul></div>
 
   <div class="picks">
-    <div class="pick"><div class="h"><span class="n">深科技</span><span class="c">000021</span></div><div class="r">主线一，存储封测，<b>DRAM 链的直接弹性标的</b>（"长鑫委外封测 60-70%"属于关注池历史整理，未现场复核）。美光指引超预期，叠加 SK 海力士恢复 DDR4/DDR5 外包封装订单，封测外包回暖。三过滤：位置方面，09-30 下跌 2.84%，不在连板梯队，位置偏低，5 日/20 日涨幅未取到；资金方面，所属半导体行业 09-30 净流出 125.6 亿，<b>降权</b>，个股资金未取到；龙虎榜未取到，不编席位。操作口径：节后首日高开超过 5% 不追，回踩低吸。</div><div class="m">存储封测 · 美光指引超预期 · SK海力士封装订单回暖 · 半导体资金-125.6亿降权 · 位置/资金/龙虎榜未取到</div></div>
-    <div class="pick"><div class="h"><span class="n">北方华创</span><span class="c">002371</span></div><div class="r">主线一，<b>半导体设备平台型龙头</b>。美光毛利率 86% 以上、指引再增 13%，意味着存储厂扩产资本开支有支撑；国内长鑫 349 亿元研发和后道测试项目是订单来源（review，待股东大会）。美股映射是 2026-09-30 LRCX +1.4%，但 KLAC -0.8%、AMAT -0.1%，设备链内部分化。三过滤：位置方面，09-30 下跌 2.07%，不在连板梯队，5 日/20 日涨幅未取到；资金方面，半导体行业 -125.6 亿，<b>降权</b>；龙虎榜未取到。</div><div class="m">设备平台龙头 · 长鑫349亿待股东会 · LRCX+1.4%/KLAC-0.8%分化 · 半导体资金-125.6亿 · 位置/龙虎榜未取到</div></div>
-    <div class="pick"><div class="h"><span class="n">兆易创新</span><span class="c">603986</span></div><div class="r">主线一，利基 DRAM 加 NOR Flash，09-30 TrendForce DRAM 现货 +0.93%，DRAM 端涨价斜率比 NAND 更稳，选它不选 NAND 模组（江波龙 301308 是创业板，只当风向标）。三过滤：位置未取到，不在连板梯队；资金方面，半导体行业 -125.6 亿，<b>降权</b>，个股资金未取到；龙虎榜未取到。（三季报预告窗口在 10-15 前，存储涨价若能体现在业绩预增里就是二次催化，公告前不提前追。）</div><div class="m">利基DRAM+NOR · DRAM现货+0.93% · 半导体资金-125.6亿降权 · 三季报预告10-15前 · 位置/资金/龙虎榜未取到</div></div>
-    <div class="pick"><div class="h"><span class="n">洛阳钼业</span><span class="c">603993</span></div><div class="r">主线二，铜矿产量弹性大，同时有钴业务；智利 Escondida 和 Centinela 罢工风险推高铜价，海外矿企供给收缩时国内矿端受益。三过滤：位置未取到，不在连板梯队；资金方面，09-30 能源金属 +16.8 亿，进流入 Top5（洛阳钼业的行业归属以同花顺口径为准，未核实），工业金属 09-30 未进 Top5，个股资金未取到；龙虎榜未取到。替代：紫金矿业（601899）铜金双属性，但 09-30 现货金 -0.60%、现货银 -1.90%，金价回落会拖累，本期不选。</div><div class="m">铜矿+钴 · Escondida/Centinela罢工风险 · 能源金属资金+16.8亿 · 替代紫金矿业(本期不选) · 位置/资金/龙虎榜未取到</div></div>
+    <div class="pick"><div class="h"><span class="n">北方华创</span><span class="c">002371</span></div><div class="r">主线一，半导体设备平台型龙头，美股设备链 10-01 涨 2.8%-3.5%，是 A 股最直接的映射。三过滤：位置方面，09-30 跌 2.07%，不在连板梯队，5 日/20 日涨幅未取到；资金方面，半导体行业 09-30 净流出 125.6 亿，<b>降权</b>，个股资金未取到；龙虎榜未取到。</div><div class="m">设备平台龙头 · 美股设备链+2.8%~+3.5% · 半导体资金-125.6亿降权 · 位置/资金/龙虎榜未取到</div></div>
+    <div class="pick"><div class="h"><span class="n">兆易创新</span><span class="c">603986</span></div><div class="r">主线一（存储辅线），做利基 DRAM 和 NOR Flash。美光指引说明 DRAM 景气延续；南亚科 3D 封装厂获批（DigiTimes 标题级，review）也是利基 DRAM 的情绪辅证。三过滤：09-30 涨跌未取到，不在连板梯队；资金方面，半导体行业 -125.6 亿，<b>降权</b>，个股资金未取到；龙虎榜未取到。（三季报预告窗口在 10-15 前，存储涨价如果体现在预增里就是二次催化，公告前不提前追。）</div><div class="m">利基DRAM+NOR · 南亚科3D封装辅证 · 半导体资金-125.6亿降权 · 三季报预告10-15前</div></div>
+    <div class="pick"><div class="h"><span class="n">深科技</span><span class="c">000021</span></div><div class="r">主线一（存储辅线），存储封测。美光是"超预期但不涨"，弹性下调，排序放在兆易之后。三过滤：位置方面，09-30 跌 2.84%，位置偏低；资金方面，半导体行业 -125.6 亿，<b>降权</b>；龙虎榜未取到。</div><div class="m">存储封测 · 美光弹性下调 · 半导体资金-125.6亿降权 · 位置偏低</div></div>
+    <div class="pick"><div class="h"><span class="n">洛阳钼业</span><span class="c">603993</span></div><div class="r">主线二，铜矿产量弹性大。Escondida 罢工授权加智利减产，矿端受益。三过滤：位置未取到，不在连板梯队；资金方面，能源金属 09-30 净流入 +16.8 亿（洛阳钼业的行业归属以同花顺口径为准，未核实）；龙虎榜未取到。替代：紫金矿业（601899）是铜金双属性，金价 10-02 报 4204.92、+0.06% 走平，可作备选。</div><div class="m">铜矿弹性 · Escondida罢工+智利减产 · 能源金属资金+16.8亿 · 替代紫金矿业(备选)</div></div>
   </div>
 
   <div class="mini" style="margin-top:8px"><h3>只回调关注、不进买入栏</h3><ul>
-    <li><b>长电科技</b>（600584）——存储封测，SK 海力士外包回暖的映射，等节后资金确认后再升级；</li>
-    <li><b>雅克科技</b>（002409）——HBM 前驱体，关注池标注已高位；</li>
-    <li>09-30 涨停的<b>化学制品</b>（4 家）、<b>医疗服务</b>（3 家）、<b>生物制品</b>（3 家）在 09-29 涨停 Top5 里都不存在，属于首日面积板；09-30 资金流入前列是银行 +41.1 亿、化学制药 +30.7 亿、医疗服务 +25.5 亿、房地产 +25.1 亿，属于节前防御切换，不是产业主线，按铁律 2 不碰；</li>
-    <li><b>新华传媒</b>（600825，出版 7 板）、<b>襄阳轴承</b>（000678，汽车零部 4 板）是题材接力高位，不碰。</li>
+    <li><b>光迅科技</b>（002281，光通信）——美股 COHR +10.9%、LITE +7.7% 映射很强，但 09-30 A 股通信设备行业净流出 26.7 亿，而且 09-30 本股 -1.21%，产业端也没有新的订单数字，等节后资金确认后再升级；</li>
+    <li>8 寸代工涨价的直接受益方是<b>中芯国际</b>（688981）和<b>华虹公司</b>（688347），都是科创板，只作风向标；</li>
+    <li>09-30 首日面积板（化学制品 4 家、医疗服务 3 家、生物制品 3 家）和节前防御资金流入的方向（银行 +41.1 亿、化学制药 +30.7 亿）按铁律 2 不碰；</li>
+    <li><b>新华传媒</b>（600825，7 板）、<b>襄阳轴承</b>（000678，4 板）是高位接力，不碰。</li>
   </ul></div>
 
   <div class="twocol">
     <div class="mini"><h3>判断原因</h3><ol>
-      <li><b>产业逻辑</b>：假期窗口内唯一 cat=强的催化是美光财报（SEC 8-K 复核 pass），而且是业绩加指引的实锤：FY27Q1 营收指引 615 亿美元，比本季高 13%，毛利率 86.25%，满足"真实需求、涨价、业绩"三项。铜的逻辑是智利两大矿罢工风险加 LME 14,446 美元/吨、9 月 +9%，属于供给收缩，但还没真正停产。其余板块偏弱：钨精矿 36-38 万元/标吨、APT 54-56 万元/吨，市场"承压偏弱"，有上市钨企下调长单的传闻；光伏 InfoLink 全链持平，多晶硅 40.0 元/kg、TOPCon 组件 0.723 元/W；金银回落，现货金 4156.10 / -0.60%，现货银 60.18 / -1.90%。这些都不支持做主线。</li>
-      <li><b>龙头共识</b>：09-30 涨停 Top5 是化学制品 4、汽车零部 4、电池 3、医疗服务 3、生物制品 3；对照 09-29 的元件 7、房地产开 6、电池 6、汽车零部 4、出版 3，跨日延续的只有汽车零部（4→4）和电池（6→3，在收缩）。元件 7 家只维持了一天，就是上期警示的首日面积板兑现。行业资金流显示节前是明显的防御切换：银行、化学制药、医疗服务、房地产流入，半导体 -125.6 亿、元件 -58.0 亿、通信设备 -26.7 亿流出。<b>A 股层面电子硬件的共识在 09-30 被打断了</b>，主线一目前只能靠美光业绩把它重新拉起来，节后首日要验证。</li>
-      <li><b>美股映射（2026-09-30 收盘，盘后另标）</b>：SOX -0.00%、NVDA +0.5%、MU 正常时段 +0.0%，盘后约 +14.6%（review）。设备 LRCX +1.4%、AMAT -0.1%、KLAC -0.8%；算力 AVGO -1.1%、TSM -0.2%；光通信 LITE -0.2%、COHR -1.5%、GLW -3.1%；中概 BABA -0.2%、PDD +0.6%、JD +1.1%。能映射的只有存储，所以主线一选封测、设备、利基 DRAM，不选光模块、PCB（上期沪电 -2.64%、光迅 -1.21%，光通信隔夜仍弱）。</li>
-      <li><b>催化（只作配菜）</b>：Anthropic 报告称 GLM-5.3 网络攻击能力逼近前沿，ExploitBench 12% 对 14%，利好网络安全，但没有订单，只作情绪。星舰 Flight 14 入轨并部署 26 颗星链 V3（NSF 单源，review），Flight 15 在 10 月底，商业航天情绪延续，但国内窗口内没有事件。群联潘健成判断存储短缺将持续数年（review），和美光指引同向。</li>
+      <li><b>产业逻辑</b>：假期窗口内本期日报没有 cat=强，最硬的产业数据仍然是美光业绩：营收 542.3 亿美元，比一致预期高 6%，下季度指引 615 亿美元，环比 +13%。8 寸代工二次提价 20%-30%（review）说明半导体缺产能已经从存储扩散到成熟制程。铜的逻辑是罢工授权 95%、智利 8 月 -12.8%，都在供给侧。钨偏空：三季度收官钨精矿 38 万元/标吨，跌破 40 万，APT 56 万元/吨（ctia，pass）。</li>
+      <li><b>龙头共识</b>：A 股最后一个交易日是 09-30，涨停 Top5 为化学制品 4、汽车零部 4、电池 3、医疗服务 3、生物制品 3；对照 09-29 的元件 7、房地产 6、电池 6，元件只维持了一天。资金流是节前防御切换：半导体 -125.6 亿、元件 -58.0 亿、通信设备 -26.7 亿流出，银行 +41.1 亿流入。电子硬件的 A 股共识在 09-30 断档，主线一目前靠产业逻辑和美股映射撑着，要等节后验证。</li>
+      <li><b>美股映射（2026-10-01 收盘）</b>：SOX +1.59%。设备 AMAT/LRCX +3.5%、KLAC +2.8%，强于存储 MU +3.0%；光通信 COHR +10.9%、LITE +7.7%、GLW +4.3% 最强；算力 AVGO -2.1%、NVDA +1.1%，分化。所以主线一以设备为先；光通信美股映射强，但 A 股资金和产业数字两关没过，只观察。</li>
+      <li><b>催化（只作配菜）</b>：英伟达 × CoreWeave 宣布 Vera Rubin 落地 Agentic AI 云（未披露金额），Gemini 4 Argon 把输出上限提到 100 万 token，都是算力需求的情绪支撑，没有订单。IDC 数据显示 2026H1 全球人形机器人出货约 2.5 万台、+432%（review），只作题材情绪。</li>
     </ol></div>
     <div class="mini risk"><h3>风险提示</h3><ul>
-      <li><b>利好兑现排查</b>：美光盘后 +14.6% 已在美股兑现，A 股存储链节后首日大概率跳空。按"预期、兑现、不涨反跌"的规律，高开超过 5% 而且开盘半小时缩量回落的就是兑现信号，主线一当天降级。09-30 首日面积板（化学制品、医疗服务、生物制品）和节前防御资金（银行、化学制药）节后可能回流科技，不接力。上期 4 只全线下跌（均 -2.19%），说明 A 股对存储/硬件的节前共识已经松动，美光是唯一的修复理由。如果 MU 假期内把盘后涨幅吐掉一半以上，节后主线一直接降为观察。</li>
-      <li><b>假期外盘缺口与板块利空</b>：A 股休市期间海外照常交易，节后要一次消化 MU/SOX 累计走势、9 月非农（按惯例 10-02 公布，未核实）、美债长端收益率（09-30 已压制金银）、智利铜矿调解结果（5 天期限）和 SpaceX Crew-13 / NROL-97 发射结果。黄金股另有个股利空：山东黄金 09-24 下调 2026 年矿产金产量目标，从不低于 49 吨降到 36-38 吨（超窗，review，未查公告原文），加上金价回落，节后黄金板块承压。钨板块有长单下调传闻，偏空。</li>
+      <li><b>利好兑现排查</b>：美光是业绩超预期、股价却只涨 3% 的典型兑现形态，较一年前已累计上涨 537%。A 股存储链如果节后跳空高开超过 5%、开盘半小时缩量回落，就是兑现信号，当天主线降级。上期写的"美光盘后 +14.6%"有误，实际盘后只有 +0.37%，上期据此给存储链的强度偏高，本期已下调。09-30 首日面积板（化学制品、医疗服务、生物制品）不接力。</li>
+      <li><b>假期外盘缺口</b>：A 股节后要一次消化多个美股交易日，包括 9 月非农（按惯例 10-02 公布，未核实）、SOX 能否守住 10-01 的涨幅、Escondida 调解结果（约 10-05 前后到期）。中概 PDD -1.8%、JD -0.9%，说明外资对中国资产的情绪偏弱，人民币 6.7156 稍有贬值压力。钨长单下调的传闻还在，钨板块偏空。</li>
     </ul></div>
   </div>
 
   <div class="mini" style="margin-top:8px"><h3>战绩 · PICKS</h3><ul>
-    <li><b>上期（2026-09-30）</b>：4 只均涨跌 <span class="down">-2.19%</span>（北方华创 -2.07%、深科技 -2.84%、沪电股份 -2.64%、光迅科技 -1.21%），上证 <span class="up">+0.31%</span>，<b>跑输大盘 2.50 个百分点</b>，红盘 0/4，跑赢 0/4。</li>
+    <li><b>上期（2026-10-01 预判）</b>：国庆休市，暂无行情，脚本未打分，节后自动补打。</li>
+    <li><b>最近一次已打分</b>：2026-09-30 预判，4 只均涨跌 <span class="down">-2.19%</span>，上证 <span class="up">+0.31%</span>，<b>跑输大盘 2.50 个百分点</b>，红盘 0/4。</li>
     <li><b>滚动</b>（近 50 条）：均涨跌 <span class="down">-0.40%</span>、红盘率 <b>34%</b>、跑赢大盘率 <b>30%</b>。</li>
-    <li><b>PICKS: 000021, 002371, 603986, 603993</b></li>
+    <li><b>PICKS: 002371, 603986, 000021, 603993</b></li>
   </ul></div>
 </section>
 
 <footer>
-  数据来源：科技资讯日报_2026-10-01（周四，国庆假期首日，A股休市；窗口 09-29~10-01，<b>去重基准科技资讯日报_2026-09-30</b>；<b>正文收录 22 条</b>：<b>GOV 2</b> / <b>AI 1</b> / <b>CHIP 8</b> / <b>METAL 4</b> / <b>ROBOT 2</b> / <b>PV 1</b> / <b>SPACE 4</b>；<b>pass 6 / review 16（含 conflict_pending 2：Crew-13 发射结果、NROL-97 发射结果）</b>；cat 强 1 / 中 17 / 弱 4；总体判断：<b>强催化一处——美光 FY26Q4 财报 + FY27Q1 指引（SEC 8-K 复核 pass）；次级催化智利铜矿罢工风险扩散；金银/钨节前回落承压；光伏 InfoLink 全链持平</b>）+ 盘前预判_2026-10-01（PICKS: 000021,002371,603986,603993）+ A股 09-30 收盘数据（akshare _数据快照_2026-09-30：新浪/腾讯/东财/同花顺，D1=09-30、D2=09-29；<b>本次按指令未运行 ak_brief.py 含 check，个股位置/个股资金流/龙虎榜未取到</b>）。<br>
-  A股 9/30：上证 3842.19 <span class="up">+0.31%</span>（成交 4146 亿）、深证成指 12887.62 <span class="down">-0.11%</span>（4947 亿）、创业板指 3135.28 <span class="down">-0.23%</span>（1337 亿）；两市成交额 <b>9093 亿缩量 -9.9%</b>（前 5 日均值 10087 亿）；<b>涨停 52 / 跌停 9 / 炸板 12（炸板率 19%）、最高 7 板</b>（均为剔退市/ST 口径）；连板梯队（≥2 板，剔退市/ST）新华传媒7板(出版)、襄阳轴承4板(汽车零部)、时代万恒3板(电池)、九阳股份3板(小家电)、深物业A3板(房地产开)、善水科技3板(化学原料)、紫竹高科2板(电池)、园林股份2板(基础建设)、传艺科技2板(消费电子)、均瑶健康2板(饮料乳品)、亚邦股份2板(化学制品)、上海洗霸2板(环境治理)；涨停行业 Top5 <b>化学制品4/汽车零部4/电池3/医疗服务3/生物制品3</b>；前日(D2 09-29)涨停行业 Top5 <b>元件7/房地产开6/电池6/汽车零部4/出版3</b>；<b>昨涨停今表现均 +1.24%、红盘率 49%（打板赚钱效应正，较 09-29 的 +2.64%/58% 减半）</b>；强势池 <b>199 家</b>、60 日新高 <b>179 家</b>；行业资金净流入 Top5（同花顺即时口径）<b>银行+41.1亿、化学制药+30.7亿、医疗服务+25.5亿、房地产+25.1亿、能源金属+16.8亿</b>；净流出 Top5 <b>文化传媒-18.9亿、通用设备-25.9亿、通信设备-26.7亿、元件-58.0亿、半导体-125.6亿</b>；情绪档位（规则粗判）<b>震荡/修复(标准仓位)——本报告同意，定档修复震荡略偏降温；节后首日不追高开，存储/设备票高开超5%算兑现位</b>。<br>
-  昨夜美股 9/30：道指 50906 <span class="down">-0.86%</span> · 纳指 26861 <span class="up">+0.24%</span> · 标普500 7652 <span class="down">-0.25%</span> · <b>费半 SOX 12629 -0.00%</b> · MU +0.0%（正常时段）→ <b><span class="up">美光盘后约+14.6%报1199.52美元</span></b>（Bloomberg/CNBC 搜索摘要，review）· <span class="down">AMAT -0.1%</span> · <span class="down">KLAC -0.8%</span> · <span class="up">LRCX +1.4%</span> · <span class="up">NVDA +0.5%</span> · <span class="down">AVGO -1.1%</span> · <span class="down">TSM -0.2%</span> · <span class="down">LITE -0.2%</span> · <span class="down"><b>COHR -1.5%</b></span> · <span class="down"><b>GLW -3.1%</b></span> · <span class="down">BABA -0.2%</span> · <span class="up">PDD +0.6%</span> · <span class="up">JD +1.1%</span>。隔夜：A50 期货（<b>2026-10-01 05:14:44</b>）<b>13937 <span class="down">-0.19%</span></b> · 恒指（2026-09-30）24613 <span class="up">+0.37%</span> · 恒生科技（2026-09-30）4254 <span class="up">+0.10%</span> · 离岸人民币（2026-10-01）6.7094 <b>+0.01%（脚本标"贬值压制"，幅度可忽略）</b> · <b>COMEX 金（2026-10-01 08:11:01）4181.58 <span class="down">-0.12%</span></b> · <b>COMEX 银（2026-10-01 08:10:56）60.55 <span class="down">-0.03%</span></b> · <b>COMEX 铜（2026-10-01 08:10:57）662.67 <span class="up">+0.08%</span></b> · NYMEX 油（2026-10-01 08:11:05）90.44 <span class="up">+0.02%</span>。<br>
-  未确认项（fail loud）：<b>Crew-13 载人任务结果</b>（10-01 11:10 ET 发射，次日抓 spaceflightnow / space.com 直播稿闭环）；<b>NROL-97 Falcon Heavy 发射结果</b>（10-01 23:53 ET，同上次日闭环）；<b>"广东某上市钨企下调长单采购价"</b>（等厦门钨业、章源钨业、翔鹭钨业 10 月上半月长单报价比对）；<b>（延续）阿曼 USP 多晶硅停产半年</b>（等 United Solar Holding 或阿曼官方声明）；<b>（延续）GPT-6.1 Astra 暂停发布</b>（抓 openai.com/news 与 WSJ 原文）；<b>（延续）白宫 09-29 AI 会议签署文件</b>（whitehouse.gov 本轮只抓到壳页）；<b>SK 海力士 Winpac 封装订单 / 三星 B1b 路线图 / 玻璃基板 510×515 / A20 Pro WMCM / Foundry 2.0</b>（DIGITIMES 标题级单篇被封锁，改抓 TrendForce 或韩媒/公司 IR）；<b>TrendForce 现货价 +0.93% / 三星代工亏损收窄 42%</b>（抓 TrendForce 单篇核对原文数字）；<b>Escondida 调解 / 上期所铜库存</b>（核 BHP 公告，库存看上期所周报）；<b>星舰 F14 轨道参数</b>（找 SpaceX 官方 Flight 14 页面确认 26 颗 V3 和轨道参数）；<b>T-Robotics 45 亿韩元项目</b>（抓 mk.co.kr 原文或 KEIT 公告）；<b>（超窗）山东黄金产量目标下调到 36-38 吨</b>（巨潮查 600547 的 09-24 公告原文）；<b>美光 CEO "AI is becoming Super Intelligence" 一句</b>（抓美光 IR 新闻稿全文确认是否存在）；<b>（延续）长鑫科技 349 亿公告原文、台积电得州 2650 亿、锡业检修公告、Gold Fields 加现金</b>（本期没有新的官方确认，继续挂起）；<b>个股位置/个股资金流/09-30 龙虎榜未取到、金龙指数未接入、FCX/SCCO 隔夜未取到、MU 盘后行情页未直抓、宏观日历未单独查询、节后首个交易日日期沿用上期口径 10-09 未核实交易所公告</b>。<b>源可用性：可用 investors.micron.com/news、sec.gov EDGAR 8-K Exhibit 99.1、anthropic.com/research、ec.europa.eu presscorner、ustr.gov、ndrc.gov.cn、gov.cn（内容不相关）、trendforce.com/news、digitimes.com/calendar.asp?d=7d（标题级）、kitco.com/news 与 /price/precious-metals、ctia.com.cn 单篇、mining.com 首页和单篇、humanoidsdaily.com、figure.ai/news、infolink-group.com/spot-price（本周已更新）、news.solarbe.com、nasaspaceflight.com（走 jina）、space.com 直播稿、spacenews.com/feed；失败/无效：whitehouse.gov/presidential-actions 与 /fact-sheets（本轮又只抓到导航壳）、tesla.com/blog（403）、businesswire 搜索（404）、news.smm.cn 首页（只给相对时间）、spaceflightnow 首页（缓存停在 09-29）、Google/DeepMind 博客列表（日期只到月）</b>。日期节点：<b>今日 10-01 为国庆假期首日，A 股休市，节后首个交易日沿用上期口径 10-09（未核实交易所公告）</b>；<b>美光财报已落地，节后首日看 A 股共识是否回归</b>；<b>长鑫科技 349 亿投资仍需股东大会审议，关注会议日期公告</b>；<b>智利 Escondida 5 天调解期到期日需跟踪</b>；三季报密集披露期 <b>10-01 至 10-31</b>，10-15 前强制预告窗口临近。<br>
+  数据来源：科技资讯日报_2026-10-02（周五，国庆假期第二天，A股休市；窗口 09-30~10-02，<b>去重基准科技资讯日报_2026-10-01</b>，AMD-World Labs 另对 09-29 日报去重；<b>正文收录 35 条</b>：<b>GOV 0</b> / <b>AI 7</b> / <b>CHIP 8</b> / <b>METAL 7</b> / <b>ROBOT 6</b> / <b>PV 3</b> / <b>SPACE 4</b>；<b>pass 6 / review 29（含 conflict_pending 2：GPT-6 Astra Ultrafast 版本冲突、NROL-97 发射结果）</b>；cat 强 0 / 中 29 / 弱 6；总体判断：<b>本期没有 cat=强；海外 AI 发布密集（Gemini 4 Argon、OpenAI 公开蒸馏攻击、英伟达×CoreWeave），国内部委与公司仍在假期静默；8 寸代工涨价和 Escondida 罢工投票两条线索有交易价值，但都没拿到官方确认</b>）+ 盘前预判_2026-10-02（PICKS: 002371,603986,000021,603993）+ A股 09-30 收盘数据（akshare _数据快照_2026-09-30：新浪/腾讯/东财/同花顺，D1=09-30、D2=09-29；<b>本次按指令未运行 ak_brief.py 含 check，个股位置/个股资金流/龙虎榜未取到</b>）。<br>
+  A股 9/30：上证 3842.19 <span class="up">+0.31%</span>（成交 4146 亿）、深证成指 12887.62 <span class="down">-0.11%</span>（4947 亿）、创业板指 3135.28 <span class="down">-0.23%</span>（1337 亿）；两市成交额 <b>9093 亿缩量 -9.9%</b>（前 5 日均值 10087 亿）；<b>涨停 52 / 跌停 9 / 炸板 12（炸板率 19%）、最高 7 板</b>（均为剔退市/ST 口径）；连板梯队（≥2 板，剔退市/ST）新华传媒7板(出版)、襄阳轴承4板(汽车零部)、时代万恒3板(电池)、九阳股份3板(小家电)、深物业A3板(房地产开)、善水科技3板(化学原料)、紫竹高科2板(电池)、园林股份2板(基础建设)、传艺科技2板(消费电子)、均瑶健康2板(饮料乳品)、亚邦股份2板(化学制品)、上海洗霸2板(环境治理)；涨停行业 Top5 <b>化学制品4/汽车零部4/电池3/医疗服务3/生物制品3</b>；前日(D2 09-29)涨停行业 Top5 <b>元件7/房地产开6/电池6/汽车零部4/出版3</b>；<b>昨涨停今表现均 +1.24%、红盘率 49%（打板赚钱效应正，较 09-29 的 +2.64%/58% 减半）</b>；强势池 <b>199 家</b>、60 日新高 <b>179 家</b>；行业资金净流入 Top5（同花顺即时口径）<b>银行+41.1亿、化学制药+30.7亿、医疗服务+25.5亿、房地产+25.1亿、能源金属+16.8亿</b>；净流出 Top5 <b>文化传媒-18.9亿、通用设备-25.9亿、通信设备-26.7亿、元件-58.0亿、半导体-125.6亿</b>；情绪档位（规则粗判）<b>震荡/修复(标准仓位)——本报告同意，定档修复震荡略偏降温；节后首日不追高开，设备/存储票高开超5%算兑现位</b>。<br>
+  昨夜美股 10/1：道指 50927 <span class="up">+0.04%</span> · 纳指 26872 <span class="up">+0.04%</span> · 标普500 7666 <span class="up">+0.19%</span> · <b>费半 SOX 12829 +1.59%</b> · MU <span class="up">+3.0%</span> · <span class="up">AMAT +3.5%</span> · <span class="up">KLAC +2.8%</span> · <span class="up">LRCX +3.5%</span> · <span class="up">NVDA +1.1%</span> · <span class="down">AVGO -2.1%</span> · <span class="up">TSM +0.7%</span> · <span class="up"><b>LITE +7.7%</b></span> · <span class="up"><b>COHR +10.9%</b></span> · <span class="up">GLW +4.3%</span> · <span class="down">BABA -0.1%</span> · <span class="down">PDD -1.8%</span> · <span class="down">JD -0.9%</span>。美光 09-30 盘后仅 <span class="up">+0.37%</span>，报 1069 美元（CNBC，<b>上期"盘后+14.6%"有误，本期更正</b>）。隔夜：A50 期货（<b>2026-10-02 05:14</b>）<b>13898 <span class="up">+0.27%</span></b> · 恒指（2026-09-30）24613 <span class="up">+0.37%</span> · 恒生科技（2026-09-30）4254 <span class="up">+0.10%</span> · 离岸人民币 USDCNH（2026-10-02）6.7156 <b>+0.04%（脚本标"贬值压制"，幅度可忽略）</b> · <b>COMEX 铜 657.78 <span class="up">+0.61%</span></b> · <b>COMEX 金 4204.92 <span class="up">+0.06%</span></b> · <b>COMEX 银 61.31 <span class="up">+0.21%</span></b> · NYMEX 原油 92.97 <span class="up">+0.11%</span>（2026-10-02 早盘快照）。<br>
+  未确认项（fail loud）：<b>NROL-97 Falcon Heavy 发射结果</b>（原定 10-01 23:53 EDT，备份 10-02 23:48 EDT，次日抓 spaceflightnow / space.com 闭环）；<b>GPT-6 Astra Ultrafast 已上线 vs GPT-6.1 Astra 暂停发布</b>（版本号冲突，抓 openai.com/news 与 help.openai.com 发布说明确认）；<b>DB HiTek 8 寸涨价 20%-30%</b>（查 DB HiTek 韩国 DART 公告或公司回应）；<b>Escondida 95% 罢工授权</b>（抓 BHP 官网新闻稿或 Reuters 转述）；<b>寒武纪 278.32 亿索赔</b>（查巨潮寒武纪诉讼进展公告）；<b>DigiTimes 标题级 5 条（三星2nm、Shinko-JDI、南亚、英飞凌泰国、Synopsys-亚马逊）</b>（单篇被封，改抓 Synopsys IR / 英飞凌新闻稿 / TrendForce 交叉核对）；<b>IDC 人形机器人 H1 2.5 万台</b>（抓 IDC 中国官网新闻稿）；<b>SMM 铜三条（智利8月产量、日本炼厂、Cobre Panama）</b>（智利数据核 Cochilco，日本炼厂核三菱材料公告）；<b>DeepSeek DSec、Manus 2.0</b>（抓 DeepSeek 知乎原文、Manus 官网）；<b>阳光电源柬埔寨108MW</b>（抓阳光电源官网新闻）；<b>Bell Bay 2031</b>（抓力拓 media release）；<b>黄仁勋/马斯克"SI"说法、美光 CEO "Super Intelligence" 原话</b>（找一手视频或美光 IR 全文）；<b>（延续）广东某钨企下调长单采购价、阿曼 USP 停产、白宫 09-29 AI 会议签署文件、长鑫科技349亿、台积电得州2650亿、山东黄金产量目标下调原文</b>（本期没有新的官方确认，继续挂起）；<b>个股位置/个股资金流/09-30 龙虎榜未取到、金龙指数未接入、FCX/SCCO 隔夜未取到、港股10-01起无新数据、宏观日历未单独查询、节后首个交易日日期未核实交易所公告</b>。<b>源可用性：可用 blog.google 单篇、openai.com/index 单篇、blogs.nvidia.com、qbitai.com 首页、ndrc.gov.cn、gov.cn/lianbo/bumen、ustr.gov 新闻列表、ec.europa.eu presscorner、digitimes.com/calendar.asp?d=7d（标题级）+ digitimes 单篇 a20261001VL216、thelec.net 单篇（经 jina）、trendforce.com/news、ctia.com.cn、kitco.com 报价页与 off-the-wire、news.smm.cn 首页（相对时间）、humanoidsdaily.com、therobotreport.com、energy-storage.news、news.solarbe.com、spaceflightnow.com、space.com、nasaspaceflight.com（走 jina）、spacenews.com；失败/无效：gov.cn/zhengce/zuixin（壳页）、whitehouse.gov/presidential-actions 与 /fact-sheets（连续两轮壳页）、investors.micron.com/news-releases（404，正确路径是 /news）、36kr 与财联社电报窗口内没有 AI 条目、WebSearch（近 3 天仍以旧闻为主：GLM-4.6、Kimi、章源长单都是 2025 年内容混入）</b>。日期节点：<b>今日 10-02 为国庆假期第二天，A 股休市，节后首个交易日以交易所公告为准</b>；<b>美光财报已落地，节后首日看 A 股共识是否回归</b>；<b>长鑫科技 349 亿投资仍需股东大会审议，关注会议日期公告</b>；<b>智利 Escondida 5 天调解期约 10-05 前后到期</b>；三季报密集披露期 <b>10-01 至 10-31</b>，10-15 前强制预告窗口临近。<br>
   本页由AI辅助生成，仅为个人投研参考，不构成投资建议。股市有风险，入市需谨慎。
 </footer>
 
